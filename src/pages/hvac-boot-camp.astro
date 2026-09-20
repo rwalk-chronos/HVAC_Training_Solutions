@@ -1,19 +1,161 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const curriculum = [
+  { title: "HVAC foundations", modules: ["Matter, Energy, and Heat Basics","The Refrigeration Process","General Safety Practices","Refrigerant Management","Hand Tools","Tubing and Piping Tools","Specialized HVAC/R Tools"] },
+  { title: "Systems, air, and commissioning", modules: ["System Location","Air Distribution Systems","System Connections","Leak Testing","System Evacuation","System Startup and Charging","Testing, Adjusting, and Balancing","Indoor Air Quality"] },
+  { title: "Electrical", modules: ["Electricity Fundamentals","Electric Motors","Electric Controls","Wiring Diagrams","Electric Codes","Electrical Troubleshooting"] },
+  { title: "Heating, heat pumps, and troubleshooting", modules: ["Mechanical Troubleshooting","Electric Heat","Gas Heat","Oil Heat","Hydronic Heat","Heat Pumps"] },
+];
 ---
 
 <BaseLayout
-  title="HVAC Boot Camp | HVAC Training Solutions"
-  description="HVAC Boot Camp rebuild staging page."
+  title="HVAC Boot Camp | Online HVAC Training with Instructor Support"
+  description="Build the HVAC fundamentals you need for an entry-level role with 27 training modules, instructor support, troubleshooting practice, and job-search coaching."
 >
-  <section class="hero">
-    <p><strong>First-page rebuild target</strong></p>
-    <h1>Learn HVAC. Prepare for the interview. Get into the field.</h1>
-    <p>
-      This page is intentionally only a structural starting point. The next
-      phase will rebuild the complete Boot Camp offer using verified current
-      pricing, Ron's training approach, student outcomes, testimonials, course
-      curriculum, job-search support, and a clear enrollment path.
-    </p>
-  </section>
+  <div class="bootcamp-page">
+    <section class="bc-hero">
+      <div class="bc-hero-inner">
+        <div>
+          <p class="eyebrow">Professional HVAC Technician — Level 1</p>
+          <h1>Learn HVAC. <span>Understand why.</span> Get ready for the field.</h1>
+          <p class="hero-lead">
+            HVAC Boot Camp is online training for people who want more than a pile of videos.
+            Learn the fundamentals, get help when you are stuck, and prepare for the job search
+            with a real instructor in your corner.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.hvactrainingsolutions.net/hvac-boot-camp/pay-in-full/">Enroll for $479</a>
+            <a class="button button-secondary" href="https://www.hvactrainingsolutions.net/find-out-more/">Talk to Ron first</a>
+          </div>
+          <p class="hero-fineprint">Textbook purchased separately. A monthly payment option is also available.</p>
+        </div>
+
+        <aside class="hero-card" aria-label="Boot Camp highlights">
+          <p class="hero-card-label">What you get</p>
+          <ul>
+            <li><div><strong>27 HVAC training modules</strong><span>Fundamentals through heat pumps and troubleshooting.</span></div></li>
+            <li><div><strong>Instructor help when you need it</strong><span>Questions do not have to stay unanswered.</span></div></li>
+            <li><div><strong>Job-search and interview coaching</strong><span>We pause the technical work and prepare you to apply.</span></div></li>
+            <li><div><strong>30-day satisfaction guarantee</strong><span>Try the course and make sure it is the right fit.</span></div></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Course facts">
+      <div class="proof-grid">
+        <div class="proof-item"><strong>27 modules</strong><span>Structured HVAC fundamentals</span></div>
+        <div class="proof-item"><strong>Online access</strong><span>Study around work and life</span></div>
+        <div class="proof-item"><strong>Real support</strong><span>Instructor help and accountability</span></div>
+        <div class="proof-item"><strong>Career prep</strong><span>Employer search + interview practice</span></div>
+      </div>
+    </section>
+
+    <section class="bc-section">
+      <div class="section-inner">
+        <div class="section-heading center">
+          <p class="eyebrow">A practical path into HVAC</p>
+          <h2>You are not just buying course access.</h2>
+          <p>The goal is to understand enough HVAC to speak intelligently in an interview, keep learning on the job, and build from a solid technical foundation.</p>
+        </div>
+        <div class="path-grid">
+          <article class="path-card"><span class="path-number">1</span><h3>Build the fundamentals</h3><p>Start with heat, refrigeration, safety, tools, airflow, electrical basics, and the systems you will encounter as a new technician.</p></article>
+          <article class="path-card"><span class="path-number">2</span><h3>Prepare to get hired</h3><p>After the early modules, we turn attention to employers in your area, your introduction, your OJT/apprenticeship plan, and the interview itself.</p></article>
+          <article class="path-card"><span class="path-number">3</span><h3>Learn how technicians think</h3><p>Continue into controls, wiring diagrams, troubleshooting, heat, heat pumps, and the reasoning behind diagnosis rather than simply memorizing procedures.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section alt">
+      <div class="section-inner difference-grid">
+        <aside class="ron-card">
+          <span class="ron-tag">Meet your instructor</span>
+          <h3>Ron Walker</h3>
+          <p>Ron entered HVAC after retiring from the U.S. Marines and earning his B.S. He has worked as an HVAC technician, service manager, and business owner, with years spent training technicians to understand the trade more deeply.</p>
+          <a href="https://www.hvactrainingsolutions.net/find-out-more/">Schedule a no-pressure conversation →</a>
+        </aside>
+        <div>
+          <div class="section-heading"><p class="eyebrow">What makes Boot Camp different</p><h2>A course should not leave you alone with a login.</h2></div>
+          <div class="feature-list">
+            <div class="feature-row"><span class="feature-icon">01</span><div><h3>Accountability</h3><p>The objective is completion and understanding, not simply handing you access and hoping you finish.</p></div></div>
+            <div class="feature-row"><span class="feature-icon">02</span><div><h3>One-on-one help</h3><p>When a refrigeration, electrical, or diagnostic concept is not clicking, you have a path to get help.</p></div></div>
+            <div class="feature-row"><span class="feature-icon">03</span><div><h3>Job-search preparation</h3><p>Identify local HVAC employers, prepare an introduction, work through an OJT/apprenticeship plan, and practice the interview.</p></div></div>
+            <div class="feature-row"><span class="feature-icon">04</span><div><h3>Learn the “why”</h3><p>The training emphasizes refrigeration principles, electrical theory, and troubleshooting logic so procedures make sense.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section">
+      <div class="section-inner curriculum-intro">
+        <div class="section-heading">
+          <p class="eyebrow">Course curriculum</p>
+          <h2>27 modules. One technical foundation.</h2>
+          <p>The curriculum moves from basic science and tools through airflow, electrical systems, troubleshooting, heating, and heat pumps.</p>
+          <div class="textbook-note"><strong>Textbook:</strong> Residential Construction Academy HVAC, 2nd Edition by Eugene Silberstein. The textbook is purchased separately.</div>
+        </div>
+        <div class="curriculum-groups">
+          {curriculum.map((group, index) => (
+            <details class="curriculum-group" open={index === 0}>
+              <summary>{group.title}</summary>
+              <ol class="module-list">{group.modules.map((module) => <li>{module}</li>)}</ol>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section dark" id="pricing">
+      <div class="section-inner">
+        <div class="section-heading center"><p class="eyebrow">Simple pricing</p><h2>Choose the payment plan that fits.</h2><p>Both options provide access to the same HVAC Boot Camp training.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card featured">
+            <p class="price-label">Pay in full</p><p class="price">$479</p><p class="price-detail">One payment. Lowest total cost.</p>
+            <ul class="price-list"><li>Full Boot Camp course</li><li>Instructor support</li><li>Job-search preparation</li><li>30-day satisfaction guarantee</li></ul>
+            <a class="button button-primary" href="https://www.hvactrainingsolutions.net/hvac-boot-camp/pay-in-full/">Enroll — pay in full</a>
+          </article>
+          <article class="price-card">
+            <p class="price-label">Monthly plan</p><p class="price">$97</p><p class="price-detail">$97 to start, then 6 monthly payments of $97. $679 total.</p>
+            <ul class="price-list"><li>Full Boot Camp course</li><li>Instructor support</li><li>Job-search preparation</li><li>30-day satisfaction guarantee</li></ul>
+            <a class="button button-dark" href="https://www.hvactrainingsolutions.net/hvac-boot-camp/monthly-plan/">Choose monthly payments</a>
+          </article>
+        </div>
+        <p class="pricing-note">Current production checkout pages are retained during the rebuild. The textbook is not included in either price.</p>
+      </div>
+    </section>
+
+    <section class="bc-section">
+      <div class="section-inner">
+        <div class="guarantee">
+          <div class="guarantee-badge">30 DAY<br />PROMISE</div>
+          <div><h2>Make sure the training is right for you.</h2><p>The current Boot Camp offer includes a 30-day satisfaction guarantee. If the course is not a fit, contact HVAC Training Solutions within 30 days of purchase for a refund.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section alt">
+      <div class="section-inner">
+        <div class="section-heading center"><p class="eyebrow">Questions before you start</p><h2>Common concerns from new HVAC students.</h2></div>
+        <div class="faq-list">
+          <details class="faq-item"><summary>I know almost nothing about HVAC. Is that okay?</summary><p>Yes. Boot Camp begins with fundamentals and is intended to build the foundation needed for an entry-level HVAC path.</p></details>
+          <details class="faq-item"><summary>What about hands-on experience?</summary><p>Online training cannot replace real field experience. Boot Camp focuses on technical understanding and includes an OJT/apprenticeship plan designed to help structure the hands-on learning that happens with an employer.</p></details>
+          <details class="faq-item"><summary>Can you guarantee I will get an HVAC job?</summary><p>No. Hiring decisions belong to employers. The course includes job-search, employer-identification, introduction, and interview preparation intended to make you better prepared for entry-level opportunities.</p></details>
+          <details class="faq-item"><summary>Can I talk to Ron before I enroll?</summary><p>Yes. The current site offers a short, no-pressure conversation so you can see the online classroom, ask questions, and decide whether the training is a good fit.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section final-cta">
+      <div class="section-inner">
+        <p class="eyebrow">Ready when you are</p>
+        <h2>Build the foundation. Then get into the field.</h2>
+        <p>Start HVAC Boot Camp today, or talk with Ron first if you want to understand the course before committing.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.hvactrainingsolutions.net/hvac-boot-camp/pay-in-full/">Start HVAC Boot Camp — $479</a>
+          <a class="button button-secondary" href="https://www.hvactrainingsolutions.net/find-out-more/">Talk to Ron</a>
+        </div>
+      </div>
+    </section>
+  </div>
 </BaseLayout>
