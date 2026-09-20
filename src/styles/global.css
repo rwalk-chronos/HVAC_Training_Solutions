@@ -70,3 +70,14 @@ main{min-height:70vh}.content-shell{width:min(1120px,calc(100% - 3rem));margin:0
   .bc-hero-inner,.proof-grid{width:min(100% - 2rem,1180px)}.bc-section{padding-left:1rem;padding-right:1rem}.bc-hero h1{font-size:clamp(2.8rem,15vw,4.5rem)}
   .hero-actions{display:grid}.button{width:100%}.module-list{grid-template-columns:1fr}.guarantee{grid-template-columns:1fr}.footer-bottom{flex-direction:column}
 }
+.proof-section{background:#fff}
+.student-proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:2.2rem}
+.testimonial-card{padding:1.6rem;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#fff 0%,#f9fbfd 100%);box-shadow:0 10px 30px rgba(8,17,31,.05)}
+.testimonial-kicker{margin:0 0 .7rem;color:var(--blue-dark);font-size:.76rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.testimonial-text{margin:0;color:#425268;font-size:1.02rem;line-height:1.75}.testimonial-name{margin:1rem 0 0;color:var(--ink);font-weight:850}
+.lesson-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding:1.5rem;border-radius:18px;background:var(--navy);color:#fff}
+.lesson-copy{padding:.7rem}.lesson-copy h3{margin:0;color:#fff;font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.05;letter-spacing:-.035em}.lesson-copy p{color:#b8c8da}
+.text-link{display:inline-block;margin-top:.4rem;color:#79cfff;font-weight:850;text-decoration:none}.text-link:hover{text-decoration:underline}
+.video-frame{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 18px 44px rgba(0,0,0,.28)}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.result-disclaimer{max-width:860px;margin:1rem auto 0;color:#7b899b;text-align:center;font-size:.8rem}
+@media(max-width:860px){.student-proof-grid,.lesson-grid{grid-template-columns:1fr}}
