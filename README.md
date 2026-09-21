@@ -1,50 +1,96 @@
 # HVAC Training Solutions
 
-Rebuild of **HVACTrainingSolutions.net**.
+This repository is the canonical source for the new **HVACTrainingSolutions.net** platform.
 
-## Purpose
+The goal is one custom, mobile-first application that eventually replaces both the WordPress marketing site and the Moodle course experience. Marketing, enrollment, learning, AI assistance, progress, and analytics belong to one product and one codebase.
 
-Create a modern, fast, SEO-focused public marketing site while preserving the search value, URLs, training content, and authority accumulated by the existing WordPress site.
+## Production freeze
 
-## Source of truth
+The current production systems are not development environments:
 
-This repository is the canonical source for the rebuilt public website.
+- WordPress on SiteGround remains live and untouched.
+- Moodle on DigitalOcean remains live and untouched.
+- Production content may be copied or exported for migration, but changes are made only in this repository and its Cloudflare development deployments.
+- A production cutover requires a separate approval and rollback plan.
 
-The existing SiteGround / WordPress site remains live and unchanged until the replacement site has passed migration, SEO, conversion, and rollback checks.
+## Current GitHub truth
 
-## Planned stack
+The active implementation is this repository.
+
+As of the consolidation cleanup:
+
+- Astro and Cloudflare scaffolding are present.
+- The first Boot Camp sales page is on `feature/boot-camp-v1`.
+- Cloudflare branch previews are used for review.
+- Staging remains `noindex, nofollow`.
+- The complete phone-first Unit 1 learning pilot is **not yet committed to this repository**.
+- `rwalk-chronos/hvac-lti` and `rwalk-chronos/ai-hvac-lms` are failed historical attempts and are not migration sources.
+
+## Product shape
+
+```text
+Public experience                 Student experience
+/                                 /learn/
+/hvac-boot-camp/                  /learn/dashboard/
+/how-it-works/                    /learn/unit-1/
+/pricing/                         /learn/unit-1/<lesson>/
+/try-boot-camp/                   /account/
+```
+
+Both sides must share one design system, navigation model, account model, analytics vocabulary, and deployment pipeline.
+
+## Near-term scope
+
+### Acquire and convert
+
+- public marketing and SEO pages
+- clear Boot Camp offer
+- pricing and enrollment path
+- a real sample of the learning experience
+
+### Learn
+
+- phone-first lessons
+- one concept at a time
+- short content blocks
+- quick checks and immediate feedback
+- visible progress
+- bounded, page-aware AI help
+
+### Measure
+
+- visitor to trial
+- trial to enrollment
+- lesson starts and completions
+- knowledge-check results
+- AI-help usage and unresolved confusion
+
+## Deliberate exclusions for the first vertical slice
+
+- no WordPress or Moodle runtime dependency
+- no full LMS rebuild before the Unit 1 pattern is proven
+- no broad autonomous AI instructor
+- no automatic course-generation system
+- no elaborate gamification
+- no importing code from the failed historical repositories
+- no production DNS, payment, email, or student-account changes
+
+## Technical direction
 
 - Astro
 - Cloudflare Workers / Static Assets
-- GitHub-based version control and deployment
-- Existing HVAC Training Academy retained as the student learning platform
-- Existing checkout/payment flow retained initially unless a later migration is explicitly approved
+- GitHub-based version control and branch previews
+- additional Cloudflare data services only when the vertical slice proves they are needed
 
-## Migration principles
+## Build order
 
-1. Do not mass-delete or rename existing indexed URLs.
-2. Inventory old URLs before migration.
-3. Classify each existing page as KEEP, UPDATE, MERGE, REDIRECT, or DELETE.
-4. Preserve strong URLs wherever practical.
-5. Use permanent 301 redirects for retired URLs.
-6. Preserve or improve titles, canonical tags, structured data, internal links, images, and metadata.
-7. Verify sitemap.xml, robots.txt, analytics, Search Console, forms, checkout, and student-login links before cutover.
-8. Keep the existing WordPress site available as rollback protection during launch.
+1. Consolidate repository truth and architecture.
+2. Preserve and review the current Boot Camp sales-page work.
+3. Bring the approved Unit 1 pilot into this repository under `/learn/`.
+4. Connect one real sample lesson to the sales journey.
+5. Replace scripted tutor responses with bounded live AI.
+6. Test on phones with real learners.
+7. Lock the lesson pattern before converting the remaining course.
+8. Plan production migration only after acceptance gates pass.
 
-## Initial product focus
-
-The first page to rebuild and review will be:
-
-`/hvac-boot-camp/`
-
-Once its design, copy, mobile layout, calls-to-action, testimonials, pricing, and SEO structure are approved, its design language can guide the rest of the site without forcing every page into an identical template.
-
-## Public-site role
-
-HVACTrainingSolutions.net will be the marketing, SEO, lead-generation, and sales site.
-
-The existing HVAC Training Academy will remain the authenticated student-learning environment.
-
-## Status
-
-Repository initialized September 20, 2026.
+See [docs/CONSOLIDATION_PLAN.md](docs/CONSOLIDATION_PLAN.md) for the current-state map and cleanup sequence.
