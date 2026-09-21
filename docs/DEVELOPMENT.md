@@ -29,7 +29,7 @@ The current repository is a small static application. Authentication, persistent
 From a clean checkout:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -37,19 +37,20 @@ Useful commands:
 
 ```bash
 npm run build
+npm run verify
 npm run preview
 ```
 
 Do not run `npm run deploy` merely to verify a change. Use the local build first and the GitHub-connected Cloudflare branch preview for review.
 
-The repository does not currently contain a committed dependency lockfile or automated test suite. Reproducible installs and basic build/route checks are cleanup requirements before application logic grows.
+The repository contains a committed npm lockfile, a local build verifier, and a GitHub Actions workflow. `npm run verify` builds the site, checks the expected routes, and confirms that development crawler protection remains active. Add focused automated tests as application logic grows.
 
 ## Branch workflow
 
 1. Start from the current approved development branch.
 2. Use one narrowly named feature or cleanup branch.
 3. Open a draft pull request early.
-4. Verify `npm run build`.
+4. Verify `npm ci` and `npm run verify`.
 5. Review the Cloudflare branch preview on desktop and phone.
 6. Record any environment, route, data, or migration impact in the pull request.
 7. Do not merge or change production routing without approval.
