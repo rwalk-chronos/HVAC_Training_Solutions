@@ -5,6 +5,7 @@ const requiredFiles = [
   "dist/hvac-boot-camp/index.html",
   "dist/404.html",
   "dist/robots.txt",
+  "dist/images/hvac-training-solutions-logo.png",
 ];
 
 for (const file of requiredFiles) {
