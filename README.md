@@ -2,7 +2,7 @@
 
 This repository is the canonical source for the new **HVACTrainingSolutions.net** platform.
 
-The goal is one custom, mobile-first application that eventually replaces both the WordPress marketing site and the Moodle course experience. Marketing, enrollment, learning, AI assistance, progress, and analytics belong to one product and one codebase.
+The goal is one custom, mobile-first application that eventually replaces both the WordPress marketing site and the Moodle course experience. Marketing, PayPal payment, automatic enrollment, learning, AI assistance, progress, and analytics belong to one product and one codebase.
 
 ## Production freeze
 
@@ -24,6 +24,7 @@ As of the consolidation cleanup:
 - Cloudflare branch previews are used for review.
 - Staging remains `noindex, nofollow`.
 - The complete phone-first Unit 1 learning pilot is **not yet committed to this repository**.
+- PayPal, accounts, and automatic enrollment are planned but not yet implemented.
 - `rwalk-chronos/hvac-lti` and `rwalk-chronos/ai-hvac-lms` are failed historical attempts and are not migration sources.
 
 ## Product shape
@@ -35,9 +36,10 @@ Public experience                 Student experience
 /how-it-works/                    /learn/unit-1/
 /pricing/                         /learn/unit-1/<lesson>/
 /try-boot-camp/                   /account/
+/checkout/
 ```
 
-Both sides must share one design system, navigation model, account model, analytics vocabulary, and deployment pipeline.
+Both sides must share one design system, navigation model, account model, billing/enrollment boundary, analytics vocabulary, and deployment pipeline.
 
 ## Near-term scope
 
@@ -61,9 +63,21 @@ Both sides must share one design system, navigation model, account model, analyt
 
 - visitor to trial
 - trial to enrollment
+- successful payment to access grant
 - lesson starts and completions
 - knowledge-check results
 - AI-help usage and unresolved confusion
+
+## Required replacement-launch capabilities
+
+- student accounts and secure sessions
+- PayPal Sandbox-tested checkout
+- server-verified payment state
+- idempotent automatic Boot Camp enrollment
+- recoverable paid-but-not-enrolled handling
+- approved refund, cancellation, failed-renewal, dispute, and access rules
+
+A browser payment-success redirect must never grant access by itself.
 
 ## Deliberate exclusions for the first vertical slice
 
@@ -91,6 +105,12 @@ Both sides must share one design system, navigation model, account model, analyt
 5. Replace scripted tutor responses with bounded live AI.
 6. Test on phones with real learners.
 7. Lock the lesson pattern before converting the remaining course.
-8. Plan production migration only after acceptance gates pass.
+8. Add the account, PayPal, and automatic-enrollment flow in Sandbox.
+9. Plan production migration only after acceptance gates pass.
 
-See [docs/CONSOLIDATION_PLAN.md](docs/CONSOLIDATION_PLAN.md) for the current-state map and cleanup sequence.
+## Documentation
+
+- [Development guide](docs/DEVELOPMENT.md)
+- [Consolidation plan](docs/CONSOLIDATION_PLAN.md)
+- [Boot Camp sales-page decisions](docs/BOOT_CAMP_V1.md)
+- [Migration audit](docs/MIGRATION_AUDIT.md)
