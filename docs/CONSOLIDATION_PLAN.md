@@ -22,7 +22,7 @@ The active repository currently contains:
 - a public home placeholder
 - a rebuilt `/hvac-boot-camp/` sales page
 - a sample lesson section inside that sales page
-- migration and sales-page notes
+- migration, development, and sales-page notes
 - staging crawler protection
 
 It does not currently contain the complete eight-page Unit 1 phone-first pilot described in the HVAC Boot Camp project conversations.
@@ -40,6 +40,8 @@ The public side acquires and converts the right student.
 - `/how-it-works/`
 - `/pricing/`
 - `/try-boot-camp/`
+- `/checkout/`
+- `/enrollment/success/`
 - `/login/`
 
 ### Learning routes
@@ -62,6 +64,7 @@ Public and learning experiences will share:
 - mobile navigation
 - content tone and terminology
 - user/account model
+- PayPal billing and automatic-enrollment boundary
 - event names and analytics
 - deployment and environment rules
 
@@ -69,7 +72,7 @@ Marketing code and learning code may remain internally separated, but they must 
 
 ## First vertical slice
 
-The first proof is one complete journey:
+The first proof is one complete learning and conversion journey:
 
 1. Visitor understands Boot Camp.
 2. Visitor opens a real sample lesson.
@@ -80,6 +83,8 @@ The first proof is one complete journey:
 7. The experience returns to a clear enrollment action.
 
 The reference learning content is Unit 1, beginning with Matter: Solids, Liquids, and Gases.
+
+PayPal does not need to block the initial lesson-experience test. It is required before the consolidated platform can replace the current production sales and enrollment flow.
 
 ## AI boundary for the slice
 
@@ -95,6 +100,27 @@ The model receives only the current course, unit, lesson, page, approved lesson 
 
 It must not answer from an unrestricted course-wide chat context.
 
+## Payment and enrollment requirement
+
+The replacement platform will use PayPal for approved Boot Camp payment options and will automatically enroll a student only after the server verifies a completed payment or valid subscription state.
+
+The browser return page is never sufficient proof of payment.
+
+The implementation must:
+
+- create and verify PayPal transactions server-side
+- support the approved pay-in-full and monthly-plan behavior
+- verify webhook authenticity
+- process duplicate and out-of-order events idempotently
+- create or safely match the student account
+- grant the configured course entitlement exactly once
+- preserve separate payment, enrollment, and access states
+- expose paid-but-not-enrolled failures for safe recovery
+- keep Sandbox and production credentials/configuration separate
+- define refund, dispute, cancellation, failed-renewal, and expiration behavior before automatic access removal
+
+Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md).
+
 ## Cleanup sequence
 
 ### Completed by this cleanup
@@ -104,6 +130,8 @@ It must not answer from an unrestricted course-wide chat context.
 - document the production freeze
 - record failed-repository exclusions
 - define one public-plus-learning route map
+- add developer workflow and production-safety guidance
+- record PayPal and automatic enrollment as launch requirements
 
 ### Next
 
@@ -114,6 +142,8 @@ It must not answer from an unrestricted course-wide chat context.
 - add automated build and route checks
 - verify a Cloudflare branch preview
 - connect the sales page to the real sample lesson
+- define the account, billing, enrollment, and entitlement data contract
+- prototype the PayPal flow in Sandbox only
 
 ## Acceptance gates
 
@@ -139,8 +169,19 @@ It must not answer from an unrestricted course-wide chat context.
 - calls to action are measurable
 - production checkout links remain unchanged until replacement enrollment is approved
 
+### Payment and enrollment gate
+
+- products, prices, currency, payment-plan terms, and refund language match the approved public offer
+- server-side transaction verification passes
+- webhook verification and replay/idempotency tests pass
+- one successful payment produces exactly one enrollment and entitlement
+- duplicate redirects and webhook deliveries do not duplicate access
+- paid-but-not-enrolled failures are visible and recoverable
+- cancellation/refund/dispute/access rules are approved
+- PayPal Sandbox and production configuration are demonstrably separated
+
 ### Cutover gate
 
 - content and URL migration are verified
-- authentication, enrollment, payment, email, analytics, and rollback are tested
+- authentication, PayPal, automatic enrollment, email, analytics, and rollback are tested
 - production change receives explicit approval
