@@ -27,6 +27,12 @@ As of the consolidation cleanup:
 - PayPal, accounts, and automatic enrollment are planned but not yet implemented.
 - `rwalk-chronos/hvac-lti` and `rwalk-chronos/ai-hvac-lms` are failed historical attempts and are not migration sources.
 
+## Current priority
+
+Public-site development is paused. The project is focused on Unit 1 structure and delivery. The remaining course, accounts, payment, enrollment, email, and additional public-platform work must not proceed ahead of an accepted Unit 1 learning pattern.
+
+The governing principle is simple: if Unit 1 does not teach accurately, feel achievable on a phone, and make a beginner want to continue, nothing else is ready to scale.
+
 ## Product shape
 
 ```text
@@ -112,6 +118,8 @@ A browser payment-success redirect must never grant access by itself.
 
 - [Development guide](docs/DEVELOPMENT.md)
 - [Student platform requirements](docs/STUDENT_PLATFORM_REQUIREMENTS.md)
+- [Unit 1 learning experience](docs/UNIT_1_LEARNING_EXPERIENCE.md)
+- [Career and OJT path](docs/CAREER_AND_OJT_PATH.md)
 - [Consolidation plan](docs/CONSOLIDATION_PLAN.md)
 - [Boot Camp sales-page decisions](docs/BOOT_CAMP_V1.md)
 - [Migration audit](docs/MIGRATION_AUDIT.md)
