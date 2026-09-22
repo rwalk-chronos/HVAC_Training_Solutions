@@ -6,6 +6,12 @@ HVAC Training Solutions will become one custom application. It will replace the 
 
 The live WordPress and Moodle systems remain untouched during development.
 
+## Current development focus
+
+Public-site development is paused. Unit 1 structure and delivery are the sole implementation priority. Planning documents may continue to mature, but no additional marketing, payment, account, email, enrollment, or full-course implementation should displace the Unit 1 proof.
+
+The Unit 1 experience must be approved before the remaining course is converted or public-platform development resumes. See [UNIT_1_LEARNING_EXPERIENCE.md](UNIT_1_LEARNING_EXPERIENCE.md). The later employment bridge is defined in [CAREER_AND_OJT_PATH.md](CAREER_AND_OJT_PATH.md).
+
 ## Repository authority
 
 | Repository | Status | Allowed use |
@@ -19,9 +25,8 @@ The live WordPress and Moodle systems remain untouched during development.
 The active repository currently contains:
 
 - Astro/Cloudflare application scaffolding
-- a public home placeholder
-- a rebuilt `/hvac-boot-camp/` sales page
-- a sample lesson section inside that sales page
+- development-only public home, Boot Camp, how-it-works, pricing, and trial routes
+- a sample lesson-format prototype that is not the complete Unit 1 course
 - migration, development, and sales-page notes
 - staging crawler protection
 
@@ -135,15 +140,14 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 
 ### Next
 
-- identify the authoritative Unit 1 pilot artifact
-- inventory its eight pages, assets, quick checks, progress behavior, and tutor behavior
-- import it on a dedicated feature branch under `/learn/`
-- extract shared design tokens without visually regressing the current sales page
-- add automated build and route checks
-- verify a Cloudflare branch preview
-- connect the sales page to the real sample lesson
-- define the account, billing, enrollment, and entitlement data contract
-- prototype the PayPal flow in Sandbox only
+- review the public site and Unit 1 source material separately
+- inventory the authoritative Unit 1 pages, concepts, images, presentations, videos, checks, and instructor intent
+- map every concept to its learning objective, HVAC relevance, visual support, interaction, feedback, and approved help
+- prototype and test one representative phone-first concept
+- complete and test Unit 1 with target learners
+- approve the repeatable delivery pattern
+- only then reconnect the real sample lesson to the public journey and plan the remaining course conversion
+- defer account, billing, enrollment, email, and PayPal implementation until the Unit 1 learning proof is accepted
 
 ## Acceptance gates
 
