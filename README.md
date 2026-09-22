@@ -111,6 +111,7 @@ A browser payment-success redirect must never grant access by itself.
 ## Documentation
 
 - [Development guide](docs/DEVELOPMENT.md)
+- [Student platform requirements](docs/STUDENT_PLATFORM_REQUIREMENTS.md)
 - [Consolidation plan](docs/CONSOLIDATION_PLAN.md)
 - [Boot Camp sales-page decisions](docs/BOOT_CAMP_V1.md)
 - [Migration audit](docs/MIGRATION_AUDIT.md)
