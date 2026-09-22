@@ -4,7 +4,13 @@
 
 This guide defines how to develop the consolidated HVAC Training Solutions platform without affecting the current WordPress or Moodle production systems.
 
-The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CONSOLIDATION_PLAN.md). The current sales-page decisions live in [BOOT_CAMP_V1.md](BOOT_CAMP_V1.md).
+The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CONSOLIDATION_PLAN.md). The current sales-page decisions live in [BOOT_CAMP_V1.md](BOOT_CAMP_V1.md). Student accounts, payment, enrollment, progress, knowledge checks, and email requirements live in [STUDENT_PLATFORM_REQUIREMENTS.md](STUDENT_PLATFORM_REQUIREMENTS.md). The current learning priority is defined in [UNIT_1_LEARNING_EXPERIENCE.md](UNIT_1_LEARNING_EXPERIENCE.md), and the approved employment bridge is defined in [CAREER_AND_OJT_PATH.md](CAREER_AND_OJT_PATH.md).
+
+## Current development focus
+
+Public-site development is paused. The sole implementation focus is the structure and delivery of Unit 1. Planning for accounts, payments, email, enrollment, career preparation, and OJT may continue, but those features must not displace the Unit 1 learning-experience proof.
+
+Do not convert the remaining course or resume public-platform implementation until the Unit 1 acceptance gate is satisfied.
 
 ## Repository and environment rules
 
