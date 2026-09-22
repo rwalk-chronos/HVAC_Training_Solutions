@@ -4,7 +4,7 @@
 
 This guide defines how to develop the consolidated HVAC Training Solutions platform without affecting the current WordPress or Moodle production systems.
 
-The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CONSOLIDATION_PLAN.md). The current sales-page decisions live in [BOOT_CAMP_V1.md](BOOT_CAMP_V1.md).
+The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CONSOLIDATION_PLAN.md). The current sales-page decisions live in [BOOT_CAMP_V1.md](BOOT_CAMP_V1.md). Student accounts, payment, enrollment, progress, knowledge checks, and email requirements live in [STUDENT_PLATFORM_REQUIREMENTS.md](STUDENT_PLATFORM_REQUIREMENTS.md).
 
 ## Repository and environment rules
 
