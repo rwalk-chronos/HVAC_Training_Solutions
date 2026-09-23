@@ -139,7 +139,7 @@ AI failure must not block the lesson. Approved static explanations and normal co
 
 Meaningful progress statements should describe real competence, for example:
 
-> You can now explain why a liquid changes shape while keeping its volume.
+> You can now explain why heat moves from warmer indoor air into a colder evaporator coil.
 
 The experience may acknowledge genuine milestones such as Unit 1 complete or Interview Ready. It should avoid points for opening pages, forced streaks, cartoon rewards, and leaderboards.
 

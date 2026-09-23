@@ -3,33 +3,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Try HVAC Boot Camp | Matter: Solids, Liquids, and Gases"
-  description="Try a short, phone-first HVAC Boot Camp lesson about matter, solids, liquids, and gases before deciding whether to enroll."
+  title="Try HVAC Boot Camp | How Air Conditioning Moves Heat"
+  description="Try a short, phone-first HVAC Boot Camp lesson about how an air conditioner removes and moves heat."
 >
   <div class="trial-page">
     <section class="trial-intro">
       <div class="trial-intro-inner">
         <div><p class="eyebrow">Free lesson preview</p><h1>See how Boot Camp helps when a concept does not click.</h1><p>This short preview uses the opening Unit 1 concept. Work through it on your phone or computer—no account required.</p></div>
-        <div class="trial-meta"><span>Unit 1</span><strong>Matter: Solids, Liquids, and Gases</strong><small>Preview · about 3 minutes</small></div>
+        <div class="trial-meta"><span>Unit 1 · Lesson 1</span><strong>What cooling really means</strong><small>Preview · about 3 minutes</small></div>
       </div>
     </section>
 
     <section class="trial-workspace">
       <article class="lesson-phone" aria-labelledby="lesson-title">
         <header class="lesson-phone-header">
-          <div><span>Unit 1 · Foundations</span><strong>Page 1 of 8</strong></div>
+          <div><span>Unit 1 · How air conditioning moves heat</span><strong>Lesson 1 preview</strong></div>
           <div class="lesson-progress"><span></span></div>
         </header>
 
         <div class="lesson-body">
           <p class="preview-kicker">One idea</p>
-          <h2 id="lesson-title">Matter normally appears as a solid, liquid, or gas.</h2>
-          <p class="lesson-lead">Matter is anything that has mass and takes up space. The three common states behave differently:</p>
+          <h2 id="lesson-title">An air conditioner cools a space by removing heat.</h2>
+          <p class="lesson-lead">It absorbs unwanted heat indoors, carries it with the refrigerant, and releases it outdoors. It does not manufacture cold.</p>
 
           <div class="state-grid">
-            <div><span class="state-icon solid-icon" aria-hidden="true"></span><strong>Solid</strong><p>Keeps its shape and volume.</p><small>Example: a wrench</small></div>
-            <div><span class="state-icon liquid-icon" aria-hidden="true"></span><strong>Liquid</strong><p>Keeps its volume but changes shape.</p><small>Example: drain-pan water</small></div>
-            <div><span class="state-icon gas-icon" aria-hidden="true"></span><strong>Gas</strong><p>Changes shape and volume.</p><small>Example: air in ductwork</small></div>
+            <div><span class="heat-step" aria-hidden="true">1</span><strong>Warm air</strong><p>Indoor air reaches the colder evaporator coil.</p></div>
+            <div><span class="heat-step" aria-hidden="true">2</span><strong>Heat moves</strong><p>Heat moves from the warmer air toward the colder coil and refrigerant.</p></div>
+            <div><span class="heat-step" aria-hidden="true">3</span><strong>Cooler air</strong><p>The air leaves the coil with less heat.</p></div>
           </div>
 
           <div class="lesson-help" aria-labelledby="help-title">
@@ -39,17 +39,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               <button type="button" data-help="example">Give me an HVAC example</button>
               <button type="button" data-help="why">Why does this matter?</button>
             </div>
-            <div class="help-response" data-response="simple" hidden><strong>A simpler way:</strong><p>A solid stays put. A liquid can pour. A gas spreads out to fill the space around it.</p></div>
-            <div class="help-response" data-response="example" hidden><strong>HVAC example:</strong><p>A copper fitting is a solid, water in a drain pan is a liquid, and air moving through a supply duct is a gas.</p></div>
-            <div class="help-response" data-response="why" hidden><strong>Why technicians need this:</strong><p>HVAC systems move heat by controlling matter. Air carries heat through ductwork, refrigerant changes between liquid and gas, and solid metal transfers heat through coils and tubing.</p></div>
+            <div class="help-response" data-response="simple" hidden><strong>A simpler way:</strong><p>Think of a refrigerator. It removes heat from inside and releases that heat into the room. Your air conditioner moves indoor heat outdoors in the same basic way.</p></div>
+            <div class="help-response" data-response="example" hidden><strong>HVAC example:</strong><p>If return air is 78°F and the evaporator coil is 45°F, heat moves from the warmer air into the colder coil and refrigerant.</p></div>
+            <div class="help-response" data-response="why" hidden><strong>Why technicians need this:</strong><p>Knowing where heat should move helps you understand what the indoor coil and refrigerant are supposed to do before you learn the complete refrigeration cycle.</p></div>
           </div>
 
           <form class="quick-check" data-quick-check>
             <fieldset>
-              <legend><span>Quick check</span>Water is poured from a glass into a drain pan. What changes?</legend>
-              <label><input type="radio" name="matter-check" value="volume" /> Its volume</label>
-              <label><input type="radio" name="matter-check" value="shape" /> Its shape</label>
-              <label><input type="radio" name="matter-check" value="both" /> Both</label>
+              <legend><span>Quick check</span>The indoor air is warmer than the evaporator coil. Which way will heat move?</legend>
+              <label><input type="radio" name="heat-check" value="coil-to-air" /> From the coil into the air</label>
+              <label><input type="radio" name="heat-check" value="air-to-coil" /> From the air into the coil</label>
+              <label><input type="radio" name="heat-check" value="none" /> Heat will not move</label>
             </fieldset>
             <button class="button button-dark" type="submit">Check my answer</button>
             <p class="check-feedback" data-check-feedback aria-live="polite"></p>
@@ -60,14 +60,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <aside class="trial-decision">
         <p class="eyebrow">What this preview demonstrates</p>
         <h2>Short content. Useful choices. Immediate feedback.</h2>
-        <p>The complete Unit 1 pilot is still under review. This page demonstrates the approved learning rhythm without pretending that the live AI tutor is finished.</p>
+        <p>The complete Unit 1 pilot is still under review. This sample follows the current student-facing Unit 1 draft and shows the intended learning rhythm.</p>
         <ul class="plain-check-list"><li>One concept per page</li><li>HVAC examples instead of generic examples</li><li>Help without leaving the lesson</li><li>A quick check before moving on</li></ul>
         <div class="trial-next-card"><strong>Like the approach?</strong><p>Review the complete Boot Camp and decide whether the course fits your goal.</p><a class="button button-primary" href="/hvac-boot-camp/">Explore HVAC Boot Camp</a><a class="text-link-dark" href="/pricing/">See plans and pricing →</a></div>
       </aside>
     </section>
 
     <section class="trial-footer-note">
-      <p><strong>Development note:</strong> The responses on this preview page are approved scripted examples. Bounded live AI will be connected after the Unit 1 content and guardrails are approved.</p>
+      <p><strong>Development note:</strong> This preview uses scripted responses from the Unit 1 review draft. Live AI is not connected.</p>
     </section>
   </div>
 
@@ -90,18 +90,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     form?.addEventListener("submit", (event) => {
       event.preventDefault();
-      const answer = new FormData(form).get("matter-check");
+      const answer = new FormData(form).get("heat-check");
       if (!feedback) return;
 
       if (!answer) {
         feedback.className = "check-feedback needs-answer";
         feedback.textContent = "Choose an answer first.";
-      } else if (answer === "shape") {
+      } else if (answer === "air-to-coil") {
         feedback.className = "check-feedback correct";
-        feedback.textContent = "Correct. The water keeps the same volume but takes the shape of the drain pan.";
+        feedback.textContent = "Correct. Heat moves from the warmer indoor air toward the colder coil.";
       } else {
         feedback.className = "check-feedback incorrect";
-        feedback.textContent = "Not quite. The amount of water stays the same. Only its shape changes.";
+        feedback.textContent = "Look at which one is warmer. Heat naturally moves from warmer material toward cooler material. Try again.";
       }
     });
   </script>

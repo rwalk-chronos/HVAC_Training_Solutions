@@ -59,8 +59,8 @@ if (!pricing.includes("$479") || !pricing.includes("$97")) {
   throw new Error("Pricing page is missing one or more approved plan prices");
 }
 
-if (!trial.includes("Matter: Solids, Liquids, and Gases")) {
-  throw new Error("Trial page is missing the approved Unit 1 concept");
+if (!trial.includes("An air conditioner cools a space by removing heat") || !trial.includes("From the air into the coil")) {
+  throw new Error("Trial page is missing the current Unit 1 draft concept or check");
 }
 
 if (!robots.includes("Disallow: /")) {
