@@ -39,13 +39,15 @@ The experience should provide:
 - adding points, streaks, badges, or leaderboards that do not represent real competence
 - waiting until course completion to connect learning to employment
 
-## Source-content rule
+## Current content and source rule
 
-The supplied Unit 1 course material, images, presentations, videos, checks, and instructor intent are the authoritative source for the pilot.
+The current [Google Drive student-facing Unit 1 draft](https://docs.google.com/document/d/1Ei8vYLgxcckZS9kDFMLwwbguQfH5eOtfNIfg64JlSHg/edit) governs the five-lesson content sequence and its approved checks. This document governs the interaction and learning pattern. The older Library `HVAC Boot Camp — Unit 1 Pilot` is a UX reference only; its eight-page Matter curriculum is superseded. Original course media and Ron's instructor intent inform each lesson after the assets are reviewed.
+
+PR #6 on `recovery/money-pages-unit1` is the durable implementation baseline. Save each accepted lesson and selected assets in GitHub before moving to the next. Cloudflare previews are review deployments, not source storage. The project Library has original MP4s; do not rely on conversation attachments as the only copy. Keep a source and revision map for selected media.
 
 Before building:
 
-1. Inventory every Unit 1 page, concept, image, presentation, video, question, and downloadable asset.
+1. Inventory the material relevant to the lesson being built, including its concepts, images, videos, questions, and downloadable assets; complete the full inventory before declaring all of Unit 1 accepted.
 2. Identify the learning objective and HVAC relevance of each concept.
 3. Mark duplicate, outdated, unclear, missing, or safety-sensitive material for Ron's review.
 4. Preserve original meaning while redesigning delivery.

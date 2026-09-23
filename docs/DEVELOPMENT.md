@@ -61,7 +61,7 @@ The repository contains a committed npm lockfile, a local build verifier, and a 
 6. Record any environment, route, data, or migration impact in the pull request.
 7. Do not merge or change production routing without approval.
 
-The current stacked cleanup PR is based on `feature/boot-camp-v1` because that branch contains the latest approved marketing work not yet present on `main`.
+The current draft PR #6 is based on `feature/site-money-pages`. Continue Lesson 1 on its `recovery/money-pages-unit1` branch so the preserved money pages and the new learning route can be reviewed together. Commit each reviewed lesson milestone and record the HEAD SHA, route, preview URL, media sources, and Ron's decision in the handoff.
 
 ## Code boundaries
 
