@@ -1,0 +1,151 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Unit 1 · Lesson 1: What cooling really means | HVAC Boot Camp"
+  description="Learn how an air conditioner removes heat from indoor air, with a short demonstration and an immediate check."
+>
+  <div class="unit-lesson" data-unit-lesson>
+    <div class="unit-shell">
+      <div class="unit-topline"><a href="/hvac-boot-camp/">← Boot Camp</a><span>Unit 1 · Lesson 1 of 5</span></div>
+      <div class="unit-heading"><p class="eyebrow">How air conditioning moves heat</p><h1>What cooling really means</h1><p>One idea at a time. Work at your own pace.</p></div>
+      <div class="unit-progress" role="progressbar" aria-label="Lesson progress" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" data-progress><span data-progress-fill></span></div>
+      <p class="unit-count" aria-live="polite" data-count>Step 1 of 5 · Why it matters</p>
+
+      <article class="unit-card" aria-label="Lesson 1 activity">
+        <section class="lesson-step" data-step="0">
+          <p class="unit-kicker">Why it matters</p>
+          <h2 tabindex="-1">Does an air conditioner make cold air?</h2>
+          <p>Walk from a hot parking lot into an air-conditioned building. The indoor air feels cold. It is easy to picture the air conditioner making cold air.</p>
+          <p class="unit-key">An air conditioner cools a space by removing heat.</p>
+          <p>It absorbs unwanted heat indoors, carries it with the refrigerant, and releases it outdoors.</p>
+        </section>
+
+        <section class="lesson-step" data-step="1" hidden>
+          <p class="unit-kicker">See it</p>
+          <h2 tabindex="-1">Follow heat at the indoor coil</h2>
+          <div class="heat-diagram" role="img" aria-label="Warm indoor air passes over a colder evaporator coil. Heat moves from the air into the coil and refrigerant. Cooler air leaves the coil.">
+            <div><strong>Warm indoor air</strong><span>78°F return air</span></div>
+            <span class="diagram-arrow" aria-hidden="true">Heat moves →</span>
+            <div class="coil"><strong>Colder coil</strong><span>45°F evaporator coil</span></div>
+          </div>
+          <p>Air leaving the coil has less heat, so it feels cooler. The system did not add cold to the air.</p>
+          <div class="unit-video">
+            <p class="unit-video-label">Watch Ron · Heat flow · 1½ minutes</p>
+            <video controls playsinline preload="metadata" aria-label="Ron explains heat flow from warmer to colder material">
+              <source src="/media/unit-1/10-heat-flow.mp4" type="video/mp4" />
+              Your browser cannot play this video. The explanation is written below.
+            </video>
+            <details><summary>Read the video idea</summary><p>In Ron's demonstration, the warmer object transfers heat toward the colder object. The example uses very low temperatures to show that “warmer” is relative. In our air conditioner, 78°F air is warmer than a 45°F coil, so heat moves from air toward the coil.</p></details>
+          </div>
+        </section>
+
+        <section class="lesson-step" data-step="2" hidden>
+          <p class="unit-kicker">Learn it</p>
+          <h2 tabindex="-1">Heat needs a temperature difference</h2>
+          <p>Heat naturally moves from warmer material toward cooler material. The indoor air is warmer than the evaporator coil, so heat moves from the air toward the colder coil and refrigerant.</p>
+          <div class="unit-example"><strong>HVAC example</strong><p>Return air: <b>78°F</b>. Evaporator coil: <b>45°F</b>. Heat moves <b>from the air into the coil</b>.</p></div>
+          <p>That is why the supply air feels cooler after it passes the coil.</p>
+        </section>
+
+        <section class="lesson-step" data-step="3" hidden>
+          <p class="unit-kicker">Try it</p>
+          <h2 tabindex="-1">Which way does heat move?</h2>
+          <form data-check>
+            <fieldset><legend>The indoor air is warmer than the evaporator coil. Which way will heat move?</legend>
+              <label><input type="radio" name="direction" value="coil" /> From the coil into the air</label>
+              <label><input type="radio" name="direction" value="air" /> From the air into the coil</label>
+              <label><input type="radio" name="direction" value="none" /> Heat will not move</label>
+            </fieldset>
+            <button class="button button-dark" type="submit">Check my answer</button>
+            <p class="unit-feedback" data-feedback role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="lesson-step" data-step="4" hidden>
+          <p class="unit-kicker">Connect it</p>
+          <h2 tabindex="-1">You can now explain cooling</h2>
+          <p>A refrigerator works the same basic way. It removes heat from inside the refrigerator and releases that heat into the room. That is why the area near its condenser can feel warm.</p>
+          <p class="unit-key">Cooling means removing and relocating heat. An air conditioner does not manufacture cold.</p>
+          <p>In the next lesson, you will see why temperature alone does not tell you the total amount of heat in something.</p>
+          <div class="unit-next"><strong>Lesson 1 complete</strong><p>This review build saves your place on this device. Lesson 2 will follow Ron's review of this lesson.</p></div>
+        </section>
+
+        <aside class="unit-help" aria-label="Help with this idea">
+          <h3>Need another way to hear it?</h3>
+          <div class="unit-help-actions">
+            <button type="button" data-help="simple" aria-pressed="false">Explain simply</button>
+            <button type="button" data-help="example" aria-pressed="false">Another example</button>
+            <button type="button" data-help="hint" aria-pressed="false">Give me a hint</button>
+          </div>
+          <p class="unit-help-answer" data-help-answer role="status" aria-live="polite" hidden></p>
+        </aside>
+
+        <nav class="unit-controls" aria-label="Lesson steps"><button type="button" class="unit-back" data-back>Back</button><button type="button" class="button button-primary" data-next>Continue</button></nav>
+      </article>
+      <p class="unit-review-note">Development lesson · Help choices use approved, scripted explanations. Live AI and account-based progress are not connected yet.</p>
+    </div>
+  </div>
+
+  <script>
+    const root = document.querySelector<HTMLElement>("[data-unit-lesson]");
+    if (root) {
+      const steps = [...root.querySelectorAll<HTMLElement>("[data-step]")];
+      const count = root.querySelector<HTMLElement>("[data-count]");
+      const progress = root.querySelector<HTMLElement>("[data-progress]");
+      const fill = root.querySelector<HTMLElement>("[data-progress-fill]");
+      const back = root.querySelector<HTMLButtonElement>("[data-back]");
+      const next = root.querySelector<HTMLButtonElement>("[data-next]");
+      const check = root.querySelector<HTMLFormElement>("[data-check]");
+      const feedback = root.querySelector<HTMLElement>("[data-feedback]");
+      const helpAnswer = root.querySelector<HTMLElement>("[data-help-answer]");
+      const helpButtons = [...root.querySelectorAll<HTMLButtonElement>("[data-help]")];
+      const names = ["Why it matters", "See it", "Learn it", "Try it", "Connect it"];
+      const key = "hvac-unit-1-lesson-1-v1";
+      let saved: { step?: number; correct?: boolean } = {};
+      try { saved = JSON.parse(localStorage.getItem(key) || "{}"); } catch { /* fresh start */ }
+      let correct = saved.correct === true;
+      let step = Number.isInteger(saved.step) ? Math.min(Math.max(saved.step!, 0), 4) : 0;
+      if (!correct && step > 3) step = 3;
+      const save = () => { try { localStorage.setItem(key, JSON.stringify({ step, correct })); } catch { /* storage unavailable */ } };
+      const show = (focus = false) => {
+        steps.forEach((section, i) => { section.hidden = i !== step; });
+        if (count) count.textContent = `Step ${step + 1} of 5 · ${names[step]}`;
+        progress?.setAttribute("aria-valuenow", String(step + 1));
+        if (fill) fill.style.width = `${(step + 1) * 20}%`;
+        if (back) back.disabled = step === 0;
+        if (next) next.textContent = step === 4 ? "Back to Boot Camp" : "Continue";
+        if (helpAnswer) helpAnswer.hidden = true;
+        helpButtons.forEach((button) => button.setAttribute("aria-pressed", "false"));
+        root.querySelectorAll("video").forEach((video) => { if (step !== 1) video.pause(); });
+        save();
+        if (focus) { steps[step].querySelector<HTMLElement>("h2")?.focus(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+      };
+      back?.addEventListener("click", () => { if (step > 0) { step--; show(true); } });
+      next?.addEventListener("click", () => {
+        if (step === 4) { window.location.href = "/hvac-boot-camp/"; return; }
+        if (step === 3 && !correct) { if (feedback) feedback.textContent = "Try the quick check before continuing. You can retry as often as you like."; check?.querySelector<HTMLElement>("input")?.focus(); return; }
+        step++; show(true);
+      });
+      check?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const answer = new FormData(check).get("direction");
+        if (!feedback) return;
+        if (!answer) feedback.textContent = "Choose an answer first.";
+        else if (answer === "air") { correct = true; save(); feedback.textContent = "Correct. Heat moves from the warmer indoor air toward the colder coil. Continue when you are ready."; feedback.dataset.result = "correct"; }
+        else { feedback.textContent = "Look at which one is warmer. Heat naturally moves from warmer material toward cooler material. Try again."; feedback.dataset.result = "retry"; }
+      });
+      const help: Record<string, string> = {
+        simple: "The coil is colder than the indoor air. Heat moves into the coil, and the air leaves cooler.",
+        example: "A refrigerator takes heat out of its food compartment and releases that heat into your kitchen.",
+        hint: "Compare 78°F air with a 45°F coil. Which one is warmer? Start there."
+      };
+      helpButtons.forEach((button) => button.addEventListener("click", () => {
+        helpButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        if (helpAnswer) { helpAnswer.textContent = help[button.dataset.help || "simple"]; helpAnswer.hidden = false; }
+      }));
+      show();
+    }
+  </script>
+</BaseLayout>
