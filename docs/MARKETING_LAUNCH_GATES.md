@@ -1,20 +1,20 @@
 # Marketing launch execution gates
 
-Status: development only, September 24, 2026. PRs #7 and #8 are merged into `main`; the Cloudflare Worker is a noindex review deployment. The public WordPress site and Moodle course remain live. This checklist records the evidence needed for a separate cutover decision; completing a build does not authorize DNS changes.
+Status: development only, September 24, 2026. PRs #7, #8, #10, and #11 are merged into `main`; the Cloudflare Worker is a noindex review deployment. The public WordPress site and Moodle course remain live. This checklist records the evidence needed for a separate cutover decision; completing a build does not authorize DNS changes.
 
 ## Gate 1 — Current checkout survives the domain move
 
-Ron supplied PayPal hosted button IDs `WAXSA22Y45YUU` (pay in full) and `7CXTSXX9FSYGS` (monthly). PR #10 changed the development pricing links to those independent PayPal URLs. The formerly linked WordPress checkout paths on `www.hvactrainingsolutions.net` will cease to be WordPress pages if the whole hostname moves to the Worker. Confirm the hosted buttons' actual offer, processor return paths, emails, and Moodle enrollment. A PayPal button alone does not prove the Moodle handoff.
+Ron supplied PayPal hosted button IDs `WAXSA22Y45YUU` (pay in full) and `7CXTSXX9FSYGS` (monthly). PR #10 changed the development pricing links to those independent PayPal URLs, verified on the Worker. Ron confirmed that he manually enrolls paid students in Moodle. PR #11 preserved the existing WordPress thank-you path, `/hvac-boot-camp/course-purchase/`, as a development page that explains the manual handoff. The return page is noindex and its visit does not prove payment. Confirm each PayPal button's actual offer and configured post-payment return URL; the public WordPress paths will cease to be WordPress pages when the hostname moves to the Worker.
 
-Record the verified HTTPS URL for each plan, the payment-to-enrollment integration, and its rollback path. The public build still requires both `BOOT_CAMP_*_CHECKOUT_URL` values explicitly after testing. Keep noindex and GA4 off in development.
+Record the verified HTTPS URL for each plan, the PayPal notification Ron uses to identify a paid student, the manual enrollment and account-email procedure, and its backup when Ron is unavailable. The public build still requires both `BOOT_CAMP_*_CHECKOUT_URL` values explicitly after testing. Keep noindex and GA4 off in development.
 
 | Test for each plan | Evidence to record |
 | --- | --- |
 | Offer | Displayed price, number and timing of installments, $479 or $97 + six $97 ($679), textbook extra, and the approved refund terms agree across marketing, checkout, and confirmation |
-| Successful payment | A controlled transaction has a verified processor record; one Moodle account and one enrollment are produced; student can sign in and open the current 27-module course |
-| Returning student / duplicate callback | Existing account is handled correctly and repeated processor notification does not create duplicate enrollment or charge |
-| Failed or abandoned payment | No course access is granted; the buyer can retry and support can identify the state |
-| Email | Confirmation and login instructions arrive; the support inbox receives or can locate the order |
+| Successful payment | A controlled transaction has a verified PayPal record; Ron receives notice, manually creates or matches one Moodle account and enrollment, and the student can sign in to the current 27-module course |
+| Existing student / duplicate notice | Ron checks for an existing account and enrollment before acting again; a duplicate PayPal notice does not cause duplicate access work |
+| Failed or abandoned payment | Ron does not enroll without a verified payment; the buyer can retry and support can identify the state |
+| Return page and email | Each PayPal button's post-payment return goes to `/hvac-boot-camp/course-purchase/`; the student sees accurate manual-access instructions and receives the Moodle “New user account” email after Ron's enrollment |
 | Refund / cancellation | Processor action, future installments, Moodle access, buyer email, and accounting follow the approved policy |
 | Attribution | Outbound `begin_checkout` is distinct from a verified purchase; no personal or payment data enters GA4 |
 
@@ -26,7 +26,7 @@ Ron confirms the legal/operator name, monitored contact address, $479 and $679 o
 
 ## Gate 3 — URL and media parity
 
-The 154 published post paths and `/EPA.pdf` are built, but 21 published WordPress page paths remain unresolved. Classify each in `LEGACY_URL_INVENTORY_2026-09-24.csv` with a destination and test result. Seven are payment/enrollment paths and depend on Gate 1. Preserve the three brazing lessons and thermistor page only after reviewing their original teaching content; decide the webinar, clone, and test paths individually. Do not route checkout paths to a generic sales page.
+The 154 published post paths, `/EPA.pdf`, and the thank-you path are built. The original inventory still lists 21 published WordPress page paths as unresolved; one of them is the now-built thank-you page and its return behavior remains to be tested. Classify each in `LEGACY_URL_INVENTORY_2026-09-24.csv` with a destination and test result. Other payment/enrollment paths depend on Gate 1. Preserve the three brazing lessons and thermistor page only after reviewing their original teaching content; decide the webinar, clone, and test paths individually. Do not route checkout paths to a generic sales page.
 
 Recover missing originals from a SiteGround media backup, prioritizing images on clicked technical articles: PT chart, superheat, and Smart Valve, then remaining inline images. `LEGACY_MEDIA_GAPS.json` lists 78 missing upload paths, including 57 distinct inline images across 46 articles. Rebuild and check rendered pages, rather than silently replacing technical diagrams with unrelated stock art. Review dated and safety-sensitive technical instructions separately from URL preservation.
 
@@ -38,4 +38,4 @@ Rehearse the public build, sitemap, canonical host, one-hop redirects, robots/in
 
 ## Next executable step
 
-Inspect the two supplied PayPal buttons and obtain a read-only description of the current payment-to-Moodle enrollment path. Then run the two-plan matrix above and record the results. If those buttons bypass the existing enrollment integration, design and test that handoff before public cutover. No production configuration change follows from this document.
+Inspect the two supplied PayPal buttons' settings, especially the return URL and notification destination. Document Ron's manual payment verification, Moodle enrollment, and account-email steps. Then run the two-plan matrix above and record the results. No production configuration change follows from this document.
