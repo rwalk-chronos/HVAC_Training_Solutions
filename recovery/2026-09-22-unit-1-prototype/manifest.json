@@ -1,0 +1,97 @@
+{
+  "recovered_from": "/workspace/scratch/1757a8796067/site-repo",
+  "original_base_commit": "f306a78ffa3737dfa21bfe5f4ac5129031e55e77",
+  "recovered_on": "2026-09-24",
+  "files": [
+    {
+      "original_path": "src/pages/unit-1-prototype.astro",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/src/pages/unit-1-prototype.astro",
+      "sha256": "becbfb9cf6c2640e296b7ae93e704b16e9f4b2d2eb729c35084cfd7d947c0ba1",
+      "bytes": 14750,
+      "modified_utc": "2026-09-22T18:17:28.762132+00:00"
+    },
+    {
+      "original_path": "src/styles/global.css",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/src/styles/global.css",
+      "sha256": "c39389160a29268214a26fc59091638a72f79c8bd9b646bad4ceb003050fedc6",
+      "bytes": 51736,
+      "modified_utc": "2026-09-22T18:19:27.145224+00:00"
+    },
+    {
+      "original_path": "src/layouts/BaseLayout.astro",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/src/layouts/BaseLayout.astro",
+      "sha256": "6f82890955473c74a58733f6b324b6df7edef3907130b3e38fcdbb3207c372e4",
+      "bytes": 4365,
+      "modified_utc": "2026-09-21T22:08:11.806908+00:00"
+    },
+    {
+      "original_path": "astro.config.mjs",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/astro.config.mjs",
+      "sha256": "8ae77c063f8eec525bc4fb36a5432e0b8a9f0f23664ef174b3bd3f4adb92383c",
+      "bytes": 156,
+      "modified_utc": "2026-09-21T22:03:53.972988+00:00"
+    },
+    {
+      "original_path": "package.json",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/package.json",
+      "sha256": "0f509203826c825b16b344095113286bf20a317146907e093048cfd53f550ca1",
+      "bytes": 460,
+      "modified_utc": "2026-09-21T22:03:53.973422+00:00"
+    },
+    {
+      "original_path": "wrangler.jsonc",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/wrangler.jsonc",
+      "sha256": "a4013b0675f18cdfd63fee22de84e9fc0198eb0733d871ae0ae4fb81fbe5019f",
+      "bytes": 218,
+      "modified_utc": "2026-09-21T22:03:53.974934+00:00"
+    },
+    {
+      "original_path": "public/media/unit-1/boiling-water-demo.mp4",
+      "active_path": "public/media/unit-1/boiling-water-demo.mp4",
+      "sha256": "1ff6858400374a3a88c33245e0f0be565cc31c8c5828468b698c522b575b38de",
+      "bytes": 6099240
+    },
+    {
+      "original_path": "public/media/unit-1/change-of-state.mp4",
+      "active_path": "public/media/unit-1/change-of-state.mp4",
+      "sha256": "307151846b1285e6fa420930946a93072f8694ffde329784008a1ad54b050bd3",
+      "bytes": 2000497
+    },
+    {
+      "original_path": "public/media/unit-1/heat-basics.mp4",
+      "active_path": "public/media/unit-1/heat-basics.mp4",
+      "sha256": "f464310e70b126d50d863d5ed22b5a79ab06c1c961468d57a57b6beca2325942",
+      "bytes": 2118039
+    },
+    {
+      "original_path": "public/media/unit-1/pt-chart.jpg",
+      "active_path": "public/media/unit-1/pt-chart.jpg",
+      "sha256": "2c5fec4f83becc23f9f8121aef4844e7ac4d4b8cf4d786473f96112a4b6d659e",
+      "bytes": 27623
+    },
+    {
+      "original_path": "public/media/unit-1/sensible-latent-intro.mp4",
+      "active_path": "public/media/unit-1/sensible-latent-intro.mp4",
+      "sha256": "cefa1d1df0f1f938884082378590cb4dc67f75c7bee3b43691784b7c388dc127",
+      "bytes": 1996818
+    },
+    {
+      "original_path": "dist/unit-1-prototype/index.html",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/dist/unit-1-prototype/index.html",
+      "sha256": "bb6a21ea51114287ec21b9d23db6e6d8a0fb4c36e4743b876baf9fa848ee791d",
+      "bytes": 16617
+    },
+    {
+      "original_path": "dist/_astro/BaseLayout.Dk_p4_YM.css",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/dist/_astro/BaseLayout.Dk_p4_YM.css",
+      "sha256": "5bb8f7358020149d2f505c7a62423070746f46d1a446c2015ca61825d9442253",
+      "bytes": 50320
+    },
+    {
+      "original_path": "package-lock.json",
+      "archive_path": "recovery/2026-09-22-unit-1-prototype/package-lock.json",
+      "sha256": "876d6e99b6ffe36bb342b6b286f9462d37f6ba35529c1c33181ae2659e14f6ae",
+      "bytes": 172656
+    }
+  ]
+}

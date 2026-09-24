@@ -1,19 +1,102 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const curriculum = [
+  { title: "HVAC foundations", modules: ["Matter, Energy, and Heat Basics", "The Refrigeration Process", "General Safety Practices", "Refrigerant Management", "Hand Tools", "Tubing and Piping Tools", "Specialized HVAC/R Tools"] },
+  { title: "Systems, air, and commissioning", modules: ["System Location", "Air Distribution Systems", "System Connections", "Leak Testing", "System Evacuation", "System Startup and Charging", "Testing, Adjusting, and Balancing", "Indoor Air Quality"] },
+  { title: "Electrical", modules: ["Electricity Fundamentals", "Electric Motors", "Electric Controls", "Wiring Diagrams", "Electric Codes", "Electrical Troubleshooting"] },
+  { title: "Heating, heat pumps, and troubleshooting", modules: ["Mechanical Troubleshooting", "Electric Heat", "Gas Heat", "Oil Heat", "Hydronic Heat", "Heat Pumps"] },
+];
 ---
 
 <BaseLayout
-  title="HVAC Boot Camp | HVAC Training Solutions"
-  description="HVAC Boot Camp rebuild staging page."
+  title="HVAC Boot Camp | Online HVAC Foundations with Ron Walker"
+  description="Explore Ron Walker's 27-module HVAC Boot Camp: what you will study, the Moodle and textbook format, a free teaching sample, pricing, and the limits of online training."
 >
-  <section class="hero">
-    <p><strong>First-page rebuild target</strong></p>
-    <h1>Learn HVAC. Prepare for the interview. Get into the field.</h1>
-    <p>
-      This page is intentionally only a structural starting point. The next
-      phase will rebuild the complete Boot Camp offer using verified current
-      pricing, Ron's training approach, student outcomes, testimonials, course
-      curriculum, job-search support, and a clear enrollment path.
-    </p>
-  </section>
+  <div class="bootcamp-page refreshed-bootcamp">
+    <section class="bc-hero">
+      <div class="bc-hero-inner">
+        <div>
+          <p class="eyebrow">HVAC Boot Camp · Beginner course</p>
+          <h1>Start with the basics. <span>Understand how the system works.</span></h1>
+          <p class="hero-lead">A 27-module online course taught by Ron Walker. Study the science, tools, safety, airflow, electrical foundations, heating, and heat pumps that prepare you to keep learning in a supervised HVAC role.</p>
+          <div class="hero-actions"><a class="button button-primary" href="/pricing/">See price and enrollment</a><a class="button button-secondary" href="/try-boot-camp/">Watch a free teaching sample</a></div>
+          <p class="hero-fineprint">Current course: Moodle lessons, textbook reading, videos, and quizzes · Textbook purchased separately</p>
+        </div>
+        <aside class="hero-card course-facts" aria-label="Course facts">
+          <p class="hero-card-label">Know what you are choosing</p>
+          <ul>
+            <li><div><strong>Built for beginners</strong><span>Start without prior HVAC experience.</span></div></li>
+            <li><div><strong>27 modules</strong><span>Follow a path from heat fundamentals through heat pumps.</span></div></li>
+            <li><div><strong>Online at your pace</strong><span>Read, watch Ron teach, and take course quizzes in Moodle.</span></div></li>
+            <li><div><strong>Field learning comes next</strong><span>Online study does not replace supervised hands-on work.</span></div></li>
+          </ul>
+          <a class="hero-card-link" href="/contact/">Questions before enrolling? Contact us →</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bc-section" aria-labelledby="bc-outcome">
+      <div class="section-inner">
+        <div class="section-heading center"><p class="eyebrow">What this course is for</p><h2 id="bc-outcome">Build the foundation to ask better questions and explain what you know.</h2><p>You will meet the concepts and language behind residential HVAC systems. A first job still requires an employer's training, safe practice, and experience on real equipment.</p></div>
+        <div class="path-grid">
+          <article class="path-card"><span class="path-number">1</span><h3>Follow the heat</h3><p>Understand why cooling moves heat, how refrigerant changes state, and what pressure has to do with it.</p></article>
+          <article class="path-card"><span class="path-number">2</span><h3>See the whole system</h3><p>Connect refrigeration with airflow, tools, electrical controls, and equipment operation.</p></article>
+          <article class="path-card"><span class="path-number">3</span><h3>Keep learning in the field</h3><p>Use your technical foundation while learning hands-on skills under experienced supervision.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section alt" aria-labelledby="bc-format">
+      <div class="section-inner format-grid">
+        <div class="section-heading"><p class="eyebrow">The course available today</p><h2 id="bc-format">Here is how you will study.</h2><p>After enrollment, the current course is delivered in Moodle. Work through 27 modules with textbook reading, Ron's videos, and quizzes. The required <em>Residential Construction Academy HVAC, 2nd Edition</em> by Eugene Silberstein is purchased separately.</p><a class="text-link-dark" href="/how-it-works/">See the course format in detail →</a></div>
+        <div class="format-panel">
+          <div><b>01</b><span><strong>Read</strong><small>Use the assigned textbook to build the concept.</small></span></div>
+          <div><b>02</b><span><strong>Watch</strong><small>Hear Ron explain the topic in course videos.</small></span></div>
+          <div><b>03</b><span><strong>Check</strong><small>Work through quizzes to test your understanding.</small></span></div>
+          <div><b>04</b><span><strong>Ask</strong><small>Contact us with course questions when you need guidance.</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc-section" aria-labelledby="bc-curriculum">
+      <div class="section-inner curriculum-intro">
+        <div class="section-heading"><p class="eyebrow">Course curriculum</p><h2 id="bc-curriculum">27 modules. A broad foundation.</h2><p>Browse the existing Boot Camp topics grouped here by subject. Moodle shows the course's actual lesson order. Some topics require patient study and practice.</p><div class="textbook-note"><strong>Textbook:</strong> Residential Construction Academy HVAC, 2nd Edition by Eugene Silberstein. Purchased separately.</div></div>
+        <div class="curriculum-groups">{curriculum.map((group, index) => <details class="curriculum-group" open={index === 0}><summary>{group.title}</summary><ol class="module-list">{group.modules.map((module) => <li>{module}</li>)}</ol></details>)}</div>
+      </div>
+    </section>
+
+    <section class="bc-section preview-section" aria-labelledby="bc-review">
+      <div class="section-inner preview-split">
+        <div class="section-heading"><p class="eyebrow">Review before enrolling</p><h2 id="bc-review">See what you get in the current Boot Camp.</h2><p>The course follows the 27-module outline above. Your lessons are in Moodle, with assigned textbook reading, Ron's videos, and quizzes. Watch a free public lesson to hear how Ron teaches before choosing a payment plan.</p><p class="preview-boundary"><strong>Plan for the textbook:</strong> it is required for the course and purchased separately from enrollment.</p><a class="button button-primary" href="/try-boot-camp/">Watch a free teaching sample</a></div>
+        <div class="preview-steps" aria-label="What to review before enrolling"><div><span>1</span><strong>Topics</strong><small>27 modules</small></div><div><span>2</span><strong>Format</strong><small>Read, watch, quiz</small></div><div><span>3</span><strong>Textbook</strong><small>Purchased separately</small></div><div><span>4</span><strong>Price</strong><small>Two payment options</small></div><div><span>5</span><strong>Next step</strong><small>Supervised field learning</small></div></div>
+      </div>
+    </section>
+
+    <section class="bc-section instructor-section" aria-labelledby="bc-ron">
+      <div class="section-inner instructor-grid"><div class="section-heading"><p class="eyebrow">Hear the instructor</p><h2 id="bc-ron">See how Ron explains the refrigeration cycle.</h2><p>This public lesson shows his teaching style. Decide whether the pace and explanations work for you.</p><a class="button button-light" href="/about/">About Ron Walker</a></div><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/27uCRQ3B8r4?rel=0" title="Basic Refrigeration Cycle lesson by Ron Walker" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+    </section>
+
+    <section class="bc-section" aria-labelledby="bc-price">
+      <div class="section-inner">
+        <div class="section-heading center"><p class="eyebrow">Enrollment options</p><h2 id="bc-price">Choose the payment schedule that fits.</h2><p>Both options are for the same current Boot Camp course. The textbook is purchased separately.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card featured"><p class="price-label">Pay in full</p><p class="price">$479</p><p class="price-detail">One payment. $200 less than the monthly total.</p><a class="button button-primary" href="/pricing/">Review full payment</a></article>
+          <article class="price-card"><p class="price-label">Monthly</p><p class="price">$97</p><p class="price-detail">$97 today, then six monthly payments of $97. $679 total.</p><a class="button button-dark" href="/pricing/">Review monthly payments</a></article>
+        </div>
+        <p class="center-note">Payment uses the existing checkout; the course is delivered in Moodle.</p>
+      </div>
+    </section>
+
+    <section class="bc-section alt" aria-labelledby="bc-questions">
+      <div class="section-inner"><div class="section-heading center"><p class="eyebrow">Questions before starting</p><h2 id="bc-questions">Know the limits and the next step.</h2></div><div class="faq-list">
+        <details class="faq-item"><summary>Can I start without HVAC experience?</summary><p>Yes. The course begins with basic concepts. It does require reading, quizzes, and time to study.</p></details>
+        <details class="faq-item"><summary>How do I access the course after enrolling?</summary><p>The course is delivered in Moodle. Review the current enrollment and access steps on the <a href="/how-it-works/">how it works</a> page.</p></details>
+        <details class="faq-item"><summary>Do I need to buy a textbook?</summary><p>Yes. Residential Construction Academy HVAC, 2nd Edition by Eugene Silberstein is purchased separately.</p></details>
+        <details class="faq-item"><summary>Will this guarantee a job or hands-on qualification?</summary><p>No. Employers make hiring decisions, and practical skill requires supervised field experience.</p></details>
+        <details class="faq-item"><summary>Where can I ask about the course?</summary><p><a href="/contact/">Contact HVAC Training Solutions</a> with your question before you enroll.</p></details>
+      </div></div>
+    </section>
+    <section class="bc-section final-cta"><div class="section-inner"><p class="eyebrow">Choose your next step</p><h2>See how Ron teaches. Then decide.</h2><p>Watch a free teaching sample, review the course and price, and ask anything you need to know before paying.</p><div class="hero-actions"><a class="button button-primary" href="/try-boot-camp/">Watch a free sample</a><a class="button button-secondary" href="/pricing/">See pricing</a></div></div></section>
+  </div>
 </BaseLayout>

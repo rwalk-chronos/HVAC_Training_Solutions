@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCheckoutLinks } from "../lib/checkout";
+
+const checkout = getCheckoutLinks();
+---
+
+<BaseLayout
+  title="HVAC Boot Camp Pricing | $479 in Full or Monthly Payments"
+  description="Compare the current HVAC Boot Camp price: $479 in full or $97 today plus six monthly payments of $97, $679 total. Textbook purchased separately."
+>
+  <div class="standard-page pricing-page refreshed-pricing">
+    <section class="page-hero"><div class="page-hero-inner narrow-hero"><p class="eyebrow">HVAC Boot Camp pricing</p><h1>One current course. <span>Two ways to pay.</span></h1><p>Both options enroll you in the existing 27-module Moodle course. Choose one payment or a lower starting amount with a higher total.</p></div></section>
+
+    <section class="page-section pricing-main-section"><div class="page-shell">
+      <div class="pricing-grid pricing-grid-light">
+        <article class="price-card featured">
+          <p class="price-badge">Lowest total</p><p class="price-label">Pay in full</p><p class="price">$479</p><p class="price-detail">One payment. $200 less than the monthly total.</p>
+          <ul class="price-list"><li>Existing 27-module HVAC Boot Camp</li><li>Moodle access, videos, and quizzes</li><li>Self-paced online study</li></ul>
+          <a class="button button-primary" href={checkout.full} data-checkout-plan="full" data-analytics-event="begin_checkout" data-payment-plan="full">Continue to current checkout ↗</a>
+          <small>Before paying, review the <a href="/terms/">terms</a>, <a href="/refund-policy/">refund policy</a>, and <a href="/privacy/">privacy policy</a>. Confirm the payment terms at checkout.</small>
+        </article>
+        <article class="price-card">
+          <p class="price-label">Monthly payments</p><p class="price">$97 <span class="price-suffix">to start</span></p><p class="price-detail">$97 today, then six monthly payments of $97. <strong>$679 total.</strong></p>
+          <ul class="price-list"><li>Same existing 27-module course</li><li>Moodle access, videos, and quizzes</li><li>Self-paced online study</li></ul>
+          <a class="button button-dark" href={checkout.monthly} data-checkout-plan="monthly" data-analytics-event="begin_checkout" data-payment-plan="monthly">Continue to current checkout ↗</a>
+          <small>Before paying, review the <a href="/terms/">terms</a>, <a href="/refund-policy/">refund policy</a>, and <a href="/privacy/">privacy policy</a>. Confirm the payment terms at checkout.</small>
+        </article>
+      </div>
+      <div class="price-clarity"><strong>Budget for the textbook separately.</strong><p>The current course uses <em>Residential Construction Academy HVAC, 2nd Edition</em> by Eugene Silberstein. The purchase price above does not include it.</p></div>
+    </div></section>
+
+    <section class="page-section soft-section"><div class="page-shell preview-split">
+      <div class="section-heading"><p class="eyebrow">What enrollment includes</p><h2>Know what you are buying.</h2><p>Both prices are for the same 27-module Boot Camp delivered in Moodle. The course uses textbook reading, Ron's video instruction, and quizzes. The textbook is an additional purchase.</p><a class="button button-outline-dark" href="/hvac-boot-camp/">Review the 27 modules</a></div>
+      <div class="comparison-card"><p class="eyebrow">Check before checkout</p><div><strong>Full payment</strong><span>$479 today</span></div><div><strong>Monthly option</strong><span>$97 today + six payments of $97 = $679 total</span></div><div><strong>Textbook</strong><span>Additional purchase</span></div><p>Review the payment and refund terms at checkout before enrolling.</p></div>
+    </div></section>
+
+    <section class="page-section"><div class="page-shell">
+      <div class="section-heading center"><p class="eyebrow">Common questions</p><h2>Make an informed decision.</h2></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Is the course different with the monthly option?</summary><p>No. Both options are for the same current Boot Camp. The monthly option costs $200 more in total.</p></details>
+        <details class="faq-item"><summary>Is the textbook included?</summary><p>No. You buy the required textbook separately.</p></details>
+        <details class="faq-item"><summary>Where do I take the course?</summary><p>After enrollment, the course is delivered online in Moodle at hvactraining.academy.</p></details>
+        <details class="faq-item"><summary>Does the course guarantee a job, certification, or independent field work?</summary><p>No. Hiring and credentials have separate requirements. Safe field skills require supervised practice.</p></details>
+        <details class="faq-item"><summary>Where can I confirm payment or refund terms?</summary><p>Review the terms shown by the existing checkout before paying, or <a href="/contact/">contact HVAC Training Solutions</a> with a question.</p></details>
+      </div>
+      <div class="center-actions"><a class="button button-outline-dark" href="/contact/">Ask a question first</a><a class="text-link-dark" href="/try-boot-camp/">Watch Ron teach →</a></div>
+    </div></section>
+  </div>
+</BaseLayout>
+
+<style>
+  .price-card small { font-size: .8125rem; }
+  .price-card small a { color: #075f96; font-weight: 700; }
+</style>
