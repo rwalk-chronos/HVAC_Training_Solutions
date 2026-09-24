@@ -76,15 +76,15 @@ Marketing code and learning code may remain internally separated, but they must 
 
 ## First marketing slice
 
-1. Capture search and conversion baselines.
-2. Select a high-intent article and map its reader path to Boot Camp.
-3. Improve the article and matching Boot Camp/pricing path together.
-4. Verify the CTA and contact or checkout handoff on a phone.
-5. Measure article-to-offer visits, leads, checkout starts, and paid enrollments where data is available.
+1. Capture search and conversion baselines, including the short available Search Console snapshot.
+2. Map technician repair queries to technical articles and beginner training queries to the Boot Camp pages.
+3. Preserve one high-value repair article at its existing URL and improve its usefulness without forcing a beginner sales CTA.
+4. Refine the Boot Camp, pricing, and free-sample path for prospective beginners.
+5. Verify contact and checkout handoff on a phone and measure each audience separately.
 
 The saved Unit 1 demo may be linked as a learning sample once reviewed; course expansion does not block marketing development.
 
-## AI boundary for the slice
+## Future learning AI boundary
 
 Allowed learner actions:
 
@@ -134,7 +134,7 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 ### Next
 
 - inventory WordPress URLs and obtain Search Console and GA4 page/query baselines
-- preserve valuable article paths and prioritize traffic, links, and near-page-one search opportunities
+- preserve valuable article paths and segment working-technician, beginner, EPA-study, and employer intent
 - refine the homepage, Boot Camp, pricing, how-it-works, instructor proof, and sample CTAs
 - prove contact and checkout routes will work after the public domain moves away from WordPress
 - migrate priority articles with relevant internal links and measurable CTAs
@@ -160,10 +160,11 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 
 ### Marketing gate
 
-- the offer is understandable within the first screen
-- the sample lesson is the real learning experience
-- calls to action are measurable
-- production checkout links remain unchanged until replacement enrollment is approved
+- the beginner offer is understandable within the first screen
+- technical repair pages answer the task and preserve useful URLs without forcing a Boot Camp pitch
+- the free sample is accurately labeled and links work
+- calls to action and audience-specific outcomes are measurable
+- contact and checkout handoff remain functional when the main domain moves away from WordPress
 
 ### Payment and enrollment gate
 
@@ -176,8 +177,14 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 - cancellation/refund/dispute/access rules are approved
 - PayPal Sandbox and production configuration are demonstrably separated
 
-### Cutover gate
+### Public marketing cutover gate
 
-- content and URL migration are verified
-- authentication, PayPal, automatic enrollment, email, analytics, and rollback are tested
-- production change receives explicit approval
+- content and URL migration, technical assets, redirects, and noindex removal are verified
+- contact, checkout, student-login handoff, email, analytics, and rollback are tested
+- production routing change receives explicit approval
+
+### Full platform cutover gate
+
+- replacement authentication, PayPal, enrollment, email, progress, and course experience pass their own acceptance tests
+- Moodle retirement and production data migration receive separate approval
+
