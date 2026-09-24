@@ -1,5 +1,7 @@
 # HVAC Training Solutions
 
+**Recovery update, September 24:** The original Unit 1 prototype source and media have been recovered at `/unit-1-prototype/`. The later Lesson 1 reconstruction is preserved separately at `/unit-1/lesson-1/`. Read [the current recovery handoff](docs/RECOVERY_STATE.md) before continuing; earlier statements below about missing source describe the prior consolidation state.
+
 This repository is the canonical source for the new **HVACTrainingSolutions.net** platform.
 
 The goal is one custom, mobile-first application that eventually replaces both the WordPress marketing site and the Moodle course experience. Marketing, PayPal payment, automatic enrollment, learning, AI assistance, progress, and analytics belong to one product and one codebase.

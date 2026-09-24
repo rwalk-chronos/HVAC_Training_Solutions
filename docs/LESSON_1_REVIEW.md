@@ -1,5 +1,7 @@
 # Unit 1 / Lesson 1 review handoff
 
+**September 24 recovery note:** This is the later reconstruction, preserved from local commit `6ed9ef8`. The original September 22 demo has now been recovered at `/unit-1-prototype/`. Use [RECOVERY_STATE.md](RECOVERY_STATE.md) for the current recovery target; do not substitute this route for the original.
+
 ## Review route and status
 
 - Route: `/unit-1/lesson-1/` on PR #6 (`recovery/money-pages-unit1`).

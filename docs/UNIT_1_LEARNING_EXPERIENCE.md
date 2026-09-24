@@ -41,6 +41,8 @@ The experience should provide:
 
 ## Current content and source rule
 
+The original September 22 prototype was recovered on September 24. For the current restoration task, preserve its source and five-section sequence at `/unit-1-prototype/` before making instructional changes. See [RECOVERY_STATE.md](RECOVERY_STATE.md). The later `/unit-1/lesson-1/` reconstruction remains a separate review route.
+
 The current [Google Drive student-facing Unit 1 draft](https://docs.google.com/document/d/1Ei8vYLgxcckZS9kDFMLwwbguQfH5eOtfNIfg64JlSHg/edit) governs the five-lesson content sequence and its approved checks. This document governs the interaction and learning pattern. The older Library `HVAC Boot Camp — Unit 1 Pilot` is a UX reference only; its eight-page Matter curriculum is superseded. Original course media and Ron's instructor intent inform each lesson after the assets are reviewed.
 
 PR #6 on `recovery/money-pages-unit1` is the durable implementation baseline. Save each accepted lesson and selected assets in GitHub before moving to the next. Cloudflare previews are review deployments, not source storage. The project Library has original MP4s; do not rely on conversation attachments as the only copy. Keep a source and revision map for selected media.
