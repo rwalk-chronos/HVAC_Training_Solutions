@@ -41,7 +41,7 @@ The experience should provide:
 
 ## Current content and source rule
 
-The original September 22 prototype was recovered on September 24. For the current restoration task, preserve its source and five-section sequence at `/unit-1-prototype/` before making instructional changes. See [RECOVERY_STATE.md](RECOVERY_STATE.md). The later `/unit-1/lesson-1/` reconstruction remains a separate review route.
+The original September 22 prototype was recovered on September 24. Ron selected its five-section sequence at `/unit-1-prototype/` as the sole Unit 1 development baseline. Improve it in place, preserving the approved concepts and selected media until each change is reviewed. See [RECOVERY_STATE.md](RECOVERY_STATE.md). The later `/unit-1/lesson-1/` reconstruction was rejected and removed.
 
 The current [Google Drive student-facing Unit 1 draft](https://docs.google.com/document/d/1Ei8vYLgxcckZS9kDFMLwwbguQfH5eOtfNIfg64JlSHg/edit) governs the five-lesson content sequence and its approved checks. This document governs the interaction and learning pattern. The older Library `HVAC Boot Camp — Unit 1 Pilot` is a UX reference only; its eight-page Matter curriculum is superseded. Original course media and Ron's instructor intent inform each lesson after the assets are reviewed.
 

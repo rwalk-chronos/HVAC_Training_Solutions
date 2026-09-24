@@ -1,6 +1,6 @@
 # HVAC Training Solutions
 
-**Recovery update, September 24:** The original Unit 1 prototype source and media have been recovered at `/unit-1-prototype/`. The later Lesson 1 reconstruction is preserved separately at `/unit-1/lesson-1/`. Read [the current recovery handoff](docs/RECOVERY_STATE.md) before continuing; earlier statements below about missing source describe the prior consolidation state.
+**Unit 1 direction, September 24:** Ron selected the recovered five-section `/unit-1-prototype/` as the lesson to develop. The later `/unit-1/lesson-1/` reconstruction was rejected and removed. Read [the current recovery handoff](docs/RECOVERY_STATE.md) before continuing.
 
 This repository is the canonical source for the new **HVACTrainingSolutions.net** platform.
 
@@ -25,7 +25,7 @@ As of the consolidation cleanup:
 - The first Boot Camp sales page is on `feature/boot-camp-v1`.
 - Cloudflare branch previews are used for review.
 - Staging remains `noindex, nofollow`.
-- The complete phone-first Unit 1 learning pilot is **not yet committed to this repository**.
+- The recovered Unit 1 prototype is committed, but its learning pattern, media selection, progress, and phone experience still need review and development.
 - PayPal, accounts, and automatic enrollment are planned but not yet implemented.
 - `rwalk-chronos/hvac-lti` and `rwalk-chronos/ai-hvac-lms` are failed historical attempts and are not migration sources.
 

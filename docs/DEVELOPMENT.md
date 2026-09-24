@@ -61,7 +61,7 @@ The repository contains a committed npm lockfile, a local build verifier, and a 
 6. Record any environment, route, data, or migration impact in the pull request.
 7. Do not merge or change production routing without approval.
 
-The current draft PR #6 is based on `feature/site-money-pages`. Continue on `recovery/money-pages-unit1`. The original September 22 `/unit-1-prototype/` source was recovered on September 24; see [RECOVERY_STATE.md](RECOVERY_STATE.md). Preserve it separately from the later `/unit-1/lesson-1/` reconstruction. Commit and push each reviewed milestone and record the remote HEAD SHA, route, verified preview URL when available, media sources, and Ron's decision in the handoff.
+The current draft PR #6 is based on `feature/site-money-pages`. Continue on `recovery/money-pages-unit1`. Ron selected the recovered September 22 `/unit-1-prototype/` as the sole Unit 1 development route and rejected the later `/unit-1/lesson-1/` reconstruction; see [RECOVERY_STATE.md](RECOVERY_STATE.md). Commit and push each reviewed milestone and record the remote HEAD SHA, route, verified preview URL when available, media sources, and Ron's decision in the handoff.
 
 ## Code boundaries
 

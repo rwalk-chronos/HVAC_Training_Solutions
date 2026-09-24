@@ -29,6 +29,6 @@ The original PT chart image is `pt chart.jpg`, reference `libfile_db9396dc80fc81
 | `public/media/unit-1/boiling-water-demo.mp4` | Original September 22 workspace; preserve the exact recovered derivative | Lesson 4 player |
 | `public/media/unit-1/sensible-latent-intro.mp4` | Original September 22 workspace | Preserved additional clip, not currently embedded |
 | `public/media/unit-1/pt-chart.jpg` | Original September 22 workspace | Lesson 5 figure |
-| `public/media/unit-1/10-heat-flow.mp4` | Later September 23 local commit `6ed9ef8` | Separate `/unit-1/lesson-1/` reconstruction |
+| `public/media/unit-1/10-heat-flow.mp4` | Original uploaded clip, copied in later September 23 local commit `6ed9ef8` | Retained for possible future review; not assigned to the selected prototype |
 
 SHA-256 hashes for original recovered assets are recorded in `recovery/2026-09-22-unit-1-prototype/manifest.json`. Do not rename, replace, or remap clips during recovery. The three-player count is what the surviving original source contains; it is not a claim that every uploaded video was integrated. Caption/transcript verification remains a later acceptance item.
