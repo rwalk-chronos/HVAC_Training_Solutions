@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact HVAC Training Solutions | Ask Ron About Boot Camp"
+  description="Ask HVAC Training Solutions about Boot Camp, course access, or a question before you enroll. Email Ron Walker directly or view the current call scheduling page."
+>
+  <section class="page-hero">
+    <div class="page-hero-inner narrow-hero">
+      <p class="eyebrow">Here to help</p>
+      <h1>Have a question? <span>Let’s talk.</span></h1>
+      <p>Whether you are deciding if Boot Camp fits your goals or need help with an existing course, send us a note. You can ask a real person before making a decision.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="mailto:hvactrainingsolutions@gmail.com">Email HVAC Training Solutions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="page-shell contact-grid">
+      <article class="contact-card">
+        <p class="eyebrow">Email</p>
+        <h2>Write to us directly.</h2>
+        <p>Ask about the course, payment options, or help with your account. A short note about what you need will help us respond.</p>
+        <a class="contact-address" href="mailto:hvactrainingsolutions@gmail.com">hvactrainingsolutions@gmail.com</a>
+      </article>
+      <article class="contact-card contact-card-soft">
+        <p class="eyebrow">Prefer a conversation?</p>
+        <h2>See the current call page.</h2>
+        <p>Ron’s existing scheduling page is available if you would like to check for a time to talk before enrolling.</p>
+        <a class="button button-outline-dark" href="https://calendly.com/hvactrainingsolutions/online-hvac-training-call" target="_blank" rel="noopener noreferrer">Check call availability <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section soft-section">
+    <div class="page-shell contact-next">
+      <p class="eyebrow">Explore first</p>
+      <h2>Want to look around before you reach out?</h2>
+      <p>See the course details, compare the current payment options, or try the free Unit 1 preview.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="/hvac-boot-camp/">Explore Boot Camp</a>
+        <a class="button button-outline-dark" href="/unit-1-prototype/">Try Unit 1</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+  .contact-card{min-width:0;padding:clamp(1.5rem,3vw,2.5rem);border:1px solid var(--line);border-radius:18px;box-shadow:0 15px 35px rgba(8,17,31,.06)}
+  .contact-card-soft{background:var(--blue-pale);border-color:#cce9fa}
+  .contact-card .eyebrow{color:var(--blue-dark)}
+  .contact-card h2,.contact-next h2{margin:0;color:var(--ink);font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.08;letter-spacing:-.04em}
+  .contact-card p:not(.eyebrow),.contact-next p:not(.eyebrow){max-width:55ch;color:var(--soft)}
+  .contact-address{display:inline-block;margin-top:.7rem;color:var(--blue-dark);font-weight:850;overflow-wrap:anywhere;text-underline-offset:3px}
+  .contact-next{text-align:center}.contact-next p{margin-left:auto;margin-right:auto}.contact-next .eyebrow{color:var(--blue-dark)}.contact-next .hero-actions{justify-content:center}
+  @media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
+</style>

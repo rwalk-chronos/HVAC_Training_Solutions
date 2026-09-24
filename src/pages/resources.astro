@@ -1,0 +1,152 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/support-pages.css";
+
+const legacy = "https://www.hvactrainingsolutions.net";
+
+const technicianGuides = [
+  {
+    title: "Refrigerant recovery without a recovery machine",
+    description: "A field-focused article about a specific recovery situation.",
+    href: `${legacy}/recovering-refrigerant-without-using-a-refrigerant-recovery-machine/`,
+    tag: "Refrigerant handling",
+  },
+  {
+    title: "The PT chart and saturation temperature",
+    description: "Connect refrigerant pressure readings with saturation temperature.",
+    href: `${legacy}/hvac-training-the-pt-chart-and-saturation-temperature/`,
+    tag: "Refrigeration",
+  },
+  {
+    title: "Steps to measuring superheat",
+    description: "A practical reference for one of the measurements technicians use.",
+    href: `${legacy}/steps-to-measuring-superheat/`,
+    tag: "Measurements",
+  },
+  {
+    title: "Air conditioning repair: troubleshooting process",
+    description: "Work through the problem in a deliberate order.",
+    href: `${legacy}/air-conditioning-repair-troubleshooting-process/`,
+    tag: "Troubleshooting",
+  },
+];
+
+const starterGuides = [
+  {
+    title: "How to learn HVAC",
+    description: "A starting point for exploring the trade and the learning path.",
+    href: `${legacy}/how-to-learn-hvac/`,
+  },
+  {
+    title: "What does it take to be an air conditioning technician?",
+    description: "Get a clearer picture of the work before choosing training.",
+    href: `${legacy}/what-does-it-take-to-be-an-air-conditioning-technician/`,
+  },
+  {
+    title: "Is online HVAC training right for you?",
+    description: "Consider what online study can provide and where hands-on learning fits.",
+    href: `${legacy}/is-online-hvac-training-right-for-you/`,
+  },
+];
+---
+
+<BaseLayout
+  title="HVAC Learning Resources | HVAC Training Solutions"
+  description="Find HVAC training articles for new learners, technical guides for working technicians, and EPA 608 study resources from HVAC Training Solutions."
+>
+  <div class="support-page resources-page">
+    <section class="support-hero">
+      <div class="support-shell support-hero-grid">
+        <div>
+          <p class="support-eyebrow">HVAC learning resources</p>
+          <h1>Find the answer you came for.</h1>
+          <p class="support-lead">Some visitors are finding their way into HVAC. Others are already on a service call and need a specific technical reference. Start with the path that fits today.</p>
+        </div>
+        <nav class="resource-wayfinder" aria-label="Choose a resource path">
+          <a href="#technicians"><span>01</span><strong>I work in HVAC</strong><span aria-hidden="true">↗</span></a>
+          <a href="#starting"><span>02</span><strong>I am exploring the trade</strong><span aria-hidden="true">↗</span></a>
+          <a href="#epa"><span>03</span><strong>I need EPA study material</strong><span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="support-section" id="technicians" aria-labelledby="technicians-title">
+      <div class="support-shell">
+        <div class="support-heading">
+          <p class="support-eyebrow">For working technicians</p>
+          <h2 id="technicians-title">Technical guides, without the detour.</h2>
+          <p>Go straight to the subject you are researching. These older posts are being reviewed for technical currency. Follow current requirements, equipment instructions, and the procedures for your work.</p>
+        </div>
+        <div class="resource-grid">
+          {technicianGuides.map((guide) => (
+            <article class="resource-card">
+              <span class="resource-tag">{guide.tag}</span>
+              <h3><a href={guide.href}>{guide.title}<span aria-hidden="true"> ↗</span></a></h3>
+              <p>{guide.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section support-section-soft" id="starting" aria-labelledby="starting-title">
+      <div class="support-shell support-split">
+        <div class="support-heading">
+          <p class="support-eyebrow">For future technicians</p>
+          <h2 id="starting-title">Start with a clearer picture of the trade.</h2>
+          <p>You can explore HVAC without pretending you already know the language. Read about the work, then try one real concept in the new lesson preview.</p>
+          <a class="button button-dark" href="/unit-1-prototype/">Try the free Unit 1 preview</a>
+        </div>
+        <div class="resource-list">
+          {starterGuides.map((guide, index) => (
+            <article>
+              <span aria-hidden="true">0{index + 1}</span>
+              <div>
+                <h3><a href={guide.href}>{guide.title}<span aria-hidden="true"> ↗</span></a></h3>
+                <p>{guide.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section" id="epa" aria-labelledby="epa-title">
+      <div class="support-shell">
+        <div class="epa-resource">
+          <div>
+            <p class="support-eyebrow">EPA Section 608 study</p>
+            <h2 id="epa-title">Looking for the EPA study material?</h2>
+            <p>The existing study page and PDF are still available while we review and move the resource library. The guide predates current refrigerant rules, so check current EPA requirements and approved exam information before using it to prepare for certification.</p>
+          </div>
+          <div class="epa-resource-links">
+            <a class="button button-primary" href={`${legacy}/EPA.pdf`}>Open EPA study PDF ↗</a>
+            <a class="support-inline-link" href={`${legacy}/epa-study-and-practice-test/`}>Read the study and practice test page ↗</a>
+          </div>
+        </div>
+        <p class="resource-location-note">These articles and the PDF currently open on the existing HVAC Training Solutions website. We are preserving the original article addresses as the new site is developed.</p>
+      </div>
+    </section>
+
+    <section class="support-section support-section-soft" aria-labelledby="other-courses-title">
+      <div class="support-shell">
+        <div class="support-heading">
+          <p class="support-eyebrow">For experienced technicians</p>
+          <h2 id="other-courses-title">Looking for other training?</h2>
+          <p>The existing site also has NATE preparation and commercial refrigeration course pages. Review their current scope and availability on the live site before deciding.</p>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card"><span class="resource-tag">Exam preparation</span><h3><a href={`${legacy}/nate/`}>NATE course <span aria-hidden="true">↗</span></a></h3><p>Existing course information for technicians exploring NATE exams.</p></article>
+          <article class="resource-card"><span class="resource-tag">Refrigeration</span><h3><a href={`${legacy}/commrecial-refrigeration-hvac-technicians/`}>Commercial refrigeration <span aria-hidden="true">↗</span></a></h3><p>Existing course information for HVAC technicians expanding into refrigeration.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section support-last">
+      <div class="support-shell support-next-step">
+        <div><p class="support-eyebrow">New to HVAC?</p><h2>Want a structured place to begin?</h2><p>HVAC Boot Camp starts with the fundamentals and explains the online training path, instructor support, and the steps toward a first supervised role.</p></div>
+        <a class="button button-primary" href="/hvac-boot-camp/">Explore HVAC Boot Camp</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

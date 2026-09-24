@@ -6,6 +6,9 @@ const requiredFiles = [
   "dist/how-it-works/index.html",
   "dist/pricing/index.html",
   "dist/try-boot-camp/index.html",
+  "dist/resources/index.html",
+  "dist/about/index.html",
+  "dist/contact/index.html",
   "dist/unit-1-prototype/index.html",
   "dist/404.html",
   "dist/robots.txt",
@@ -16,12 +19,15 @@ for (const file of requiredFiles) {
   await access(file);
 }
 
-const [home, bootCamp, howItWorks, pricing, trial, prototype, robots] = await Promise.all([
+const [home, bootCamp, howItWorks, pricing, trial, resources, about, contact, prototype, robots] = await Promise.all([
   readFile("dist/index.html", "utf8"),
   readFile("dist/hvac-boot-camp/index.html", "utf8"),
   readFile("dist/how-it-works/index.html", "utf8"),
   readFile("dist/pricing/index.html", "utf8"),
   readFile("dist/try-boot-camp/index.html", "utf8"),
+  readFile("dist/resources/index.html", "utf8"),
+  readFile("dist/about/index.html", "utf8"),
+  readFile("dist/contact/index.html", "utf8"),
   readFile("dist/unit-1-prototype/index.html", "utf8"),
   readFile("dist/robots.txt", "utf8"),
 ]);
@@ -32,6 +38,9 @@ const builtPages = [
   ["/how-it-works/", howItWorks],
   ["/pricing/", pricing],
   ["/try-boot-camp/", trial],
+  ["/resources/", resources],
+  ["/about/", about],
+  ["/contact/", contact],
   ["/unit-1-prototype/", prototype],
 ];
 
@@ -68,8 +77,16 @@ for (const match of prototype.matchAll(/src="(\/media\/[^"?#]+)(?:[?#][^"]*)?"/g
   await access(`dist${match[1]}`);
 }
 
-if (!trial.includes("An air conditioner cools a space by removing heat") || !trial.includes("From the air into the coil")) {
-  throw new Error("Trial page is missing the current Unit 1 draft concept or check");
+if (!home.includes("/unit-1-prototype/") || !trial.includes("/unit-1-prototype/")) {
+  throw new Error("Marketing journey does not link to the approved Unit 1 preview");
+}
+
+if (!pricing.includes("679 total") || !pricing.includes("textbook")) {
+  throw new Error("Pricing must disclose the payment total and separate textbook");
+}
+
+if (!resources.includes("EPA.pdf")) {
+  throw new Error("Resources page is missing the existing EPA PDF entry point");
 }
 
 if (!prototype.includes("boiling-water-demo.mp4") || !prototype.includes("pt-chart.jpg")) {

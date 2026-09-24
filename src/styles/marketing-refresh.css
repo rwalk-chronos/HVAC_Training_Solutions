@@ -1,0 +1,134 @@
+/* Marketing relaunch. The selected Unit 1 prototype keeps its own lesson styles. */
+:focus-visible{outline:3px solid #ff9b53;outline-offset:3px}
+.site-value-bar{background:#0b2e49;color:#eaf6ff}
+.site-header{width:min(1240px,calc(100% - 2.5rem))}
+.brand img{width:190px}
+.nav-link{padding:.6rem .55rem}
+.nav-cta{background:#e96520}
+.nav-cta:hover{background:#bd4911}
+.footer-bottom{align-items:center}
+
+.marketing-home .home-hero{background:radial-gradient(circle at 78% 4%,rgba(34,152,190,.25),transparent 25rem),linear-gradient(125deg,#082337 0%,#071827 61%,#0a2437 100%)}
+.marketing-home .home-hero-inner{padding:clamp(3.6rem,7vw,6.6rem) 0;grid-template-columns:minmax(0,1.05fr) minmax(350px,.86fr);gap:clamp(2rem,5vw,5rem)}
+.marketing-home .home-hero h1{max-width:15ch;font-size:clamp(3.2rem,6vw,5.5rem);line-height:1.01;letter-spacing:-.052em}
+.marketing-home .home-hero h1 span{color:#84d8f2}
+.marketing-home .home-hero-lead{max-width:56ch;line-height:1.65}
+.marketing-home .hero-fineprint{color:#b6cbd8}
+.hero-lesson-card{padding:clamp(1.3rem,3.2vw,2rem);border:1px solid rgba(255,255,255,.14);border-radius:22px;background:#fff;color:#13283b;box-shadow:0 28px 70px rgba(0,0,0,.22);transform:rotate(1deg)}
+.hero-lesson-top{display:flex;justify-content:space-between;gap:1rem;align-items:center;color:#52677a;font-size:.78rem;font-weight:800}
+.preview-pill{padding:.35rem .65rem;border-radius:999px;background:#e7f7fd;color:#075c85;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em}
+.hero-lesson-label{margin:2.1rem 0 .35rem;color:#a84012;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em}
+.hero-lesson-card h2{max-width:18ch;margin:0;font-size:clamp(1.8rem,2.5vw,2.6rem);line-height:1.1;letter-spacing:-.04em}
+.hero-lesson-card>p:not(.hero-lesson-label){color:#52677a;font-size:.91rem}
+.heat-flow-graphic{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.7rem;margin:1.5rem 0;padding:1rem;border-radius:14px;background:#f1f7fa}
+.heat-flow-graphic div{padding:.8rem;border:1px solid #d9e5eb;border-radius:10px;background:#fff}
+.heat-flow-graphic div:first-child{border-color:#efbe9d;background:#fff6ef}
+.heat-flow-graphic div:last-child{border-color:#b9dcea;background:#eefaff}
+.heat-flow-graphic small,.heat-flow-graphic strong{display:block;line-height:1.25}
+.heat-flow-graphic small{color:#63768a;font-size:.67rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.heat-flow-graphic strong{margin-top:.3rem;font-size:.86rem}
+.heat-flow-graphic>span{color:#d1571b;font-size:1.5rem;font-weight:900}
+.hero-lesson-card>a{display:flex;justify-content:space-between;align-items:center;padding:.85rem 1rem;border-radius:9px;background:#0b2e49;color:#fff;text-decoration:none;font-weight:850}
+.hero-lesson-card>a:hover{background:#13587d}
+.hero-lesson-card .preview-disclosure{display:block;margin-top:1rem;color:#596b7c;font-size:.72rem;line-height:1.45}
+
+.audience-section{padding:clamp(3rem,6vw,5rem) 0;background:#fff}
+.audience-section .eyebrow,.marketing-home .section-heading .eyebrow,.refreshed-bootcamp .section-heading .eyebrow,.refreshed-how .section-heading .eyebrow,.refreshed-pricing .section-heading .eyebrow,.home-next .eyebrow{color:#a84211}
+.audience-section h2{max-width:18ch;margin:0 0 1.6rem;font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.06;letter-spacing:-.045em}
+.audience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.audience-card{display:grid;grid-template-columns:50px 1fr;gap:1.1rem;padding:1.6rem;border:1px solid #d6e3ea;border-radius:17px;background:#f7fafb;text-decoration:none;box-shadow:0 8px 24px rgba(10,42,62,.04);transition:transform .18s,border-color .18s}
+.audience-card:hover{transform:translateY(-3px);border-color:#66b8d6}
+.audience-card:nth-child(2){background:#fff8f2}
+.audience-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:13px;background:#d9f2fa;color:#075b80;font-weight:900}
+.resource-icon{background:#ffe7d6;color:#a84311}
+.audience-card strong,.audience-card small,.audience-card b{display:block}
+.audience-card strong{font-size:1.25rem;line-height:1.2}
+.audience-card small{max-width:48ch;margin:.65rem 0 1rem;color:#54687a;font-size:.9rem;line-height:1.55}
+.audience-card b{color:#075d82;font-size:.87rem}
+.audience-card:nth-child(2) b{color:#a84311}
+
+.foundation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.foundation-grid article{min-height:245px;padding:1.5rem;border:1px solid #d7e4e9;border-radius:15px;background:#fff}
+.foundation-grid article>span{color:#a34517;font-size:.7rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.foundation-grid h3{margin:1.15rem 0 .55rem;font-size:1.28rem;line-height:1.17}
+.foundation-grid p{margin:0;color:#556a7b;font-size:.9rem}
+.section-action{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;margin-top:2rem}
+.preview-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(310px,.85fr);gap:clamp(2rem,7vw,6rem);align-items:center}
+.preview-split .section-heading{margin:0}
+.preview-boundary{padding:1rem 1.1rem;border-left:4px solid #d56125;border-radius:0 10px 10px 0;background:#fff5eb;color:#603e2d!important;font-size:.92rem!important;line-height:1.55}
+.preview-split .button{margin-top:.6rem}
+.preview-steps{display:grid;gap:.55rem;padding:1rem;border:1px solid #cbdfe8;border-radius:18px;background:#edf6f9;box-shadow:0 18px 42px rgba(13,49,71,.08)}
+.preview-steps div{display:grid;grid-template-columns:40px 1fr auto;gap:.75rem;align-items:center;padding:.8rem;border-radius:10px;background:#fff}
+.preview-steps span{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#0c4866;color:#fff;font-weight:900}
+.preview-steps strong{font-size:.98rem}
+.preview-steps small{max-width:125px;color:#5e7384;font-size:.75rem;text-align:right}
+.instructor-section{background:#0b2a40;color:#fff}
+.instructor-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(350px,1.2fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.instructor-section .section-heading{margin:0}
+.instructor-section .section-heading h2{color:#fff}
+.instructor-section .section-heading p:not(.eyebrow){color:#c6d6e1}
+.instructor-section .eyebrow{color:#85d8f5!important}
+.text-link-light{color:#a6e6fa;text-decoration:none;font-weight:850}
+.text-link-light:hover{text-decoration:underline}
+.instructor-section .video-frame{border:1px solid rgba(255,255,255,.2)}
+.home-next{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
+.home-next h2{max-width:18ch;margin:0;font-size:clamp(2.2rem,4vw,3.8rem);line-height:1.06;letter-spacing:-.045em}
+.home-next p:not(.eyebrow){max-width:70ch;color:#52687a}
+.home-next-actions{display:grid;gap:.7rem}
+
+.refreshed-bootcamp .bc-hero h1{max-width:14ch;font-size:clamp(3rem,5.8vw,5.4rem);line-height:1}
+.refreshed-bootcamp .bc-hero-inner{padding:clamp(3.5rem,7vw,6.5rem) 0}
+.refreshed-bootcamp .bc-hero .hero-fineprint{color:#b8cedc}
+.format-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);gap:clamp(2rem,7vw,6rem);align-items:start}
+.format-panel{display:grid;gap:.7rem}
+.format-panel>div{display:grid;grid-template-columns:48px 1fr;gap:1rem;align-items:center;padding:1rem;border:1px solid #d8e3e9;border-radius:12px;background:#fff}
+.format-panel b{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:#e6f6fb;color:#0b6588}
+.format-panel strong,.format-panel small{display:block}
+.format-panel small{color:#617184}
+.preview-section{background:#edf7fa}
+.refreshed-bootcamp .pricing-grid{margin-top:1rem}
+.refreshed-bootcamp .price-card{box-shadow:0 12px 30px rgba(8,17,31,.07)}
+.comparison-card{padding:1.5rem;border:1px solid #d4e2e9;border-radius:17px;background:#fff;box-shadow:0 16px 38px rgba(8,43,65,.07)}
+.comparison-card .eyebrow{color:#a84211!important}
+.comparison-card>div{padding:1rem 0;border-bottom:1px solid #dce7ed}
+.comparison-card strong,.comparison-card span{display:block}
+.comparison-card span{margin:.25rem 0 0;color:#566b7d;font-size:.92rem}
+.comparison-card>p:last-child{color:#647789;font-size:.85rem}
+.price-suffix{font-size:1rem;letter-spacing:0}
+.price-clarity{max-width:930px;margin:1.5rem auto 0;padding:1rem 1.25rem;border-left:4px solid #d56125;border-radius:0 10px 10px 0;background:#fff5eb;color:#583d2e}
+.price-clarity p{margin:.25rem 0 0}
+.refreshed-pricing .price-card small{text-align:left;line-height:1.45}
+.refreshed-pricing .price-detail{min-height:60px}
+
+@media(max-width:1100px){
+  .site-header{width:min(100% - 2rem,1180px)}
+  .brand img{width:170px}
+  .desktop-nav{gap:0}
+  .nav-link{padding:.55rem .4rem;font-size:.82rem}
+}
+@media(max-width:980px){
+  .marketing-home .home-hero-inner,.instructor-grid,.format-grid{grid-template-columns:1fr}
+  .hero-lesson-card{max-width:650px;transform:none}
+  .instructor-section .video-frame{max-width:850px;width:100%}
+}
+@media(max-width:800px){
+  .foundation-grid{grid-template-columns:repeat(2,1fr)}
+  .preview-split,.home-next{grid-template-columns:1fr}
+  .home-next-actions{display:flex;flex-wrap:wrap}
+}
+@media(max-width:620px){
+  .marketing-home .home-hero-inner{padding:3.1rem 0}
+  .marketing-home .home-hero h1{font-size:clamp(2.75rem,13vw,4.2rem)}
+  .audience-grid,.foundation-grid{grid-template-columns:1fr}
+  .foundation-grid article{min-height:0}
+  .audience-card{padding:1.25rem}
+  .hero-lesson-card{padding:1.15rem}
+  .hero-lesson-card h2{font-size:1.65rem}
+  .heat-flow-graphic{gap:.3rem;padding:.55rem}
+  .heat-flow-graphic div{padding:.55rem}
+  .heat-flow-graphic strong{font-size:.75rem}
+  .preview-steps div{grid-template-columns:38px 1fr}
+  .preview-steps small{grid-column:2;text-align:left;max-width:none;margin-top:-.4rem}
+  .home-next-actions{display:grid}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.audience-card{transition:none}}

@@ -2,6 +2,12 @@
 
 Updated: 2026-09-24. Ron chose the marketing site first because traffic has declined and there are no conversions. The recovered Unit 1 demo remains saved at `/unit-1-prototype/`; course expansion follows this marketing work.
 
+## Development build status
+
+The `feature/marketing-face` branch now implements a first reviewable marketing face: homepage, Boot Camp course page, how-it-works, pricing, selected Unit 1 preview entry, Ron bio, resource hub, and contact. The copy separates the existing 27-module Moodle/textbook/video/quiz course from the five-part lesson redesign. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook. The resource hub currently links back to original production article and PDF URLs while preserving their search entry points.
+
+This is a **noindex development build**. It does not yet replace the WordPress site or its existing checkout. The new marketing pages do not implement new enrollment, student accounts, email automation, or production analytics. The unresolved policy and checkout decisions are in [POLICY_LAUNCH_GAPS.md](POLICY_LAUNCH_GAPS.md); URL/media migration remains in [MIGRATION_AUDIT.md](MIGRATION_AUDIT.md). Do not route the public domain here until both are complete and verified.
+
 ## Goals and boundary
 
 - Preserve useful organic traffic from working technicians while building a separate acquisition path for beginners who may buy Boot Camp. Ranking gains are an outcome to measure, not a promise.
@@ -33,7 +39,7 @@ Prioritize article work using actual clicks, relevant impressions, query intent,
 
 Review the existing Cloudflare drafts together: home, `/hvac-boot-camp/`, `/how-it-works/`, `/pricing/`, and free sample. The offer must explain who it helps, what is included, Ron's role, limits of online learning, career/OJT support, total payment terms, textbook, and a clear next action. Add real proof and Ron's bio; use testimonials only with permission. Confirm all prices, refund terms, claims, and contact details against the current approved offer before launch.
 
-Keep `/try-boot-camp/` distinct from the saved `/unit-1-prototype/` until Ron chooses the public sample. Review contrast, navigation, speed, and form/CTA behavior on phones. Track beginner-journey sample starts, inquiries, checkout starts, and confirmed purchases separately from technician-article engagement and any voluntary course clicks. Do not send personal or payment data to analytics.
+Ron selected the recovered `/unit-1-prototype/` as the public development sample. The marketing CTAs now go there; `/try-boot-camp/` is an explanatory entry page that also opens the selected prototype. Review contrast, navigation, speed, and form/CTA behavior on phones. Track beginner-journey sample starts, inquiries, checkout starts, and confirmed purchases separately from technician-article engagement and any voluntary course clicks. Do not send personal or payment data to analytics.
 
 ## 4. Reuse articles for the right audience
 
