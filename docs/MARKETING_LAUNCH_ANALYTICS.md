@@ -15,7 +15,7 @@ After the public marketing and preserved article URLs, checkout handoff, policy 
 
 Use `npm run build:public` for the reviewed public release and `npm run build` for Worker and branch previews. A public build fails if the GA4 ID is absent or malformed, if checkout URLs are missing or loop to the marketing domain, or if the privacy, terms, or refund page still contains development approval markers. A successful public build is **not** by itself cutover approval; verify DNS routing, old article/PDF parity, policies, checkout, and ownership before routing the domain.
 
-The public build renders marketing HTML with `index,follow`, produces `/sitemap.xml` from generated indexable HTML pages, and publishes a `robots.txt` with the sitemap address. `/unit-1-prototype/` and the 404 page remain `noindex,nofollow` and are excluded from the sitemap. The `_headers` rules keep the Cloudflare `workers.dev` preview host and prototype response noindex even if public build assets are viewed there. A generated sitemap is only a discovery signal; submit and monitor it in Search Console at launch.
+The public build renders indexable marketing HTML, produces `/sitemap.xml` from generated indexable HTML pages, and publishes a `robots.txt` with the sitemap address. `/unit-1-prototype/`, `/hvac-boot-camp/course-purchase/`, and the 404 page remain `noindex,nofollow` and are excluded from the sitemap. The `_headers` rules keep the Cloudflare `workers.dev` preview host and prototype response noindex even if public build assets are viewed there. A generated sitemap is only a discovery signal; submit and monitor it in Search Console at launch.
 
 ## Events and QA
 
@@ -29,6 +29,6 @@ The analytics loader is absent from development, prototype, and 404 pages. On pu
 | `contact_intent` | Email or scheduler link click | Contact intent; **not** a submitted lead |
 | `begin_checkout` | Click on one of the two tagged pricing checkout links | Checkout intent; **not** a confirmed payment |
 
-The site emits **no** `generate_lead` or `purchase` event: there is no confirmed form submission or transaction callback on this marketing site. Configure those only after the actual checkout/account system reports a verified outcome, and prevent duplicates. Do not put email, phone, student details, or payment data into analytics parameters.
+The site emits **no** `generate_lead` or `purchase` event: there is no confirmed form submission or transaction callback on this marketing site. The static thank-you page is accessible without paying and must not be used as proof of purchase. Ron's manual Moodle enrollment is currently separate from GA4. Configure a purchase event only after verified PayPal transaction evidence can be reported without duplicates. Do not put email, phone, student details, or payment data into analytics parameters.
 
 At launch, inspect built HTML/headers/robots/sitemap; test each pricing link on mobile and desktop; confirm GA4 Realtime and DebugView events on the **public hostname**, then compare Search Console and GA4 by landing page, source, and device. Confirm the privacy notice accurately describes Google Analytics, YouTube, scheduling, and payment handoffs before GA4 is enabled. Ron and El should use read-only GA4/Search Console access for ongoing 7-, 28-, and 90-day comparisons.
