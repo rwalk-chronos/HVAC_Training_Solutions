@@ -24,11 +24,11 @@ The active implementation is this repository.
 As of September 24, 2026:
 
 - Astro and Cloudflare scaffolding are present.
-- The current-course marketing build and 154 preserved post paths were reviewed in PR #7 and merged through PR #8 to `main`, the development Worker's configured production branch.
+- The current-course marketing build and 154 preserved post paths were reviewed in PR #7 and merged through PR #8 to `main`. PR #10 added Ron's two PayPal hosted buttons, and PR #11 preserved `/hvac-boot-camp/course-purchase/` as the manual-enrollment thank-you page. The development Worker has displayed builds from `recovery/money-pages-unit1`, which is synchronized with `main`; check its current source branch before relying on automatic deployment.
 - The Cloudflare Worker URL is the development review site; the public domain still runs WordPress on SiteGround.
 - Staging remains `noindex, nofollow`.
 - The recovered Unit 1 prototype is committed, but its learning pattern, media selection, progress, and phone experience still need review and development.
-- PayPal, accounts, and automatic enrollment are planned but not yet implemented.
+- The first marketing release links to Ron's existing PayPal hosted buttons. Ron verifies payments and manually enrolls students in the existing Moodle course. The development marketing site does not verify payment, create accounts, send account email, or grant access. Automatic enrollment belongs to the later replacement platform.
 - `rwalk-chronos/hvac-lti` and `rwalk-chronos/ai-hvac-lms` are failed historical attempts and are not migration sources.
 
 ## Current priority
@@ -49,7 +49,7 @@ Public experience                 Student experience
 /checkout/
 ```
 
-The future student experience will share the marketing site's design, navigation, account and billing boundaries, analytics vocabulary, and deployment pipeline. The first marketing release will still hand off to existing Moodle and checkout services.
+The future student experience will share the marketing site's design, navigation, account and billing boundaries, analytics vocabulary, and deployment pipeline. The first marketing release links to existing PayPal checkout and relies on Ron's manual Moodle enrollment.
 
 ## Near-term scope
 
