@@ -6,6 +6,7 @@ const articles = JSON.parse(await readFile("src/data/legacy-articles.json", "utf
 const requiredFiles = [
   "dist/index.html",
   "dist/hvac-boot-camp/index.html",
+  "dist/hvac-boot-camp/course-purchase/index.html",
   "dist/how-it-works/index.html",
   "dist/pricing/index.html",
   "dist/try-boot-camp/index.html",
@@ -38,9 +39,10 @@ for (const file of requiredFiles) {
   await access(file);
 }
 
-const [home, bootCamp, howItWorks, pricing, trial, resources, about, contact, beginner, blog, nate, refrigeration, oldTechCourse, epaGuide, resourceGuide, privacy, terms, refund, prototype, notFound, robots, headers] = await Promise.all([
+const [home, bootCamp, purchase, howItWorks, pricing, trial, resources, about, contact, beginner, blog, nate, refrigeration, oldTechCourse, epaGuide, resourceGuide, privacy, terms, refund, prototype, notFound, robots, headers] = await Promise.all([
   readFile("dist/index.html", "utf8"),
   readFile("dist/hvac-boot-camp/index.html", "utf8"),
+  readFile("dist/hvac-boot-camp/course-purchase/index.html", "utf8"),
   readFile("dist/how-it-works/index.html", "utf8"),
   readFile("dist/pricing/index.html", "utf8"),
   readFile("dist/try-boot-camp/index.html", "utf8"),
@@ -66,6 +68,7 @@ const [home, bootCamp, howItWorks, pricing, trial, resources, about, contact, be
 const builtPages = [
   ["/", home],
   ["/hvac-boot-camp/", bootCamp],
+  ["/hvac-boot-camp/course-purchase/", purchase],
   ["/how-it-works/", howItWorks],
   ["/pricing/", pricing],
   ["/try-boot-camp/", trial],
@@ -86,7 +89,7 @@ const builtPages = [
 ];
 
 for (const [route, html] of builtPages) {
-  const expected = publicLaunch && !["/unit-1-prototype/", "/hvac-tech-course/"].includes(route) ? "index,follow" : "noindex,nofollow";
+  const expected = publicLaunch && !["/unit-1-prototype/", "/hvac-tech-course/", "/hvac-boot-camp/course-purchase/"].includes(route) ? "index,follow" : "noindex,nofollow";
   if (!html.includes(`name="robots" content="${expected}"`)) {
     throw new Error(`${route} is missing its ${expected} directive`);
   }
@@ -161,6 +164,10 @@ if (!trial.includes("27-module Moodle course") || !bootCamp.includes("Moodle")) 
 
 if (!pricing.includes("679 total") || !pricing.includes("textbook")) {
   throw new Error("Pricing must disclose the payment total and separate textbook");
+}
+
+if (!purchase.includes("manually set up your account") || !purchase.includes("does not confirm a payment")) {
+  throw new Error("Purchase return page must explain manual enrollment without claiming payment confirmation");
 }
 
 if (!resources.includes("EPA.pdf")) {
