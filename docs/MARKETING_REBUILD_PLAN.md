@@ -4,7 +4,7 @@ Updated: 2026-09-24. Ron chose to launch the new marketing format for the **exis
 
 ## Development build status
 
-The `feature/marketing-face` branch implements a reviewable marketing face: homepage, Boot Camp course page, how-it-works, pricing, a sample of Ron's current teaching, Ron bio, resource hub, contact, and a dedicated `/how-to-learn-hvac/` beginner guide. Sales copy describes the existing 27-module Moodle/textbook/video/quiz course. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook.
+The marketing build is merged to `main` and deployed on the Cloudflare development Worker through PRs #7 and #8. It includes a reviewable homepage, Boot Camp course page, how-it-works, pricing, a sample of Ron's current teaching, Ron bio, resource hub, contact, and a dedicated `/how-to-learn-hvac/` beginner guide. Sales copy describes the existing 27-module Moodle/textbook/video/quiz course. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook.
 
 The development build now serves **all 154 published WordPress post paths**, including the dedicated beginner guide, from the original URLs. The archive index is `/blog/`; the resource hub links directly to the preserved local articles. `/EPA.pdf` is copied at the original path. Twenty clearly thin or obsolete posts remain accessible but have `indexable=false` for a future public build. This is URL continuity and an editorial starting point, **not a completed technical review** of 154 articles. See the [versioned URL inventory](LEGACY_URL_INVENTORY_2026-09-24.csv) and [migration audit](MIGRATION_AUDIT.md).
 
