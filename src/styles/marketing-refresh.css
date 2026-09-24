@@ -4,7 +4,7 @@
 .site-header{width:min(1240px,calc(100% - 2.5rem))}
 .brand img{width:190px}
 .nav-link{padding:.6rem .55rem}
-.nav-cta{background:#e96520}
+.nav-cta{background:var(--orange-cta)}
 .nav-cta:hover{background:#bd4911}
 .footer-bottom{align-items:center}
 

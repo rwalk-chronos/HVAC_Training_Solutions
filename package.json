@@ -7,11 +7,13 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "node scripts/restore-media.mjs && astro dev",
+    "build": "node scripts/restore-media.mjs && astro build",
+    "build:public": "MARKETING_PUBLIC_LAUNCH=1 npm run build",
     "verify": "npm run build && node scripts/verify-build.mjs",
+    "verify:public": "npm run build:public && MARKETING_PUBLIC_LAUNCH=1 node scripts/verify-build.mjs",
     "preview": "astro preview",
-    "deploy": "astro build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "astro": "7.3.3"

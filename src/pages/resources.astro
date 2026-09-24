@@ -2,31 +2,41 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/support-pages.css";
 
-const legacy = "https://www.hvactrainingsolutions.net";
-
 const technicianGuides = [
   {
     title: "Refrigerant recovery without a recovery machine",
     description: "A field-focused article about a specific recovery situation.",
-    href: `${legacy}/recovering-refrigerant-without-using-a-refrigerant-recovery-machine/`,
+    href: "/recovering-refrigerant-without-using-a-refrigerant-recovery-machine/",
     tag: "Refrigerant handling",
   },
   {
     title: "The PT chart and saturation temperature",
     description: "Connect refrigerant pressure readings with saturation temperature.",
-    href: `${legacy}/hvac-training-the-pt-chart-and-saturation-temperature/`,
+    href: "/hvac-training-the-pt-chart-and-saturation-temperature/",
     tag: "Refrigeration",
   },
   {
     title: "Steps to measuring superheat",
     description: "A practical reference for one of the measurements technicians use.",
-    href: `${legacy}/steps-to-measuring-superheat/`,
+    href: "/steps-to-measuring-superheat/",
     tag: "Measurements",
   },
   {
     title: "Air conditioning repair: troubleshooting process",
     description: "Work through the problem in a deliberate order.",
-    href: `${legacy}/air-conditioning-repair-troubleshooting-process/`,
+    href: "/air-conditioning-repair-troubleshooting-process/",
+    tag: "Troubleshooting",
+  },
+  {
+    title: "Airflow calculation",
+    description: "The original airflow calculation reference for technicians.",
+    href: "/airflow-calculation/",
+    tag: "Airflow",
+  },
+  {
+    title: "Troubleshooting a Honeywell Smart Valve",
+    description: "Archived equipment-specific troubleshooting notes.",
+    href: "/hvac-training-troubleshooting-a-honeywell-smart-valve/",
     tag: "Troubleshooting",
   },
 ];
@@ -35,17 +45,17 @@ const starterGuides = [
   {
     title: "How to learn HVAC",
     description: "A starting point for exploring the trade and the learning path.",
-    href: `${legacy}/how-to-learn-hvac/`,
+    href: "/how-to-learn-hvac/",
   },
   {
     title: "What does it take to be an air conditioning technician?",
     description: "Get a clearer picture of the work before choosing training.",
-    href: `${legacy}/what-does-it-take-to-be-an-air-conditioning-technician/`,
+    href: "/what-does-it-take-to-be-an-air-conditioning-technician/",
   },
   {
     title: "Is online HVAC training right for you?",
     description: "Consider what online study can provide and where hands-on learning fits.",
-    href: `${legacy}/is-online-hvac-training-right-for-you/`,
+    href: "/is-online-hvac-training-right-for-you/",
   },
 ];
 ---
@@ -86,6 +96,7 @@ const starterGuides = [
             </article>
           ))}
         </div>
+        <p class="resource-location-note"><a class="support-inline-link" href="/blog/">Browse the technical article library →</a></p>
       </div>
     </section>
 
@@ -117,14 +128,14 @@ const starterGuides = [
           <div>
             <p class="support-eyebrow">EPA Section 608 study</p>
             <h2 id="epa-title">Looking for the EPA study material?</h2>
-            <p>The existing study page and PDF are still available while we review and move the resource library. The guide predates current refrigerant rules, so check current EPA requirements and approved exam information before using it to prepare for certification.</p>
+            <p>We preserved the original study page and PDF at their existing addresses. The PDF was created in 2011; check current EPA requirements and approved exam information before using it to prepare for certification.</p>
           </div>
           <div class="epa-resource-links">
-            <a class="button button-primary" href={`${legacy}/EPA.pdf`}>Open EPA study PDF ↗</a>
-            <a class="support-inline-link" href={`${legacy}/epa-study-and-practice-test/`}>Read the study and practice test page ↗</a>
+            <a class="button button-primary" href="/EPA.pdf">Open EPA study PDF ↗</a>
+            <a class="support-inline-link" href="/epa-study-and-practice-test/">Review EPA study information ↗</a>
           </div>
         </div>
-        <p class="resource-location-note">These articles and the PDF currently open on the existing HVAC Training Solutions website. We are preserving the original article addresses as the new site is developed.</p>
+        <p class="resource-location-note">These archived articles retain their original addresses. Some equipment details and regulations may have changed since publication.</p>
       </div>
     </section>
 
@@ -133,11 +144,11 @@ const starterGuides = [
         <div class="support-heading">
           <p class="support-eyebrow">For experienced technicians</p>
           <h2 id="other-courses-title">Looking for other training?</h2>
-          <p>The existing site also has NATE preparation and commercial refrigeration course pages. Review their current scope and availability on the live site before deciding.</p>
+          <p>Ron has also offered NATE preparation and commercial refrigeration courses. Review their course overviews and ask about current availability before deciding.</p>
         </div>
         <div class="resource-grid">
-          <article class="resource-card"><span class="resource-tag">Exam preparation</span><h3><a href={`${legacy}/nate/`}>NATE course <span aria-hidden="true">↗</span></a></h3><p>Existing course information for technicians exploring NATE exams.</p></article>
-          <article class="resource-card"><span class="resource-tag">Refrigeration</span><h3><a href={`${legacy}/commrecial-refrigeration-hvac-technicians/`}>Commercial refrigeration <span aria-hidden="true">↗</span></a></h3><p>Existing course information for HVAC technicians expanding into refrigeration.</p></article>
+          <article class="resource-card"><span class="resource-tag">Exam preparation</span><h3><a href="/nate/">NATE course <span aria-hidden="true">↗</span></a></h3><p>Existing course information for technicians exploring NATE exams.</p></article>
+          <article class="resource-card"><span class="resource-tag">Refrigeration</span><h3><a href="/commrecial-refrigeration-hvac-technicians/">Commercial refrigeration <span aria-hidden="true">↗</span></a></h3><p>Existing course information for HVAC technicians expanding into refrigeration.</p></article>
         </div>
       </div>
     </section>

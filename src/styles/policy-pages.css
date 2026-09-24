@@ -1,0 +1,22 @@
+.policy-hero{padding:clamp(3.25rem,7vw,5.5rem) 1.5rem;background:linear-gradient(135deg,#081726,#14304a);color:#fff}
+.policy-hero-inner,.policy-layout{width:min(1020px,100%);margin:0 auto}
+.policy-hero h1{max-width:18ch;margin:0;font-size:clamp(2.55rem,5vw,4.6rem);line-height:1.04;letter-spacing:-.045em}
+.policy-hero p:last-child{max-width:70ch;margin:1.15rem 0 0;color:#d3e4f4;font-size:1.08rem}
+.policy-layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:clamp(2rem,5vw,4rem);padding:clamp(3rem,6vw,5rem) 0}
+.policy-body{min-width:0}
+.policy-body h2{margin:2.3rem 0 .6rem;color:var(--ink);font-size:clamp(1.45rem,2.6vw,2rem);line-height:1.2;letter-spacing:-.025em}
+.policy-body h2:first-child{margin-top:0}
+.policy-body p,.policy-body li{color:#4c5d70;line-height:1.75}
+.policy-body a{color:var(--blue-dark);text-underline-offset:3px}
+.policy-body ul{padding-left:1.3rem}
+.policy-review{padding:1.2rem 1.35rem;border:1px solid #e9d8bf;border-left:4px solid var(--orange);border-radius:12px;background:var(--cream)}
+.policy-review strong{display:block;color:#623b18}
+.policy-review p{margin:.4rem 0 0;color:#6b523c}
+.policy-aside{align-self:start;position:sticky;top:7.5rem;padding:1.35rem;border:1px solid var(--line);border-radius:15px;background:#f8fbfd}
+.policy-aside strong{display:block;margin-bottom:.8rem;color:var(--ink)}
+.policy-aside a{display:block;margin:.55rem 0;color:var(--blue-dark);font-weight:750;text-decoration:none}
+.policy-aside a:hover{text-decoration:underline}
+.policy-action{margin-top:2.3rem;padding:1.4rem;border-radius:14px;background:var(--blue-pale)}
+.policy-action h2{margin:0 0 .4rem;font-size:1.45rem}
+.policy-action p{margin:0 0 1.1rem}
+@media(max-width:760px){.policy-layout{grid-template-columns:1fr;padding:3rem 0}.policy-aside{position:static;grid-row:1}}

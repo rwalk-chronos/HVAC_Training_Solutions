@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCheckoutLinks } from "../lib/checkout";
+
+const checkout = getCheckoutLinks();
 ---
 
 <BaseLayout
@@ -13,15 +16,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="pricing-grid pricing-grid-light">
         <article class="price-card featured">
           <p class="price-badge">Lowest total</p><p class="price-label">Pay in full</p><p class="price">$479</p><p class="price-detail">One payment. $200 less than the monthly total.</p>
-          <ul class="price-list"><li>Existing 27-module HVAC Boot Camp</li><li>Moodle access, videos, and quizzes</li><li>Instructor course guidance</li></ul>
-          <a class="button button-primary" href="https://www.hvactrainingsolutions.net/hvac-boot-camp/pay-in-full/">Continue to current checkout ↗</a>
-          <small>Review the checkout terms and policies before paying.</small>
+          <ul class="price-list"><li>Existing 27-module HVAC Boot Camp</li><li>Moodle access, videos, and quizzes</li><li>Self-paced online study</li></ul>
+          <a class="button button-primary" href={checkout.full} data-checkout-plan="full" data-analytics-event="begin_checkout" data-payment-plan="full">Continue to current checkout ↗</a>
+          <small>Before paying, review the <a href="/terms/">terms</a>, <a href="/refund-policy/">refund policy</a>, and <a href="/privacy/">privacy policy</a>. Confirm the payment terms at checkout.</small>
         </article>
         <article class="price-card">
           <p class="price-label">Monthly payments</p><p class="price">$97 <span class="price-suffix">to start</span></p><p class="price-detail">$97 today, then six monthly payments of $97. <strong>$679 total.</strong></p>
-          <ul class="price-list"><li>Same existing 27-module course</li><li>Moodle access, videos, and quizzes</li><li>Instructor course guidance</li></ul>
-          <a class="button button-dark" href="https://www.hvactrainingsolutions.net/hvac-boot-camp/monthly-plan/">Continue to current checkout ↗</a>
-          <small>Review the checkout terms and policies before paying.</small>
+          <ul class="price-list"><li>Same existing 27-module course</li><li>Moodle access, videos, and quizzes</li><li>Self-paced online study</li></ul>
+          <a class="button button-dark" href={checkout.monthly} data-checkout-plan="monthly" data-analytics-event="begin_checkout" data-payment-plan="monthly">Continue to current checkout ↗</a>
+          <small>Before paying, review the <a href="/terms/">terms</a>, <a href="/refund-policy/">refund policy</a>, and <a href="/privacy/">privacy policy</a>. Confirm the payment terms at checkout.</small>
         </article>
       </div>
       <div class="price-clarity"><strong>Budget for the textbook separately.</strong><p>The current course uses <em>Residential Construction Academy HVAC, 2nd Edition</em> by Eugene Silberstein. The purchase price above does not include it.</p></div>
@@ -45,3 +48,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div></section>
   </div>
 </BaseLayout>
+
+<style>
+  .price-card small { font-size: .8125rem; }
+  .price-card small a { color: #075f96; font-weight: 700; }
+</style>

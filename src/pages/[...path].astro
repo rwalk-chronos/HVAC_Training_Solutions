@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import articles from "../data/legacy-articles.json";
+import "../styles/article.css";
+
+export function getStaticPaths() {
+  return articles.filter((article) => !["/epa-study-and-practice-test/", "/how-to-learn-hvac/"].includes(article.path)).map((article) => ({
+    params: { path: article.path.replace(/^\/+|\/+$/g, "") },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const refrigerantRecoveryArchive = article.path === "/recovering-refrigerant-without-using-a-refrigerant-recovery-machine/";
+const published = /^\d{4}-\d\d-\d\d$/.test(article.date)
+  ? new Date(`${article.date}T12:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
+  : null;
+---
+
+<BaseLayout title={`${article.title} | HVAC Training Solutions`} description={article.description} indexable={article.indexable !== false}>
+  <div class="archive-article">
+    <div class="archive-article-header">
+      <div class="archive-article-shell">
+        <nav aria-label="Breadcrumb" class="archive-breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/resources/">Resources</a><span aria-hidden="true">/</span><span>Article</span></nav>
+        <p class="archive-category">{article.category}</p>
+        <h1>{article.title}</h1>
+        <p class="archive-byline">From the HVAC Training Solutions archive{published ? ` · Originally published ${published}` : ""}</p>
+      </div>
+    </div>
+
+    <div class="archive-article-shell archive-article-layout">
+      <article class="archive-article-main">
+        <aside class="archive-notice" aria-label="Archived article notice">
+          <strong>{refrigerantRecoveryArchive ? "Historical refrigerant recovery article — do not use as a current field procedure" : "Archived technical article"}</strong>
+          {refrigerantRecoveryArchive ? (
+            <p>These older steps have not been checked against today’s service requirements or your equipment. The EPA specifies recovery equipment and evacuation requirements. Review its <a href="https://www.epa.gov/section608/stationary-refrigeration-service-practice-requirements">current service practices</a> and <a href="https://www.epa.gov/section608/refrigerant-recovery-and-recycling-equipment-certification">recovery equipment guidance</a> before doing this work.</p>
+          ) : (
+            <p>This article preserves Ron’s original lesson. Verify equipment instructions, current requirements, and procedures before field work.</p>
+          )}
+        </aside>
+        <div class="archive-prose" set:html={article.html} />
+        {article.missingMedia.length > 0 && <p class="archive-media-note">Some original images are still being transferred into this development build.</p>}
+        <div class="archive-article-end">
+          <a href="/resources/">← Browse free resources</a>
+          <a href="/contact/">Ask about HVAC training →</a>
+        </div>
+      </article>
+      <aside class="archive-aside" aria-label="Next steps">
+        <p class="archive-category">New to HVAC?</p>
+        <h2>Build the fundamentals.</h2>
+        <p>HVAC Boot Camp is Ron Walker’s existing online course with 27 modules. See what it covers and watch Ron teach before enrolling.</p>
+        <a href="/hvac-boot-camp/">Explore HVAC Boot Camp <span aria-hidden="true">→</span></a>
+        <a href="/try-boot-camp/">Watch a free lesson <span aria-hidden="true">→</span></a>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

@@ -4,9 +4,11 @@ Updated: 2026-09-24. Ron chose to launch the new marketing format for the **exis
 
 ## Development build status
 
-The `feature/marketing-face` branch implements a first reviewable marketing face: homepage, Boot Camp course page, how-it-works, pricing, a sample of Ron's current teaching, Ron bio, resource hub, and contact. Public sales copy describes the existing 27-module Moodle/textbook/video/quiz course. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook. The resource hub currently links back to original production article and PDF URLs while preserving their search entry points.
+The `feature/marketing-face` branch implements a reviewable marketing face: homepage, Boot Camp course page, how-it-works, pricing, a sample of Ron's current teaching, Ron bio, resource hub, contact, and a dedicated `/how-to-learn-hvac/` beginner guide. Sales copy describes the existing 27-module Moodle/textbook/video/quiz course. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook.
 
-This is a **noindex development build**. It does not yet replace the WordPress site or its existing checkout. The new marketing pages do not implement new enrollment, student accounts, email automation, or production analytics. The unresolved policy and checkout decisions are in [POLICY_LAUNCH_GAPS.md](POLICY_LAUNCH_GAPS.md); URL/media migration remains in [MIGRATION_AUDIT.md](MIGRATION_AUDIT.md). Do not route the public domain here until both are complete and verified.
+The development build now serves **all 154 published WordPress post paths**, including the dedicated beginner guide, from the original URLs. The archive index is `/blog/`; the resource hub links directly to the preserved local articles. `/EPA.pdf` is copied at the original path. Twenty clearly thin or obsolete posts remain accessible but have `indexable=false` for a future public build. This is URL continuity and an editorial starting point, **not a completed technical review** of 154 articles. See the [versioned URL inventory](LEGACY_URL_INVENTORY_2026-09-24.csv) and [migration audit](MIGRATION_AUDIT.md).
+
+This is a **noindex development build**. It does not yet replace the WordPress site or its existing checkout. GA4 event loading is gated to a configured, approved public launch; the development preview does not send GA4 events. The new site does not implement enrollment, student accounts, or email automation. There are **21 unresolved published WordPress page paths** (including current checkout/enrollment), 78 missing legacy media paths, and policy and payment decisions to resolve before cutover. See [POLICY_LAUNCH_GAPS.md](POLICY_LAUNCH_GAPS.md), [MARKETING_LAUNCH_ANALYTICS.md](MARKETING_LAUNCH_ANALYTICS.md), and [MIGRATION_AUDIT.md](MIGRATION_AUDIT.md). Do not route the public domain here until those gates are complete and verified.
 
 ## Goals and boundary
 
@@ -44,7 +46,7 @@ For the interim launch, `/try-boot-camp/` shows Ron's public teaching video as a
 
 ## 4. Reuse articles for the right audience
 
-Ron's live observations are that many visitors are working HVAC technicians looking up a specific repair. The first five days in the September 24 Search Console export are consistent with strong technical and EPA-study demand, but they do not establish historical trends or prove who purchased. Treat audience intent as a hypothesis to validate with page/query data and GA4 engagement.
+Ron's live observations are that many visitors are working HVAC technicians looking up a specific repair. The September 24 Search Console **Pages export is filtered to the last three months**: `/EPA.pdf` received 260 of 474 clicks, followed by technical articles. GA4 was only recently re-established and has a few days of data. Neither source establishes a long-term trend or proves who purchased. Treat audience intent as a hypothesis to validate with page/query data and GA4 engagement.
 
 | Visitor intent | Page job | Appropriate next action | Primary measure |
 | --- | --- | --- | --- |
@@ -53,9 +55,9 @@ Ron's live observations are that many visitors are working HVAC technicians look
 | EPA 608 study seeker | Supply the requested study resource and current context | Preserve the PDF URL; offer relevant study/help options only when verified | PDF clicks, resource engagement |
 | Employer evaluating training | Explain outcomes and supervised OJT support | Employer inquiry when this offer is defined | Qualified employer inquiries |
 
-Migrate a representative high-value repair article at its original URL. Correct technical claims, images, byline/contact details, old course references, and template contamination. Give the reader the answer first, related technical reading second, and a course link only where it genuinely fits. Approve this article pattern before repeating it.
+The WXR import already preserves 154 post URLs and filters unsafe WordPress markup and unrelated outbound links. The original prose remains largely unedited. **Next**, technically and editorially review the leading repair pages in traffic order, recover missing images from SiteGround backup where possible, fix dated details and old course references, and approve a revised article pattern. The refrigerant recovery page has an explicit historical warning and links to current EPA guidance because its old procedure has not been validated as current instruction.
 
-Build a separate beginner search-content path around career entry, learning HVAC from zero, training options, cost, and the difference between online fundamentals and supervised field work. Connect these pages directly to the Boot Camp money pages. Use actual queries to prioritize and avoid bulk thin location pages. Do not count every technician article visit as a failed Boot Camp conversion.
+The dedicated beginner guide at `/how-to-learn-hvac/` starts that search-content path. Expand only where query evidence supports career entry, training options, cost, and the difference between online fundamentals and supervised field work. Connect these pages directly to the Boot Camp money pages. Avoid bulk thin location pages. Do not count every technician article visit as a failed Boot Camp conversion.
 
 ## 5. Solve checkout and student handoff
 
@@ -69,4 +71,4 @@ After marketing launch, compare 7-, 28-, and 90-day Search Console and GA4 windo
 
 ## First build milestone
 
-Deliver the URL/analytics inventory with audience intent, one approved Boot Camp page pattern for beginners, one migrated repair article at its existing URL, and a tested checkout/contact handoff. Then expand the money pages and priority article batch. This milestone makes the migration concrete without waiting for a full course rewrite.
+The reviewable marketing pages, beginner guide, 154 post paths, resource PDFs, GA4 launch scaffolding, and versioned URL inventory are built in development. **Next milestone:** approve the Boot Camp page pattern and article revisions, restore priority media, settle the 21 unresolved published page paths, approve policies, then test the checkout and Moodle enrollment handoff end to end. Public-domain migration remains gated on those results and a rollback plan.
