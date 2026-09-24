@@ -25,6 +25,8 @@ Do not convert the remaining course or resume public-platform implementation unt
 
 The development Worker is `hvac-training-solutions` at `https://hvac-training-solutions.rawalker0619.workers.dev`. Its Git repository is `rwalk-chronos/HVAC_Training_Solutions`. For this development phase, Cloudflare Workers Builds uses `recovery/money-pages-unit1` as the Worker's production branch. That label controls only this development Worker; the live WordPress and Moodle sites remain separate.
 
+The **Cloudflare Workers and Pages** GitHub App must have repository access to `rwalk-chronos/HVAC_Training_Solutions`. On September 24, 2026, the app was found with only the `Embody` repository selected; adding this repository cleared the disconnected-account warning. If the warning returns, inspect GitHub **Settings > Applications > Installed GitHub Apps > Cloudflare Workers and Pages > Repository access** before changing Worker build settings.
+
 Build settings: repository root `/`, build command `npm run build`, deploy command `npx wrangler deploy`. Pushes to the selected branch should build and update the development Worker automatically. Changing the selected branch does not build its existing HEAD; a new push is needed to test the connection. Inspect **Deployments > Recent builds** and the build log after each push. Record the Git commit SHA and confirm `/unit-1-prototype/` on the Worker URL before reviewing the page.
 
 Other branches can produce isolated previews after Worker Previews are set up and the preview command is configured. The current recovery branch is the active development Worker branch, not an isolated preview. Do not connect the public domain or move the production branch to `main` until the review and cutover decisions are made.
