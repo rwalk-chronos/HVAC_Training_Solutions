@@ -1,0 +1,33 @@
+[
+  {
+    "destination": "public/EPA.pdf",
+    "sha256": "430faecf433875c85e0e0cae660a64b760074356590b12cff683de24b9ecc6a1",
+    "parts": [
+      "EPA.pdf.00.part",
+      "EPA.pdf.01.part"
+    ]
+  },
+  {
+    "destination": "public/wp-content/uploads/2015/05/CompressorInfoGraph.pdf",
+    "sha256": "141989dbcc6c0f6bac6547099e72bf08b88414c6eee4d0c0478b7daaedbb9d8f",
+    "parts": [
+      "CompressorInfoGraph.pdf.00.part",
+      "CompressorInfoGraph.pdf.01.part",
+      "CompressorInfoGraph.pdf.02.part",
+      "CompressorInfoGraph.pdf.03.part"
+    ]
+  },
+  {
+    "destination": "public/wp-content/uploads/2015/05/ResourceGuide.pdf",
+    "sha256": "c8553ed00bd80999a76a1fd8bb06c02a8bd539608526bab21efac7d629ceb815",
+    "parts": [
+      "ResourceGuide.pdf.00.part",
+      "ResourceGuide.pdf.01.part",
+      "ResourceGuide.pdf.02.part",
+      "ResourceGuide.pdf.03.part",
+      "ResourceGuide.pdf.04.part",
+      "ResourceGuide.pdf.05.part",
+      "ResourceGuide.pdf.06.part"
+    ]
+  }
+]

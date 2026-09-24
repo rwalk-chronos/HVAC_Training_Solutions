@@ -2,11 +2,9 @@
 
 ## Status and priority
 
-This is the current development priority. Public-site development is paused while HVAC Training Solutions defines, builds, and tests the structure and delivery of Unit 1.
+The recovered five-section `/unit-1-prototype/` remains Ron's selected course baseline. On September 24, 2026, Ron chose to build the marketing site first because traffic and conversion have declined. Unit 1 implementation is paused while the marketing pages and migration plan are built; its source and media remain saved. See [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md).
 
-No additional marketing pages, checkout, account, email, PayPal, automatic-enrollment, full-course conversion, or production work should proceed merely to stay busy. Planning may continue, but implementation returns to the public platform only after the Unit 1 learning pattern is accepted.
-
-> If Unit 1 does not make a beginner feel capable, teach the approved material accurately, and make the learner want to continue, nothing else is ready to scale.
+When course work resumes, review the prototype on a phone, validate instruction and playback, and use this document to improve its learning pattern.
 
 ## Learning position
 
@@ -39,13 +37,17 @@ The experience should provide:
 - adding points, streaks, badges, or leaderboards that do not represent real competence
 - waiting until course completion to connect learning to employment
 
-## Source-content rule
+## Current content and source rule
 
-The supplied Unit 1 course material, images, presentations, videos, checks, and instructor intent are the authoritative source for the pilot.
+The original September 22 prototype was recovered on September 24. Ron selected its five-section sequence at `/unit-1-prototype/` as the sole Unit 1 development baseline. Improve it in place, preserving the approved concepts and selected media until each change is reviewed. See [RECOVERY_STATE.md](RECOVERY_STATE.md). The later `/unit-1/lesson-1/` reconstruction was rejected and removed.
+
+The current [Google Drive student-facing Unit 1 draft](https://docs.google.com/document/d/1Ei8vYLgxcckZS9kDFMLwwbguQfH5eOtfNIfg64JlSHg/edit) governs the five-lesson content sequence and its approved checks. This document governs the interaction and learning pattern. The older Library `HVAC Boot Camp — Unit 1 Pilot` is a UX reference only; its eight-page Matter curriculum is superseded. Original course media and Ron's instructor intent inform each lesson after the assets are reviewed.
+
+PR #6 on `recovery/money-pages-unit1` is the durable implementation baseline. Save each accepted lesson and selected assets in GitHub before moving to the next. Cloudflare previews are review deployments, not source storage. The project Library has original MP4s; do not rely on conversation attachments as the only copy. Keep a source and revision map for selected media.
 
 Before building:
 
-1. Inventory every Unit 1 page, concept, image, presentation, video, question, and downloadable asset.
+1. Inventory the material relevant to the lesson being built, including its concepts, images, videos, questions, and downloadable assets; complete the full inventory before declaring all of Unit 1 accepted.
 2. Identify the learning objective and HVAC relevance of each concept.
 3. Mark duplicate, outdated, unclear, missing, or safety-sensitive material for Ron's review.
 4. Preserve original meaning while redesigning delivery.
@@ -139,7 +141,7 @@ AI failure must not block the lesson. Approved static explanations and normal co
 
 Meaningful progress statements should describe real competence, for example:
 
-> You can now explain why a liquid changes shape while keeping its volume.
+> You can now explain why heat moves from warmer indoor air into a colder evaporator coil.
 
 The experience may acknowledge genuine milestones such as Unit 1 complete or Interview Ready. It should avoid points for opening pages, forced streaks, cartoon rewards, and leaderboards.
 

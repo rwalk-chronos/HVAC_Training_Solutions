@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Unit 1 Review | How Air Conditioning Moves Heat" description="Development review of HVAC Boot Camp Unit 1.">
+  <main class="unit-review">
+    <header class="unit-review-header">
+      <div class="unit-review-title"><p>HVAC Boot Camp · Unit 1</p><h1>How air conditioning moves heat</h1><span>Development review · Progress is not recorded</span></div>
+      <div class="unit-review-progress" aria-label="Unit progress"><span data-unit-progress></span></div>
+      <nav class="lesson-jump" aria-label="Unit 1 lessons"><a href="#lesson-1">1<span>Cooling</span></a><a href="#lesson-2">2<span>Heat</span></a><a href="#lesson-3">3<span>State</span></a><a href="#lesson-4">4<span>Sensible/latent</span></a><a href="#lesson-5">5<span>Pressure</span></a></nav>
+    </header>
+
+    <section class="unit-intro lesson-panel">
+      <p class="prototype-kicker">Before you begin</p><h2>No formulas. Follow what the heat and refrigerant are doing.</h2>
+      <p>By the end of this unit, you should be able to explain why an air conditioner moves heat instead of creating cold, how refrigerant absorbs and releases heat, and why pressure changes where refrigerant boils and condenses.</p>
+      <div class="unit-goals"><span>About 20 minutes</span><span>Five short lessons</span><span>Practice without hard grading</span></div>
+    </section>
+
+    <section class="lesson-panel" id="lesson-1" data-lesson>
+      <header class="lesson-heading"><span>Lesson 1 of 5</span><h2>What cooling really means</h2><p>Cooling does not mean making cold. It means removing heat.</p></header>
+      <div class="heat-direction" aria-label="Heat moves from the warmer indoor air to the colder evaporator coil"><article class="warm"><small>RETURN AIR</small><strong>78°F</strong><p>Warmer indoor air</p></article><i>→</i><article class="cold"><small>EVAPORATOR COIL</small><strong>45°F</strong><p>Colder coil and refrigerant</p></article></div>
+      <p>Heat naturally moves from warmer material toward cooler material. Because the indoor air is warmer than the evaporator coil, heat moves from the air into the coil and refrigerant. The air leaves with less heat, so it feels cooler.</p>
+      <aside class="key-idea"><strong>The system did not add cold.</strong><span>It removed some of the air’s heat and carried it elsewhere.</span></aside>
+      <div class="mini-check" data-check data-correct="air"><h3>Which way will heat move?</h3><button data-choice="coil">From the coil into the air</button><button data-choice="air">From the air into the coil</button><button data-choice="none">Heat will not move</button><p data-feedback hidden></p></div>
+      <div class="lesson-complete"><button type="button" data-complete>Mark Lesson 1 reviewed</button></div>
+    </section>
+
+    <section class="lesson-panel" id="lesson-2" data-lesson>
+      <header class="lesson-heading"><span>Lesson 2 of 5</span><h2>Temperature and thermal energy</h2><p>Temperature tells part of the story—not the total amount of heat.</p></header>
+      <div class="lesson-video"><video controls preload="metadata" playsinline src="/media/unit-1/heat-basics.mp4"></video></div>
+      <p class="watch-note"><strong>Watch for:</strong> Heat is energy in motion, and it moves from warmer material toward cooler material.</p>
+      <div class="water-compare"><article><div class="cup-water"></div><strong>One cup · 80°F</strong><p>Less water to cool</p></article><article><div class="bucket-water"></div><strong>One bucket · 80°F</strong><p>More water to cool</p></article></div>
+      <p>The cup and bucket have the same temperature, but the bucket contains much more water. It requires more heat removal to cool it by the same number of degrees. HVAC technicians use Btu to describe an amount of heat, but you do not need a Btu calculation here.</p>
+      <div class="mini-check" data-check data-correct="bucket"><h3>Both start at 80°F. Which requires more heat removal to reach 70°F?</h3><button data-choice="cup">The cup</button><button data-choice="bucket">The bucket</button><button data-choice="same">They require the same amount</button><p data-feedback hidden></p></div>
+      <div class="lesson-complete"><button type="button" data-complete>Mark Lesson 2 reviewed</button></div>
+    </section>
+
+    <section class="lesson-panel" id="lesson-3" data-lesson>
+      <header class="lesson-heading"><span>Lesson 3 of 5</span><h2>Refrigerant changes state</h2><p>It remains refrigerant while changing between liquid and vapor.</p></header>
+      <div class="lesson-video"><video controls preload="metadata" playsinline src="/media/unit-1/change-of-state.mp4"></video></div>
+      <div class="state-change-row"><article><span class="liquid-state">LIQUID</span><strong>Boiling absorbs heat</strong><p>Inside the evaporator, liquid refrigerant absorbs heat and becomes vapor.</p></article><i>⇄</i><article><span class="vapor-state">VAPOR</span><strong>Condensing releases heat</strong><p>Inside the condenser, refrigerant vapor releases heat and becomes liquid.</p></article></div>
+      <p>Think about boiling water. Liquid water becomes water vapor, but it is still water. Refrigerant behaves the same way; the system controls the conditions where the change happens.</p>
+      <div class="mini-check" data-check data-correct="state"><h3>Liquid refrigerant enters the evaporator and leaves as vapor. What happened?</h3><button data-choice="gone">The refrigerant disappeared</button><button data-choice="state">The refrigerant changed state</button><button data-choice="chemical">It became a different chemical</button><p data-feedback hidden></p></div>
+      <div class="lesson-complete"><button type="button" data-complete>Mark Lesson 3 reviewed</button></div>
+    </section>
+
+    <section class="lesson-panel" id="lesson-4" data-lesson>
+      <header class="lesson-heading"><span>Lesson 4 of 5</span><h2>Sensible and latent heat</h2><p>This is the key to understanding the refrigeration cycle.</p></header>
+      <div class="two-heat-types"><article><strong>Sensible heat</strong><span>Changes temperature</span><p>You can follow it with a thermometer.</p></article><article><strong>Latent heat</strong><span>Changes state</span><p>Heat moves while temperature remains nearly steady.</p></article></div>
+      <div class="lesson-video"><video controls preload="metadata" playsinline src="/media/unit-1/boiling-water-demo.mp4"></video></div>
+      <p class="watch-note"><strong>Watch for:</strong> The thermometer rises until the water boils. Heat keeps entering after the temperature stops rising.</p>
+      <div class="heat-demo" data-heat-demo data-step="1">
+        <p class="prototype-kicker">Try it</p><h3>Watch what the added heat actually does.</h3>
+        <div class="heat-demo-tabs"><button data-demo-step="1" aria-pressed="true">1<span>Start</span></button><button data-demo-step="2">2<span>Heating</span></button><button data-demo-step="3">3<span>Boiling</span></button><button data-demo-step="4">4<span>State change</span></button></div>
+        <div class="heat-demo-grid"><div class="demo-pot-scene"><div class="demo-readings"><span><small>BURNER</small><strong data-burner>550°F</strong></span><span><small>WATER</small><strong data-water>74°F</strong></span></div><div class="demo-steam"><i></i><i></i><i></i></div><div class="demo-pot"><div class="demo-water"><i></i><i></i><i></i></div></div><div class="demo-flame"><i></i><i></i><i></i></div></div><div class="demo-copy"><small>STEP <b data-demo-number>1</b> OF 4</small><h4 data-demo-title>Heat starts entering the water</h4><p data-demo-copy>The burner is hotter than the water, so heat moves into the water.</p><button class="button button-primary" data-demo-next>Next: temperature rises</button></div></div>
+        <p class="pressure-note">Water boils at approximately 212°F at normal atmospheric pressure.</p>
+      </div>
+      <div class="mini-check" data-check data-correct="vapor"><h3>The water is boiling at 212°F while more heat is added. Where is the energy going?</h3><button data-choice="none">No heat is entering</button><button data-choice="hotter">It is making the liquid hotter</button><button data-choice="vapor">It is changing liquid water into vapor</button><p data-feedback hidden></p></div>
+      <div class="lesson-complete"><button type="button" data-complete>Mark Lesson 4 reviewed</button></div>
+    </section>
+
+    <section class="lesson-panel" id="lesson-5" data-lesson>
+      <header class="lesson-heading"><span>Lesson 5 of 5</span><h2>Pressure makes refrigeration possible</h2><p>Changing pressure changes the temperature where refrigerant boils and condenses.</p></header>
+      <div class="pressure-visual"><article><small>INDOORS · EVAPORATOR</small><strong>Lower pressure</strong><span>Lower boiling temperature</span><p>Refrigerant can boil cold enough to absorb heat from warmer indoor air.</p></article><div class="pressure-center"><b>PRESSURE</b><i>↓</i><i>↑</i><span>controls saturation temperature</span></div><article><small>OUTDOORS · CONDENSER</small><strong>Higher pressure</strong><span>Higher condensing temperature</span><p>Refrigerant can release heat to the outdoor air and condense into liquid.</p></article></div>
+      <p>You do not need a gas-law formula or pressure calculation here. The practical idea is simple: pressure helps the system choose where refrigerant will boil and where it will condense.</p>
+      <figure class="pt-chart-card"><img src="/media/unit-1/pt-chart.jpg" alt="A refrigerant pressure-temperature chart with one relationship highlighted"/><figcaption><strong>Technicians use a PT chart to connect refrigerant pressure to its saturation temperature.</strong> You will learn to use one later.</figcaption></figure>
+      <div class="mini-check" data-check data-correct="boil"><h3>Why does the system keep refrigerant pressure low in the evaporator?</h3><button data-choice="boil">To let refrigerant boil at a lower temperature</button><button data-choice="stop">To stop heat transfer</button><button data-choice="convert">To convert Fahrenheit to Celsius</button><p data-feedback hidden></p></div>
+      <div class="lesson-complete"><button type="button" data-complete>Mark Lesson 5 reviewed</button></div>
+    </section>
+
+    <section class="lesson-panel unit-finish"><p class="prototype-kicker">Put it together</p><h2>Follow the heat through the evaporator.</h2><ol><li>Warm indoor air reaches the colder evaporator coil.</li><li>Heat moves from the warmer air into the colder refrigerant.</li><li>Low pressure lets the refrigerant boil at a low temperature.</li><li>The refrigerant absorbs latent heat while changing from liquid to vapor.</li><li>The air leaves the coil with less heat and feels cooler.</li></ol><div class="prototype-summary"><strong>You can now explain:</strong> An air conditioner removes and relocates heat. Sensible heat changes temperature, latent heat changes state, and pressure controls the temperature where refrigerant boils and condenses.</div><a class="button button-primary" href="#lesson-1">Review Unit 1 again</a></section>
+    <footer class="prototype-review-note"><strong>Development boundary</strong><p>This review build does not record student progress, change Moodle, or represent finished course production.</p></footer>
+  </main>
+
+  <script>
+    const lessons = Array.from(document.querySelectorAll<HTMLElement>("[data-lesson]"));
+    const progress = document.querySelector<HTMLElement>("[data-unit-progress]");
+    const updateProgress = () => { const done = lessons.filter((lesson) => lesson.dataset.complete === "true").length; if (progress) progress.style.width = `${Math.max(8, done / lessons.length * 100)}%`; };
+    lessons.forEach((lesson) => lesson.querySelector<HTMLButtonElement>("[data-complete]")?.addEventListener("click", (event) => { lesson.dataset.complete = "true"; const button = event.currentTarget as HTMLButtonElement; button.textContent = "✓ Lesson reviewed"; button.disabled = true; updateProgress(); }));
+    document.querySelectorAll<HTMLElement>("[data-check]").forEach((check) => check.querySelectorAll<HTMLButtonElement>("[data-choice]").forEach((button) => button.addEventListener("click", () => { check.querySelectorAll("[data-choice]").forEach((choice) => choice.removeAttribute("aria-pressed")); button.setAttribute("aria-pressed", "true"); const feedback = check.querySelector<HTMLElement>("[data-feedback]"); if (!feedback) return; feedback.hidden = false; const correct = button.dataset.choice === check.dataset.correct; feedback.className = correct ? "correct" : "incorrect"; feedback.innerHTML = correct ? "<strong>Correct.</strong> You identified what the heat, refrigerant, or pressure is doing." : "<strong>Not quite.</strong> Look at what is warmer, what changed, or what pressure controls—then try again."; })));
+    const demo = document.querySelector<HTMLElement>("[data-heat-demo]");
+    const demoSteps = [{burner:"550°F",water:"74°F",title:"Heat starts entering the water",copy:"The burner is hotter than the water, so heat moves into the water.",button:"Next: temperature rises"},{burner:"550°F",water:"175°F",title:"Sensible heat raises temperature",copy:"The water temperature rises from 74°F to 175°F. The water remains liquid.",button:"Next: water reaches boiling"},{burner:"550°F",water:"212°F",title:"The water begins boiling",copy:"At normal atmospheric pressure, the water has reached its boiling temperature.",button:"Next: add even more heat"},{burner:"1,000°F",water:"212°F",title:"More heat—same water temperature",copy:"The hotter burner adds more heat, but the water stays near 212°F. The energy is changing liquid water into vapor. This is latent heat.",button:"Start again"}]; let demoIndex = 0;
+    const showDemo = (index:number) => { demoIndex=index; const step=demoSteps[index]; if(!demo)return; demo.dataset.step=String(index+1); demo.querySelectorAll<HTMLButtonElement>("[data-demo-step]").forEach((b)=>b.setAttribute("aria-pressed",String(Number(b.dataset.demoStep)===index+1))); const set=(s:string,v:string)=>{const e=demo.querySelector<HTMLElement>(s);if(e)e.textContent=v}; set("[data-burner]",step.burner);set("[data-water]",step.water);set("[data-demo-number]",String(index+1));set("[data-demo-title]",step.title);set("[data-demo-copy]",step.copy);set("[data-demo-next]",step.button); };
+    demo?.querySelectorAll<HTMLButtonElement>("[data-demo-step]").forEach((b)=>b.addEventListener("click",()=>showDemo(Number(b.dataset.demoStep)-1))); demo?.querySelector<HTMLButtonElement>("[data-demo-next]")?.addEventListener("click",()=>showDemo((demoIndex+1)%demoSteps.length)); updateProgress();
+  </script>
+</BaseLayout>

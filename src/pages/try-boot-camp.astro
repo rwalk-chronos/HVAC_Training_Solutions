@@ -3,106 +3,41 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Try HVAC Boot Camp | Matter: Solids, Liquids, and Gases"
-  description="Try a short, phone-first HVAC Boot Camp lesson about matter, solids, liquids, and gases before deciding whether to enroll."
+  title="Watch a Free HVAC Lesson | Ron Walker's Teaching Style"
+  description="Watch Ron Walker explain the basic refrigeration cycle in a free public video, then see how the current 27-module HVAC Boot Camp works."
 >
-  <div class="trial-page">
-    <section class="trial-intro">
-      <div class="trial-intro-inner">
-        <div><p class="eyebrow">Free lesson preview</p><h1>See how Boot Camp helps when a concept does not click.</h1><p>This short preview uses the opening Unit 1 concept. Work through it on your phone or computer—no account required.</p></div>
-        <div class="trial-meta"><span>Unit 1</span><strong>Matter: Solids, Liquids, and Gases</strong><small>Preview · about 3 minutes</small></div>
+  <div class="standard-page">
+    <section class="page-hero">
+      <div class="page-hero-inner narrow-hero">
+        <p class="eyebrow">Watch Ron teach</p>
+        <h1>See how Ron explains <span>an HVAC idea.</span></h1>
+        <p>Before choosing a course, hear the instructor for yourself. This public lesson introduces the basic refrigeration cycle. Watch free, without an account.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#watch">Watch the lesson</a><a class="button button-secondary" href="/hvac-boot-camp/">Explore Boot Camp</a></div>
       </div>
     </section>
 
-    <section class="trial-workspace">
-      <article class="lesson-phone" aria-labelledby="lesson-title">
-        <header class="lesson-phone-header">
-          <div><span>Unit 1 · Foundations</span><strong>Page 1 of 8</strong></div>
-          <div class="lesson-progress"><span></span></div>
-        </header>
-
-        <div class="lesson-body">
-          <p class="preview-kicker">One idea</p>
-          <h2 id="lesson-title">Matter normally appears as a solid, liquid, or gas.</h2>
-          <p class="lesson-lead">Matter is anything that has mass and takes up space. The three common states behave differently:</p>
-
-          <div class="state-grid">
-            <div><span class="state-icon solid-icon" aria-hidden="true"></span><strong>Solid</strong><p>Keeps its shape and volume.</p><small>Example: a wrench</small></div>
-            <div><span class="state-icon liquid-icon" aria-hidden="true"></span><strong>Liquid</strong><p>Keeps its volume but changes shape.</p><small>Example: drain-pan water</small></div>
-            <div><span class="state-icon gas-icon" aria-hidden="true"></span><strong>Gas</strong><p>Changes shape and volume.</p><small>Example: air in ductwork</small></div>
-          </div>
-
-          <div class="lesson-help" aria-labelledby="help-title">
-            <p id="help-title">Choose the help you need</p>
-            <div class="help-buttons">
-              <button type="button" data-help="simple">Explain it simply</button>
-              <button type="button" data-help="example">Give me an HVAC example</button>
-              <button type="button" data-help="why">Why does this matter?</button>
-            </div>
-            <div class="help-response" data-response="simple" hidden><strong>A simpler way:</strong><p>A solid stays put. A liquid can pour. A gas spreads out to fill the space around it.</p></div>
-            <div class="help-response" data-response="example" hidden><strong>HVAC example:</strong><p>A copper fitting is a solid, water in a drain pan is a liquid, and air moving through a supply duct is a gas.</p></div>
-            <div class="help-response" data-response="why" hidden><strong>Why technicians need this:</strong><p>HVAC systems move heat by controlling matter. Air carries heat through ductwork, refrigerant changes between liquid and gas, and solid metal transfers heat through coils and tubing.</p></div>
-          </div>
-
-          <form class="quick-check" data-quick-check>
-            <fieldset>
-              <legend><span>Quick check</span>Water is poured from a glass into a drain pan. What changes?</legend>
-              <label><input type="radio" name="matter-check" value="volume" /> Its volume</label>
-              <label><input type="radio" name="matter-check" value="shape" /> Its shape</label>
-              <label><input type="radio" name="matter-check" value="both" /> Both</label>
-            </fieldset>
-            <button class="button button-dark" type="submit">Check my answer</button>
-            <p class="check-feedback" data-check-feedback aria-live="polite"></p>
-          </form>
+    <section class="page-section" id="watch" aria-labelledby="lesson-title">
+      <div class="page-shell preview-split">
+        <div class="section-heading">
+          <p class="eyebrow">Free public video</p>
+          <h2 id="lesson-title">The basic refrigeration cycle</h2>
+          <p>Listen to Ron's explanation and decide whether his teaching style works for you. You can also <a href="https://www.youtube.com/watch?v=27uCRQ3B8r4" target="_blank" rel="noopener noreferrer">watch the lesson on YouTube ↗</a>.</p>
+          <p class="preview-boundary"><strong>About the paid course:</strong> HVAC Boot Camp is currently a 27-module Moodle course with textbook reading, Ron's teaching videos, and quizzes. This public video shows Ron teaching; it does not provide paid-course access.</p>
         </div>
-      </article>
-
-      <aside class="trial-decision">
-        <p class="eyebrow">What this preview demonstrates</p>
-        <h2>Short content. Useful choices. Immediate feedback.</h2>
-        <p>The complete Unit 1 pilot is still under review. This page demonstrates the approved learning rhythm without pretending that the live AI tutor is finished.</p>
-        <ul class="plain-check-list"><li>One concept per page</li><li>HVAC examples instead of generic examples</li><li>Help without leaving the lesson</li><li>A quick check before moving on</li></ul>
-        <div class="trial-next-card"><strong>Like the approach?</strong><p>Review the complete Boot Camp and decide whether the course fits your goal.</p><a class="button button-primary" href="/hvac-boot-camp/">Explore HVAC Boot Camp</a><a class="text-link-dark" href="/pricing/">See plans and pricing →</a></div>
-      </aside>
+        <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/27uCRQ3B8r4?rel=0" title="Basic Refrigeration Cycle lesson by Ron Walker" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
     </section>
 
-    <section class="trial-footer-note">
-      <p><strong>Development note:</strong> The responses on this preview page are approved scripted examples. Bounded live AI will be connected after the Unit 1 content and guardrails are approved.</p>
+    <section class="page-section soft-section" aria-labelledby="next-title">
+      <div class="page-shell preview-split">
+        <div class="section-heading">
+          <p class="eyebrow">Ready to see the course?</p>
+          <h2 id="next-title">Review Boot Camp before enrolling.</h2>
+          <p>See the curriculum, textbook requirement, and payment options so you know what to expect. Online lessons can help you understand systems; safe field skills require practice under supervision.</p>
+          <div class="hero-actions"><a class="button button-dark" href="/hvac-boot-camp/">Explore the course</a><a class="button button-outline-dark" href="/pricing/">See pricing</a></div>
+        </div>
+        <div class="comparison-card"><p class="eyebrow">How Boot Camp works</p><div><strong>Study</strong><span>Read the required textbook and watch Ron's videos</span></div><div><strong>Check</strong><span>Use quizzes as you progress through 27 modules</span></div><div><strong>Practice</strong><span>Bring what you learn into supervised field training</span></div></div>
+      </div>
     </section>
   </div>
-
-  <script>
-    const helpButtons = document.querySelectorAll<HTMLButtonElement>("[data-help]");
-    const responses = document.querySelectorAll<HTMLElement>("[data-response]");
-
-    helpButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const target = button.dataset.help;
-        helpButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
-        responses.forEach((response) => {
-          response.hidden = response.dataset.response !== target;
-        });
-      });
-    });
-
-    const form = document.querySelector<HTMLFormElement>("[data-quick-check]");
-    const feedback = document.querySelector<HTMLElement>("[data-check-feedback]");
-
-    form?.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const answer = new FormData(form).get("matter-check");
-      if (!feedback) return;
-
-      if (!answer) {
-        feedback.className = "check-feedback needs-answer";
-        feedback.textContent = "Choose an answer first.";
-      } else if (answer === "shape") {
-        feedback.className = "check-feedback correct";
-        feedback.textContent = "Correct. The water keeps the same volume but takes the shape of the drain pan.";
-      } else {
-        feedback.className = "check-feedback incorrect";
-        feedback.textContent = "Not quite. The amount of water stays the same. Only its shape changes.";
-      }
-    });
-  </script>
 </BaseLayout>

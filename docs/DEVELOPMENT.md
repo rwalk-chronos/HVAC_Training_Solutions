@@ -8,9 +8,9 @@ The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CON
 
 ## Current development focus
 
-Public-site development is paused. The sole implementation focus is the structure and delivery of Unit 1. Planning for accounts, payments, email, enrollment, career preparation, and OJT may continue, but those features must not displace the Unit 1 learning-experience proof.
+Marketing site first. Ron chose to launch the new marketing format for the existing 27-module Boot Camp, measure that public site with the verified GA4 property, then replace course delivery after the new course is complete. [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md) governs article reuse, sales pages, conversion measurement, and migration. The recovered `/unit-1-prototype/` remains the selected new-course baseline and must not be marketed as the course sold today.
 
-Do not convert the remaining course or resume public-platform implementation until the Unit 1 acceptance gate is satisfied.
+Course account, PayPal, enrollment, and email planning may continue for the later release. For the interim marketing release, Ron's PayPal hosted buttons are linked from `/pricing/`; Ron verifies payment and manually enrolls students in the existing Moodle course. The same-path `/hvac-boot-camp/course-purchase/` page explains what happens next, but it cannot confirm payment. Verify both PayPal return settings and the manual handoff before public-domain cutover. The existing Moodle course continues to serve students after the marketing cutover.
 
 ## Repository and environment rules
 
@@ -18,8 +18,16 @@ Do not convert the remaining course or resume public-platform implementation unt
 - The SiteGround WordPress site is frozen production.
 - The DigitalOcean Moodle site is frozen production.
 - Cloudflare branch deployments are development and review environments.
-- No development environment may send production email, collect live payments, enroll production students, or modify production data.
+- No development environment may send production email, collect live payments, enroll production students, or modify production data. Outbound links to the existing live checkout are for review; do not submit test purchases there.
 - A production cutover requires explicit approval, a tested migration, and a rollback plan.
+
+## Current GitHub to Cloudflare workflow
+
+The development Worker is `hvac-training-solutions` at `https://hvac-training-solutions.rawalker0619.workers.dev`. Its Git repository is `rwalk-chronos/HVAC_Training_Solutions`. PR #7 merged the marketing build into the recovery branch; PR #8 then merged that reviewed branch into `main`. PRs #10 and #11 added the PayPal links and same-path thank-you page. Recent Worker versions displayed `recovery/money-pages-unit1`; that branch was fast-forwarded to match `main` and the live routes were verified. Check the current Cloudflare Workers Builds source setting and actual deployed route after future changes. The Worker's branch is a development deployment setting, not the public-domain cutover.
+
+The **Cloudflare Workers and Pages** GitHub App needs access to this repository. If a disconnected-account warning returns, inspect GitHub **Settings > Applications > Installed GitHub Apps > Cloudflare Workers and Pages > Repository access** before changing Worker build settings.
+
+Build settings previously used repository root `/`, build command `npm run build`, and deploy command `npx wrangler deploy`. Verify these against the current Worker configuration. Record the Git commit SHA, build result, and actual Worker route after each deployment. Do not connect the public domain, enable indexing, or enable GA4 as part of routine development.
 
 ## Current stack
 
@@ -28,7 +36,7 @@ Do not convert the remaining course or resume public-platform implementation unt
 - Wrangler 4
 - GitHub branches and pull requests
 
-The current repository is a small static application. Authentication, persistent student data, payment processing, automatic enrollment, and live AI are planned capabilities; they are not yet implemented.
+The current repository is a small static application. It renders outbound links to existing PayPal hosted buttons and an informational thank-you page. Authentication, persistent student data, on-site payment processing, automatic enrollment, and live AI are planned capabilities; they are not yet implemented.
 
 ## Local development
 
@@ -47,21 +55,20 @@ npm run verify
 npm run preview
 ```
 
-Do not run `npm run deploy` merely to verify a change. Use the local build first and the GitHub-connected Cloudflare branch preview for review.
+Do not run `npm run deploy` merely to verify a change. Use the local build first, then review the GitHub-connected development Worker or an isolated branch preview once configured.
 
 The repository contains a committed npm lockfile, a local build verifier, and a GitHub Actions workflow. `npm run verify` builds the site, checks the expected routes, and confirms that development crawler protection remains active. Add focused automated tests as application logic grows.
 
 ## Branch workflow
 
-1. Start from the current approved development branch.
-2. Use one narrowly named feature or cleanup branch.
-3. Open a draft pull request early.
-4. Verify `npm ci` and `npm run verify`.
-5. Review the Cloudflare branch preview on desktop and phone.
-6. Record any environment, route, data, or migration impact in the pull request.
-7. Do not merge or change production routing without approval.
+1. Start from the current `main` branch and use one narrowly named feature or cleanup branch.
+2. Open a draft pull request for work needing review.
+3. Verify `npm ci` and `npm run verify` for code changes.
+4. Review the Cloudflare development Worker or an isolated branch preview on desktop and phone; record its actual deployed commit.
+5. Record environment, route, data, and migration impact in the pull request.
+6. Do not merge a change that would activate public indexing, analytics, payment, enrollment, or production routing without its specific launch review.
 
-The current stacked cleanup PR is based on `feature/boot-camp-v1` because that branch contains the latest approved marketing work not yet present on `main`.
+PRs #7, #8, #10, and #11 are merged to `main`; their earlier branch instructions are historical. Ron selected the recovered September 22 `/unit-1-prototype/` as the sole new-course Unit 1 development route and rejected the later `/unit-1/lesson-1/` reconstruction; see [RECOVERY_STATE.md](RECOVERY_STATE.md). The immediate marketing gates are in [MARKETING_LAUNCH_GATES.md](MARKETING_LAUNCH_GATES.md). Commit and push reviewed milestones and record remote HEAD, route, deployed preview URL, media sources, and Ron's decision in the handoff.
 
 ## Code boundaries
 
@@ -106,7 +113,7 @@ Directories should be introduced only when real code needs them. Do not scaffold
 
 ## PayPal payment and automatic enrollment
 
-PayPal is a required launch integration. Payment and enrollment are one controlled workflow, but separate records.
+The first public marketing release links to Ron's existing PayPal hosted buttons and retains his manual Moodle enrollment. Before DNS cutover, verify both button offers, their return URLs, PayPal notification, Ron's payment check, Moodle account creation, account email, and support fallback. The **later course-platform replacement release** adds server-verified PayPal payment and automatic enrollment. In that system, payment and enrollment are one controlled workflow, but separate records.
 
 ### Required flow
 

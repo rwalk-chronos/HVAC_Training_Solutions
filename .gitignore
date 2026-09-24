@@ -7,3 +7,6 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+public/EPA.pdf
+public/wp-content/uploads/2015/05/CompressorInfoGraph.pdf
+public/wp-content/uploads/2015/05/ResourceGuide.pdf
