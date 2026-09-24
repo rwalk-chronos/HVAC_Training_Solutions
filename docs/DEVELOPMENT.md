@@ -8,9 +8,9 @@ The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CON
 
 ## Current development focus
 
-Public-site development is paused. The sole implementation focus is the structure and delivery of Unit 1. Planning for accounts, payments, email, enrollment, career preparation, and OJT may continue, but those features must not displace the Unit 1 learning-experience proof.
+Marketing site first. Ron reported declining traffic and no conversions and chose to build the public site before the course. [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md) governs article reuse, sales pages, conversion measurement, and migration. The recovered `/unit-1-prototype/` remains the selected course baseline and must not be replaced.
 
-Do not convert the remaining course or resume public-platform implementation until the Unit 1 acceptance gate is satisfied.
+Course account, PayPal, enrollment, and email planning may continue. Production checkout continuity must be solved before public-domain cutover. WordPress and Moodle remain live during development.
 
 ## Repository and environment rules
 

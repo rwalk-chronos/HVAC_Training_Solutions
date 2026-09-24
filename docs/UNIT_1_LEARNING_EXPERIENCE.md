@@ -2,11 +2,9 @@
 
 ## Status and priority
 
-This is the current development priority. Public-site development is paused while HVAC Training Solutions defines, builds, and tests the structure and delivery of Unit 1.
+The recovered five-section `/unit-1-prototype/` remains Ron's selected course baseline. On September 24, 2026, Ron chose to build the marketing site first because traffic and conversion have declined. Unit 1 implementation is paused while the marketing pages and migration plan are built; its source and media remain saved. See [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md).
 
-No additional marketing pages, checkout, account, email, PayPal, automatic-enrollment, full-course conversion, or production work should proceed merely to stay busy. Planning may continue, but implementation returns to the public platform only after the Unit 1 learning pattern is accepted.
-
-> If Unit 1 does not make a beginner feel capable, teach the approved material accurately, and make the learner want to continue, nothing else is ready to scale.
+When course work resumes, review the prototype on a phone, validate instruction and playback, and use this document to improve its learning pattern.
 
 ## Learning position
 

@@ -8,9 +8,9 @@ The live WordPress and Moodle systems remain untouched during development.
 
 ## Current development focus
 
-Public-site development is paused. Unit 1 structure and delivery are the sole implementation priority. Planning documents may continue to mature, but no additional marketing, payment, account, email, enrollment, or full-course implementation should displace the Unit 1 proof.
+Marketing site first. Ron reported diminished traffic and no conversions and chose to build the public site before returning to course delivery. The immediate work is a measured URL/article inventory, clearer money pages, a verified conversion path, and safe migration. See [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md).
 
-The Unit 1 experience must be approved before the remaining course is converted or public-platform development resumes. See [UNIT_1_LEARNING_EXPERIENCE.md](UNIT_1_LEARNING_EXPERIENCE.md). The later employment bridge is defined in [CAREER_AND_OJT_PATH.md](CAREER_AND_OJT_PATH.md).
+The recovered `/unit-1-prototype/` remains saved as the selected learning baseline. Course expansion follows the marketing foundation.
 
 ## Repository authority
 
@@ -74,21 +74,15 @@ Public and learning experiences will share:
 
 Marketing code and learning code may remain internally separated, but they must ship as one coherent product.
 
-## First vertical slice
+## First marketing slice
 
-The first proof is one complete learning and conversion journey:
+1. Capture search and conversion baselines.
+2. Select a high-intent article and map its reader path to Boot Camp.
+3. Improve the article and matching Boot Camp/pricing path together.
+4. Verify the CTA and contact or checkout handoff on a phone.
+5. Measure article-to-offer visits, leads, checkout starts, and paid enrollments where data is available.
 
-1. Visitor understands Boot Camp.
-2. Visitor opens a real sample lesson.
-3. The lesson teaches one concept at a time.
-4. The learner can request bounded AI help.
-5. The learner completes a quick check.
-6. Progress is recorded.
-7. The experience returns to a clear enrollment action.
-
-The reference learning content is Unit 1, beginning with Matter: Solids, Liquids, and Gases.
-
-PayPal does not need to block the initial lesson-experience test. It is required before the consolidated platform can replace the current production sales and enrollment flow.
+The saved Unit 1 demo may be linked as a learning sample once reviewed; course expansion does not block marketing development.
 
 ## AI boundary for the slice
 
@@ -139,12 +133,13 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 
 ### Next
 
-- review the selected `/unit-1-prototype/` on desktop and phone for video playback, interaction, checks, legibility, and instructional accuracy
-- use the recovered media inventory and instructor material to refine Unit 1 without silently changing its selected five-section sequence
-- complete and test the Unit 1 learning pattern with target learners
-- connect the approved real learning experience to the public sample journey
-- plan remaining course conversion, student accounts, PayPal, enrollment, and email after the Unit 1 proof is accepted
-- preserve existing traffic-driving URLs and measure search/conversion baselines before any public-domain migration
+- inventory WordPress URLs and obtain Search Console and GA4 page/query baselines
+- preserve valuable article paths and prioritize traffic, links, and near-page-one search opportunities
+- refine the homepage, Boot Camp, pricing, how-it-works, instructor proof, and sample CTAs
+- prove contact and checkout routes will work after the public domain moves away from WordPress
+- migrate priority articles with relevant internal links and measurable CTAs
+- verify policies, SEO, redirects, analytics, mobile quality, and rollback before cutover
+- return to the selected Unit 1 prototype and course platform after the marketing foundation works
 
 ## Acceptance gates
 

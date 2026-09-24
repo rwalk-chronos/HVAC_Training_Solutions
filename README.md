@@ -31,9 +31,9 @@ As of the consolidation cleanup:
 
 ## Current priority
 
-Public-site development is paused. The project is focused on Unit 1 structure and delivery. The remaining course, accounts, payment, enrollment, email, and additional public-platform work must not proceed ahead of an accepted Unit 1 learning pattern.
+Marketing site first. Ron reported declining traffic and no conversions and on September 24, 2026 chose to rebuild the public site before continuing course implementation. See [Marketing rebuild plan](docs/MARKETING_REBUILD_PLAN.md).
 
-The governing principle is simple: if Unit 1 does not teach accurately, feel achievable on a phone, and make a beginner want to continue, nothing else is ready to scale.
+The recovered five-section `/unit-1-prototype/` remains saved as the selected course baseline. Course expansion resumes after the marketing site has a working, measurable visitor-to-enrollment path.
 
 ## Product shape
 
@@ -106,15 +106,12 @@ A browser payment-success redirect must never grant access by itself.
 
 ## Build order
 
-1. Consolidate repository truth and architecture.
-2. Preserve and review the current Boot Camp sales-page work.
-3. Bring the approved Unit 1 pilot into this repository under `/learn/`.
-4. Connect one real sample lesson to the sales journey.
-5. Replace scripted tutor responses with bounded live AI.
-6. Test on phones with real learners.
-7. Lock the lesson pattern before converting the remaining course.
-8. Add the account, PayPal, and automatic-enrollment flow in Sandbox.
-9. Plan production migration only after acceptance gates pass.
+1. Capture Search Console and GA4 baselines and inventory WordPress URLs and conversion paths.
+2. Classify URLs, preserving high-value article paths and mapping necessary redirects.
+3. Refine homepage, Boot Camp, pricing, how-it-works, proof, and free sample on the development Worker.
+4. Migrate and improve priority articles with relevant internal links and measured CTAs.
+5. Verify contact, checkout continuity, policies, analytics, SEO, mobile quality, and rollback before a public-domain change.
+6. Resume the saved Unit 1 prototype and broader course platform after the marketing foundation works.
 
 ## Documentation
 
@@ -125,3 +122,4 @@ A browser payment-success redirect must never grant access by itself.
 - [Consolidation plan](docs/CONSOLIDATION_PLAN.md)
 - [Boot Camp sales-page decisions](docs/BOOT_CAMP_V1.md)
 - [Migration audit](docs/MIGRATION_AUDIT.md)
+- [Marketing rebuild plan](docs/MARKETING_REBUILD_PLAN.md)

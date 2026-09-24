@@ -1,6 +1,8 @@
 # HVACTrainingSolutions.net Migration Audit
 
-Status: **In progress**
+Status: **In progress — marketing-first priority, September 24, 2026**
+
+The implementation sequence and data requirements are in [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md). This audit is not yet a complete URL inventory.
 
 ## Non-negotiable launch rule
 
