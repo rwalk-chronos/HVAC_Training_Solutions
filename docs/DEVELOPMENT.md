@@ -23,13 +23,11 @@ Course account, PayPal, enrollment, and email planning may continue for the late
 
 ## Current GitHub to Cloudflare workflow
 
-The development Worker is `hvac-training-solutions` at `https://hvac-training-solutions.rawalker0619.workers.dev`. Its Git repository is `rwalk-chronos/HVAC_Training_Solutions`. For this development phase, Cloudflare Workers Builds uses `recovery/money-pages-unit1` as the Worker's production branch. That label controls only this development Worker; the live WordPress and Moodle sites remain separate.
+The development Worker is `hvac-training-solutions` at `https://hvac-training-solutions.rawalker0619.workers.dev`. Its Git repository is `rwalk-chronos/HVAC_Training_Solutions`. PR #7 merged the marketing build into the recovery branch; PR #8 then merged that reviewed branch into `main` and deployed the development Worker. Check the current Cloudflare Workers Builds branch setting and recent build commit before relying on an automatic deployment. The Worker's branch is a development deployment setting, not the public-domain cutover.
 
-The **Cloudflare Workers and Pages** GitHub App must have repository access to `rwalk-chronos/HVAC_Training_Solutions`. On September 24, 2026, the app was found with only the `Embody` repository selected; adding this repository cleared the disconnected-account warning. If the warning returns, inspect GitHub **Settings > Applications > Installed GitHub Apps > Cloudflare Workers and Pages > Repository access** before changing Worker build settings.
+The **Cloudflare Workers and Pages** GitHub App needs access to this repository. If a disconnected-account warning returns, inspect GitHub **Settings > Applications > Installed GitHub Apps > Cloudflare Workers and Pages > Repository access** before changing Worker build settings.
 
-Build settings: repository root `/`, build command `npm run build`, deploy command `npx wrangler deploy`. Pushes to the selected branch should build and update the development Worker automatically. Changing the selected branch does not build its existing HEAD; a new push is needed to test the connection. Inspect **Deployments > Recent builds** and the build log after each push. Record the Git commit SHA and confirm `/unit-1-prototype/` on the Worker URL before reviewing the page.
-
-Other branches can produce isolated previews after Worker Previews are set up and the preview command is configured. The current recovery branch is the active development Worker branch, not an isolated preview. Do not connect the public domain or move the production branch to `main` until the review and cutover decisions are made.
+Build settings previously used repository root `/`, build command `npm run build`, and deploy command `npx wrangler deploy`. Verify these against the current Worker configuration. Record the Git commit SHA, build result, and actual Worker route after each deployment. Do not connect the public domain, enable indexing, or enable GA4 as part of routine development.
 
 ## Current stack
 
@@ -63,15 +61,14 @@ The repository contains a committed npm lockfile, a local build verifier, and a 
 
 ## Branch workflow
 
-1. Start from the current approved development branch.
-2. Use one narrowly named feature or cleanup branch.
-3. Open a draft pull request early.
-4. Verify `npm ci` and `npm run verify`.
-5. Review the Cloudflare development Worker or configured branch preview on desktop and phone.
-6. Record any environment, route, data, or migration impact in the pull request.
-7. Do not merge or change production routing without approval.
+1. Start from the current `main` branch and use one narrowly named feature or cleanup branch.
+2. Open a draft pull request for work needing review.
+3. Verify `npm ci` and `npm run verify` for code changes.
+4. Review the Cloudflare development Worker or an isolated branch preview on desktop and phone; record its actual deployed commit.
+5. Record environment, route, data, and migration impact in the pull request.
+6. Do not merge a change that would activate public indexing, analytics, payment, enrollment, or production routing without its specific launch review.
 
-The marketing refresh is draft PR #7, `feature/marketing-face` into `recovery/money-pages-unit1`. The recovery branch remains the development Worker's selected branch; PR work does not appear on that Worker until the appropriate merge or branch setting is used. Ron selected the recovered September 22 `/unit-1-prototype/` as the sole new-course Unit 1 development route and rejected the later `/unit-1/lesson-1/` reconstruction; see [RECOVERY_STATE.md](RECOVERY_STATE.md). Commit and push each reviewed milestone and record the remote HEAD SHA, route, verified preview URL when available, media sources, and Ron's decision in the handoff.
+PRs #7 and #8 already merged the marketing build to `main`; their earlier branch instructions are historical. Ron selected the recovered September 22 `/unit-1-prototype/` as the sole new-course Unit 1 development route and rejected the later `/unit-1/lesson-1/` reconstruction; see [RECOVERY_STATE.md](RECOVERY_STATE.md). The immediate marketing gates are in [MARKETING_LAUNCH_GATES.md](MARKETING_LAUNCH_GATES.md). Commit and push reviewed milestones and record remote HEAD, route, deployed preview URL, media sources, and Ron's decision in the handoff.
 
 ## Code boundaries
 
