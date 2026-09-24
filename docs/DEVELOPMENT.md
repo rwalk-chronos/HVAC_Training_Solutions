@@ -8,9 +8,9 @@ The product charter and sequencing decisions live in [CONSOLIDATION_PLAN.md](CON
 
 ## Current development focus
 
-Marketing site first. Ron reported declining traffic and no conversions and chose to build the public site before the course. [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md) governs article reuse, sales pages, conversion measurement, and migration. The recovered `/unit-1-prototype/` remains the selected course baseline and must not be replaced.
+Marketing site first. Ron chose to launch the new marketing format for the existing 27-module Boot Camp, measure that public site with the verified GA4 property, then replace course delivery after the new course is complete. [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md) governs article reuse, sales pages, conversion measurement, and migration. The recovered `/unit-1-prototype/` remains the selected new-course baseline and must not be marketed as the course sold today.
 
-Course account, PayPal, enrollment, and email planning may continue. Production checkout continuity must be solved before public-domain cutover. WordPress and Moodle remain live during development.
+Course account, PayPal, enrollment, and email planning may continue for the later release. Production checkout continuity must be solved before public-domain cutover. The existing Moodle course continues to serve students after the marketing cutover.
 
 ## Repository and environment rules
 
@@ -18,7 +18,7 @@ Course account, PayPal, enrollment, and email planning may continue. Production 
 - The SiteGround WordPress site is frozen production.
 - The DigitalOcean Moodle site is frozen production.
 - Cloudflare branch deployments are development and review environments.
-- No development environment may send production email, collect live payments, enroll production students, or modify production data.
+- No development environment may send production email, collect live payments, enroll production students, or modify production data. Outbound links to the existing live checkout are for review; do not submit test purchases there.
 - A production cutover requires explicit approval, a tested migration, and a rollback plan.
 
 ## Current GitHub to Cloudflare workflow
@@ -71,7 +71,7 @@ The repository contains a committed npm lockfile, a local build verifier, and a 
 6. Record any environment, route, data, or migration impact in the pull request.
 7. Do not merge or change production routing without approval.
 
-The current draft PR #6 is based on `feature/site-money-pages`. Continue on `recovery/money-pages-unit1`. Ron selected the recovered September 22 `/unit-1-prototype/` as the sole Unit 1 development route and rejected the later `/unit-1/lesson-1/` reconstruction; see [RECOVERY_STATE.md](RECOVERY_STATE.md). Commit and push each reviewed milestone and record the remote HEAD SHA, route, verified preview URL when available, media sources, and Ron's decision in the handoff.
+The marketing refresh is draft PR #7, `feature/marketing-face` into `recovery/money-pages-unit1`. The recovery branch remains the development Worker's selected branch; PR work does not appear on that Worker until the appropriate merge or branch setting is used. Ron selected the recovered September 22 `/unit-1-prototype/` as the sole new-course Unit 1 development route and rejected the later `/unit-1/lesson-1/` reconstruction; see [RECOVERY_STATE.md](RECOVERY_STATE.md). Commit and push each reviewed milestone and record the remote HEAD SHA, route, verified preview URL when available, media sources, and Ron's decision in the handoff.
 
 ## Code boundaries
 
@@ -116,7 +116,7 @@ Directories should be introduced only when real code needs them. Do not scaffold
 
 ## PayPal payment and automatic enrollment
 
-PayPal is a required launch integration. Payment and enrollment are one controlled workflow, but separate records.
+PayPal is required for the **later course-platform replacement release**. The first public marketing release keeps the existing course and payment operation, with its checkout moved to a stable destination or verified proxy before DNS cutover. In the replacement system, payment and enrollment are one controlled workflow, but separate records.
 
 ### Required flow
 

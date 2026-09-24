@@ -3,109 +3,99 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="HVAC Training Solutions | Start Learning HVAC the Right Way"
-  description="Beginner-friendly online HVAC training that helps you understand the fundamentals, prepare for interviews, and get support when you are stuck."
+  title="HVAC Training Solutions | Learn HVAC with Ron Walker"
+  description="New to HVAC? Explore Ron Walker's 27-module online HVAC Boot Camp, see how the existing course works, review pricing, and watch a free teaching sample."
 >
-  <div class="home-page">
-    <section class="home-hero">
+  <div class="marketing-home">
+    <section class="home-hero refreshed-hero">
       <div class="home-hero-inner">
-        <div>
-          <p class="eyebrow">A clearer way into the HVAC trade</p>
-          <h1>Learn HVAC from the ground up. <span>Understand the fundamentals technicians use every day.</span></h1>
-          <p class="home-hero-lead">Build the fundamentals, practice explaining what you know, and prepare for an entry-level HVAC opportunity—with a real instructor and focused learning help behind you.</p>
+        <div class="hero-copy">
+          <p class="eyebrow">Online HVAC training for your first step</p>
+          <h1>New to HVAC? <span>Build a foundation you can explain.</span></h1>
+          <p class="home-hero-lead">Start with how systems move heat, then work through the tools, safety, airflow, electricity, and equipment you will encounter in the trade. Ron Walker's HVAC Boot Camp gives beginners a structured place to start.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="/try-boot-camp/">Try a lesson first</a>
-            <a class="button button-light" href="/hvac-boot-camp/">Explore HVAC Boot Camp</a>
+            <a class="button button-primary" href="/hvac-boot-camp/">Explore HVAC Boot Camp</a>
+            <a class="button button-secondary" href="/try-boot-camp/">Watch a free teaching sample</a>
           </div>
-          <p class="hero-fineprint">No HVAC experience required · Learn online · Instructor support included</p>
+          <p class="hero-fineprint">Online study · 27 modules in the current course · Textbook purchased separately</p>
         </div>
 
-        <aside class="start-card" aria-label="Choose your next step">
-          <p class="start-card-kicker">Where are you right now?</p>
-          <a href="/try-boot-camp/"><span>01</span><div><strong>I am completely new to HVAC</strong><small>See how the first lesson explains the basics.</small></div><b>→</b></a>
-          <a href="/how-it-works/"><span>02</span><div><strong>I want to know how the training works</strong><small>See the lesson, support, and career-prep path.</small></div><b>→</b></a>
-          <a href="/pricing/"><span>03</span><div><strong>I am ready to compare plans</strong><small>Review the full-pay and monthly options.</small></div><b>→</b></a>
+        <aside class="hero-lesson-card" aria-label="Free teaching sample">
+          <div class="hero-lesson-top"><span class="preview-pill">Free teaching sample</span><span>HVAC basics · Moving heat</span></div>
+          <p class="hero-lesson-label">Start with one idea</p>
+          <h2>An air conditioner moves heat. It does not make cold.</h2>
+          <div class="heat-flow-graphic" aria-label="Heat moves from warm indoor air into the evaporator coil">
+            <div><small>Warmer</small><strong>Indoor air</strong></div>
+            <span aria-hidden="true">→</span>
+            <div><small>Colder</small><strong>Evaporator coil</strong></div>
+          </div>
+          <p>See how Ron explains a core HVAC idea, then review the course you can enroll in today.</p>
+          <a href="/try-boot-camp/">Watch Ron teach <span aria-hidden="true">↗</span></a>
+          <small class="preview-disclosure">The paid Boot Camp has 27 modules in Moodle with textbook reading, videos, and quizzes.</small>
         </aside>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="HVAC Boot Camp highlights">
-      <div class="proof-grid">
-        <div class="proof-item"><strong>27 modules</strong><span>A structured technical foundation</span></div>
-        <div class="proof-item"><strong>Beginner friendly</strong><span>Starts with the basics</span></div>
-        <div class="proof-item"><strong>Instructor support</strong><span>You are not left alone</span></div>
-        <div class="proof-item"><strong>Career preparation</strong><span>From learning to interview</span></div>
+    <section class="audience-section" aria-labelledby="choose-path">
+      <div class="page-shell">
+        <p class="eyebrow">Find what brought you here</p>
+        <h2 id="choose-path">Two ways to use this site.</h2>
+        <div class="audience-grid">
+          <a class="audience-card" href="/hvac-boot-camp/">
+            <span class="audience-icon" aria-hidden="true">01</span>
+            <span><strong>I'm exploring an HVAC career</strong><small>See what Boot Camp teaches, how the current course works, and what it costs.</small><b>Explore Boot Camp →</b></span>
+          </a>
+          <a class="audience-card" href="/resources/">
+            <span class="audience-icon resource-icon" aria-hidden="true">02</span>
+            <span><strong>I'm looking up a technical question</strong><small>Find practical articles on refrigerant recovery, pressure and temperature, superheat, and more.</small><b>Browse free resources →</b></span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="page-section">
-      <div class="page-shell split-feature">
+    <section class="page-section soft-section" aria-labelledby="course-today">
+      <div class="page-shell">
+        <div class="section-heading"><p class="eyebrow">The course available today</p><h2 id="course-today">A structured start, from heat basics to heat pumps.</h2><p>HVAC Boot Camp is an existing online course for beginners. Its 27 modules use textbook reading, Ron's video instruction, and quizzes in Moodle. The textbook is an additional purchase.</p></div>
+        <div class="foundation-grid">
+          <article><span>01 / Fundamentals</span><h3>Understand the system</h3><p>Heat, refrigeration, matter, safety, and the tools used around HVAC equipment.</p></article>
+          <article><span>02 / Systems</span><h3>Follow the air and refrigerant</h3><p>Air distribution, refrigerant management, startup, charging, and indoor air quality.</p></article>
+          <article><span>03 / Electrical</span><h3>Make sense of controls</h3><p>Electricity, motors, controls, diagrams, codes, and basic troubleshooting.</p></article>
+          <article><span>04 / Equipment</span><h3>Keep building</h3><p>Heating systems, heat pumps, and mechanical troubleshooting.</p></article>
+        </div>
+        <div class="section-action"><a class="button button-dark" href="/hvac-boot-camp/">See the full curriculum</a><a class="text-link-dark" href="/how-it-works/">How studying works today →</a></div>
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="course-sample">
+      <div class="page-shell preview-split">
         <div class="section-heading">
-          <p class="eyebrow">The problem with most online training</p>
-          <h2>Watching is not the same as understanding.</h2>
-          <p>A difficult HVAC concept can stop your progress long before the quiz. Boot Camp is being rebuilt around the moments when learners usually get lost.</p>
+          <p class="eyebrow">See the course before you decide</p>
+          <h2 id="course-sample">Hear Ron teach. Explore what Boot Camp covers.</h2>
+          <p>Start with a free public teaching sample, then browse the actual 27-module course outline. You can see the topics, the textbook requirement, the study format, and the price before enrolling.</p>
+          <p class="preview-boundary"><strong>The current course:</strong> study the textbook, watch Ron's videos, and complete quizzes in Moodle. You will still need supervised practice to develop field skills.</p>
+          <a class="button button-primary" href="/try-boot-camp/">Watch a free sample</a>
         </div>
-        <div class="friction-list">
-          <article><span>01</span><div><h3>Too much at once</h3><p>Lessons are broken into small concepts so you can focus on one idea before moving on.</p></div></article>
-          <article><span>02</span><div><h3>No help at the point of confusion</h3><p>Focused assistance explains the current page more simply or connects it to an HVAC example.</p></div></article>
-          <article><span>03</span><div><h3>No bridge to employment</h3><p>Technical learning connects to employer research, an OJT plan, and interview preparation.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section soft-section">
-      <div class="page-shell">
-        <div class="section-heading center">
-          <p class="eyebrow">A simple learning rhythm</p>
-          <h2>Learn it. Work with it. Check it. Move on.</h2>
-          <p>The student should always know what to focus on and what the next action is.</p>
-        </div>
-        <div class="process-grid">
-          <article><span>1</span><h3>One clear concept</h3><p>Read or watch only what is needed for the idea in front of you.</p></article>
-          <article><span>2</span><h3>Help when needed</h3><p>Ask for a simpler explanation, an HVAC example, or why it matters.</p></article>
-          <article><span>3</span><h3>A quick check</h3><p>Answer a focused question and get immediate feedback.</p></article>
-          <article><span>4</span><h3>Visible progress</h3><p>Move forward knowing what you completed and where to continue.</p></article>
-        </div>
-        <div class="center-actions"><a class="button button-dark" href="/try-boot-camp/">Try the learning experience</a></div>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="page-shell">
-        <div class="home-offer">
-          <div>
-            <p class="eyebrow">The complete starting point</p>
-            <h2>HVAC Boot Camp</h2>
-            <p>Twenty-seven modules covering fundamentals, refrigeration, tools, safety, airflow, electricity, troubleshooting, heating, and heat pumps—plus instructor support and career preparation.</p>
-            <div class="offer-actions"><a class="button button-primary" href="/hvac-boot-camp/">See everything included</a><a class="text-link-dark" href="/pricing/">Compare payment options →</a></div>
-          </div>
-          <ul class="offer-list">
-            <li><strong>Start from the beginning</strong><span>No prior HVAC experience required.</span></li>
-            <li><strong>Study around your schedule</strong><span>Online access with a structured path.</span></li>
-            <li><strong>Get unstuck</strong><span>Learning help plus access to Ron.</span></li>
-            <li><strong>Prepare for the next step</strong><span>Employer search, OJT plan, and interview practice.</span></li>
-          </ul>
+        <div class="preview-steps" aria-label="Topics in the current Boot Camp">
+          <div><span>1</span><strong>Fundamentals</strong><small>Heat and refrigeration</small></div>
+          <div><span>2</span><strong>Systems</strong><small>Airflow and refrigerant</small></div>
+          <div><span>3</span><strong>Electrical</strong><small>Motors and controls</small></div>
+          <div><span>4</span><strong>Heating</strong><small>Equipment and operation</small></div>
+          <div><span>5</span><strong>Heat pumps</strong><small>Continuing the path</small></div>
         </div>
       </div>
     </section>
 
-    <section class="page-section proof-section soft-section">
-      <div class="page-shell">
-        <div class="section-heading center"><p class="eyebrow">Student experience</p><h2>Understanding gives you something real to talk about.</h2></div>
-        <div class="student-proof-grid">
-          <article class="testimonial-card"><p class="testimonial-text">Robert said a prospective employer was impressed when he discussed the refrigeration cycle, pressures, temperatures, subcooling, and superheat. He was offered a job.</p><p class="testimonial-name">— Robert O.</p></article>
-          <article class="testimonial-card"><p class="testimonial-text">Chris said he could explain the refrigeration cycle in detail during an interview even though his hands-on gauge experience was still limited.</p><p class="testimonial-name">— Chris J.</p></article>
-        </div>
-        <p class="result-disclaimer">Student experiences vary. HVAC Training Solutions does not guarantee employment.</p>
+    <section class="page-section instructor-section" aria-labelledby="meet-ron">
+      <div class="page-shell instructor-grid">
+        <div class="section-heading"><p class="eyebrow">Meet your instructor</p><h2 id="meet-ron">Learn the why with Ron Walker.</h2><p>Ron's lessons connect the science to what technicians observe. Watch a public refrigeration cycle lesson to see his teaching style before deciding whether Boot Camp fits.</p><div class="section-action"><a class="button button-light" href="/about/">Meet Ron</a><a class="text-link-light" href="https://www.youtube.com/watch?v=27uCRQ3B8r4">Watch on YouTube ↗</a></div></div>
+        <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/27uCRQ3B8r4?rel=0" title="Basic Refrigeration Cycle lesson by Ron Walker" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       </div>
     </section>
 
-    <section class="page-section final-cta">
-      <div class="page-shell">
-        <p class="eyebrow">Do not take our word for it</p>
-        <h2>Try one concept before you choose the course.</h2>
-        <p>See whether the short, focused lesson style works for you. No account or payment is required for the preview.</p>
-        <div class="hero-actions"><a class="button button-primary" href="/try-boot-camp/">Try a lesson</a><a class="button button-secondary" href="/pricing/">See pricing</a></div>
+    <section class="page-section" aria-labelledby="ready-next">
+      <div class="page-shell home-next">
+        <div><p class="eyebrow">Ready to look closer?</p><h2 id="ready-next">Know the course and the cost before you decide.</h2><p>Pay $479 in full, or $97 now plus six monthly payments of $97 ($679 total). The textbook is purchased separately. Online study builds a foundation; supervised field experience is still essential.</p></div>
+        <div class="home-next-actions"><a class="button button-primary" href="/pricing/">See pricing and enrollment</a><a class="button button-outline-dark" href="/contact/">Ask a question</a></div>
       </div>
     </section>
   </div>

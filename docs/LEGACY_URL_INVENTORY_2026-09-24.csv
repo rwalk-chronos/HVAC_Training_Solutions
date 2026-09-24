@@ -1,0 +1,241 @@
+type,original_path,title,gsc_clicks,gsc_impressions,status,destination,next_action
+page,/,Home,4,419,preserved,same URL,verify at cutover
+page,/commrecial-refrigeration-hvac-technicians/,Commercial Refrigeration for HVAC Techs,2,156,preserved,same URL,verify at cutover
+page,/nate/,NATE Course,0,57,preserved,same URL,verify at cutover
+page,/hvac-boot-camp/,HVAC Boot Camp,0,42,preserved,same URL,verify at cutover
+page,/hvac-tech-course/,HVAC Technician Course,0,31,preserved,/hvac-tech-course/,distinct archived course; review status before public cutover
+page,/hvac-training-resource-guide/,HVAC Training Resource Guide,0,17,preserved,same URL,verify at cutover
+page,/find-out-more/,Let's Connect,0,8,mapped,/contact/,verify at cutover
+page,/hvac-boot-camp/monthly-plan/,Boot Camp - Monthly Plan,0,8,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/self-paced-instructor-guided/,Self Paced or Instructor Guided,0,2,mapped,/how-it-works/,verify at cutover
+page,/hvac-boot-camp/brazing-lesson-part-1/,Brazing Lesson - Part 1,0,1,unresolved,,review and preserve teaching content or map to approved replacement
+page,/hvac-boot-camp/pay-in-full/,Boot Camp - Pay in Full,0,1,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/blog/,HVAC Training Articles,0,0,preserved,same URL,verify at cutover
+page,/boot-camp-webinar-registration-form/,Boot Camp Webinar Registration Form,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/boot-camp-webinar-registration-form/boot-camp-webinar-thank-you/,Boot Camp Webinar Thank You,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/boot-camp-webinar-registration-form/boot-camp-webinar-thank-you/boot-camp-webinar/,Boot Camp Webinar,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/boot-camp-webinar-registration-form/boot-camp-webinar-thank-you/boot-camp-webinar/boot-camp-webinar-special-offer-expired/,Boot Camp - Webinar | Special Offer | Expired,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/boot-camp-webinar-registration-form/boot-camp-webinar-thank-you/boot-camp-webinar/boot-camp-webinar-special-offer/,Boot Camp - Webinar | Special Offer,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/faq/,faq-op3,0,0,mapped,/how-it-works/,verify at cutover
+page,/hvac-boot-camp-2/,HVAC Boot Camp,0,0,mapped,/hvac-boot-camp/,verify at cutover
+page,/hvac-boot-camp-az-cloned-at-2021-02-07-194857/,HVAC Boot Camp AZ | Cloned at: 2021-02-07 19:48:57,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/hvac-boot-camp-cloned-at-2021-02-07-190841/,HVAC Boot Camp AZ,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/hvac-boot-camp-meet-your-instructor/,HVAC Boot Camp - Meet Your Instructor,0,0,mapped,/about/,verify at cutover
+page,/hvac-boot-camp/boot-camp-monthly-plan-cloned-at-2022-07-11-154924/,Boot Camp - Monthly Plan | Cloned at: 2022-07-11 15:49:24,0,0,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/hvac-boot-camp/boot-camp-self-paced-enrollment-special/,Boot Camp - Self Paced Enrollment | Special Offer,0,0,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/hvac-boot-camp/brazing-lesson-part-2/,Brazing Lesson - Part 2,0,0,unresolved,,review and preserve teaching content or map to approved replacement
+page,/hvac-boot-camp/brazing-lesson-part-3/,Brazing Lesson - Part 3,0,0,unresolved,,review and preserve teaching content or map to approved replacement
+page,/hvac-boot-camp/course-purchase/,Thank You,0,0,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/hvac-boot-camp/hvac-boot-camp-payment-option/,HVAC Boot Camp Payment Option,0,0,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/hvac-boot-camp/thermistor-snippet/,Thermistor Snippet,0,0,unresolved,,review and preserve teaching content or map to approved replacement
+page,/hvac-tech-course-enrollement/,hvac-tech-course-enrollement,0,0,unresolved,,checkout blocker: retain WordPress payment/enrollment until tested replacement
+page,/op-test-default-page/,OP test default page,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/op-test/,OP Test,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+page,/sqprivacy/,Privacy Policy,0,0,mapped,/privacy/,verify at cutover
+page,/wi-sc-test/,WI  SC test,0,0,unresolved,,"review old clone, webinar, form, or test page for a redirect or retirement"
+post,/recovering-refrigerant-without-using-a-refrigerant-recovery-machine/,Recovering Refrigerant WITHOUT Using a Refrigerant Recovery Machine,41,3617,preserved,same URL,verify at cutover
+post,/hvac-training-the-pt-chart-and-saturation-temperature/,HVAC Training - The PT Chart and Saturation Temperature,29,1904,preserved,same URL,verify at cutover
+post,/steps-to-measuring-superheat/,Steps to Measuring Superheat,19,1224,preserved,same URL,verify at cutover
+post,/hvac-training-troubleshooting-a-honeywell-smart-valve/,HVAC Training - Troubleshooting a Honeywell Smart Valve,9,270,preserved,same URL,verify at cutover
+post,/airflow-calculation/,Airflow Calculation,7,1596,preserved,same URL,verify at cutover
+post,/hvac-training-mold-on-an-evaporator-coil/,HVAC Training - Mold on an Evaporator Coil,7,414,preserved,same URL,verify at cutover
+post,/replacing-an-oem-blower-motor-step-by-step/,Replacing an HVAC Blower Motor Step-by-Step,5,2164,preserved,same URL,verify at cutover
+post,/condenser-fan-cycling-controls/,Condenser Fan Cycling Controls,5,719,preserved,same URL,verify at cutover
+post,/non-condensables/,Non Condensables,5,504,preserved,same URL,verify at cutover
+post,/potential-relays-what-happened-to-terminal-3/,Potential Relays - What Happened to Terminal 3?,4,816,preserved,same URL,verify at cutover
+post,/current-relays-part-2/,Be the Guru of Current Relays (we will unlock the mystery together)!,4,680,preserved,same URL,verify at cutover
+post,/hvac-training-commercial-refrigeration-headmaster/,HVAC Training - Commercial Refrigeration Headmaster,4,388,preserved,same URL,verify at cutover
+post,/the-subcooling-process/,The Subcooling Process,4,323,preserved,same URL,verify at cutover
+post,/troubleshooting-air-conditioning-compressor-motors-like-pro/,Troubleshooting Air Conditioning Compressor Motors Like A Pro,3,1324,preserved,same URL,verify at cutover
+post,/capillary-tubes-cap-tubes/,Capillary Tubes (Cap Tubes),3,485,preserved,same URL,verify at cutover
+post,/hvac-training-cleaning-up-a-burned-out-compressor/,HVAC Training - Cleaning up a Burned out Compressor,3,369,preserved,same URL,verify at cutover
+post,/hvac-training-underfeeding-overfeeding-txv/,HVAC Training - Underfeeding & Overfeeding TXV,3,361,preserved,same URL,verify at cutover
+post,/the-six-classes-of-refrigerant-leaks/,The Six Classes of Refrigerant Leaks,3,329,preserved,same URL,verify at cutover
+post,/using-refrigeration-gauges-to-convert-pressure-to-saturation-temperature/,Using Refrigeration Gauges to Convert Pressure to Saturation Temperature,3,135,preserved,same URL,verify at cutover
+post,/hvac-training-class-refrigeration-tubing/,HVAC Training Class - Refrigeration Tubing,2,553,preserved,same URL,verify at cutover
+post,/troubleshooting-reversing-valve/,Troubleshooting a Reversing Valve,2,473,preserved,same URL,verify at cutover
+post,/heat-pump-defrost-control-boards-step-step/,Heat Pump Defrost Control Boards Step-by-Step,2,471,preserved,same URL,verify at cutover
+post,/commercial-refrigeration-walk-in-cooler-operation/,Commercial Refrigeration - Walk-in Cooler Operation,2,454,preserved,same URL,verify at cutover
+post,/hvac-training-commercial-defrost-timers/,HVAC Training - Commercial Defrost Timers,2,347,preserved,same URL,verify at cutover
+post,/using-jumper-wires-troubleshooting-tool/,Using Jumper Wires as a Troubleshooting Tool,2,253,preserved,same URL,verify at cutover
+post,/understanding-the-defrost-control-board-part-4-testing/,Understanding the Defrost Control Board - Part 4 Testing,2,186,preserved,same URL,verify at cutover
+post,/hvac-training-residential-duct-systems/,HVAC Training - Residential Duct Systems,2,33,preserved,same URL,verify at cutover
+post,/hvac-training-understanding-simple-circuits/,HVAC Training - Understanding Simple Circuits,2,22,preserved,same URL,verify at cutover
+post,/capillary-tubes-15-minutes/,Capillary Tubes in 15 Minutes,1,869,preserved,same URL,verify at cutover
+post,/understanding-capillary-tubes/,Understanding Capillary Tubes,1,742,preserved,same URL,verify at cutover
+post,/nitrogen-purging-brazing/,Nitrogen Purging and Brazing,1,552,preserved,same URL,verify at cutover
+post,/hvac-training-refrigerant/,HVAC Training - Refrigerant,1,509,preserved,same URL,verify at cutover
+post,/heat-pump-reversing-valve/,Heat Pump Reversing Valve,1,452,preserved,same URL,verify at cutover
+post,/air-conditioning-training-electric-circuits-1/,Air Conditioning Training - Electric Circuits 1,1,313,preserved,same URL,verify at cutover
+post,/hvac-training-txv-overview/,HVAC Training - TXV Overview,1,272,preserved,same URL,verify at cutover
+post,/basic-operation-of-automatic-pump-down-medium-temperature-walk-in-coolers/,Basic Operation of Automatic Pump Down Medium Temperature Walk-in Coolers,1,174,preserved,same URL,verify at cutover
+post,/hvac-training-flame-sensor-and-flame-rectification/,HVAC Training - Flame Sensor and Flame Rectification,1,156,preserved,same URL,verify at cutover
+post,/hvac-training-in-tampa-fl/,"HVAC Training in Tampa, FL",1,139,preserved,same URL,verify at cutover
+post,/understanding-a-heat-pump-defrost-control-board-part-1/,Understanding a Heat Pump Defrost Control Board - Part 1,1,122,preserved,same URL,verify at cutover
+post,/hvac-training-cooling-terms/,HVAC Training - Cooling Terms,1,119,preserved,same URL,verify at cutover
+post,/six-steps-checking-a-txv/,Six Steps - Checking a TXV,1,104,preserved,same URL,verify at cutover
+post,/troubleshoot-an-hvac-system-24-volt-problem-with-confidence/,Troubleshoot an HVAC System 24 Volt Problem With Confidence,1,104,preserved,same URL,verify at cutover
+post,/heat-and-heat-transfer/,Heat and Heat Transfer,1,69,preserved,same URL,verify at cutover
+post,/duct-work-and-airflow-principles-part-2-of-the-airflow-series/,Duct Work and Airflow Principles - Part 2 of the Airflow Series,1,59,preserved,same URL,verify at cutover
+post,/refrigeration-and-air-conditioning-training-the-evaporator-circuit/,Refrigeration and Air Conditioning Training - The Evaporator Circuit,1,54,preserved,same URL,verify at cutover
+post,/schematic-reading-hvac-technicians-4-part-series/,Schematic Reading for HVAC Technicians,1,53,preserved,same URL,verify at cutover
+post,/checking-refrigerant-charge-colder-months/,Checking the Refrigerant Charge in the Colder Months,1,52,preserved,same URL,verify at cutover
+post,/hvac-training-course-cirriculum/,HVAC Training - Course Curriculum,1,52,preserved,same URL,verify at cutover
+post,/hvac-training-power-factor/,HVAC Training - Power Factor,1,51,preserved,same URL,verify at cutover
+post,/operating-principles-of-a-honeywell-smart-valve-part-2/,Operating Principles of a Honeywell Smart Valve - Part 2,1,20,preserved,same URL,verify at cutover
+post,/operating-principles-of-a-honeywell-smart-valve-part-4/,Operating Principles of a Honeywell Smart Valve - Part 4,1,11,preserved,same URL,verify at cutover
+post,/hvac-training-in-albany-ga/,"HVAC Training in Albany, GA",1,3,preserved,same URL,verify at cutover
+post,/how-to-diagnose-a-24-volt-short/,How to Diagnose a 24 Volt Short,0,599,preserved,same URL,verify at cutover
+post,/hvac-training-superheat/,HVAC Training - Superheat,0,525,preserved,same URL,verify at cutover
+post,/air-conditioning-training-electric-circuits-2/,Air Conditioning Training - Electric Circuits 2,0,241,preserved,same URL,verify at cutover
+post,/hvac-leak-detection-everything-leaks/,HVAC Leak Detection - Everything Leaks,0,237,preserved,same URL,verify at cutover
+post,/refrigeration-and-air-conditioning-training-superheating-suction-vapor/,Refrigeration and Air Conditioning Training - Superheating Suction Vapor,0,170,preserved,same URL,verify at cutover
+post,/tackling-a-txv-part-2/,Tackling a TXV - Part 2,0,151,preserved,same URL,verify at cutover
+post,/hvac-training-moisture-in-an-hvac-system/,HVAC Training - Moisture in an HVAC System,0,129,preserved,same URL,verify at cutover
+post,/hvac-training-head-pressure-control-in-commercial-refrigeration/,HVAC Training - Head Pressure Control in Commercial Refrigeration,0,116,preserved,same URL,verify at cutover
+post,/hvac-training-ohms-law/,HVAC Training - Ohm's Law,0,105,preserved,same URL,verify at cutover
+post,/electro-mechanical-defrost-timers/,Electro-Mechanical Defrost Timers,0,100,preserved,same URL,verify at cutover
+post,/hvac-training-brazing/,HVAC Training - Brazing,0,85,preserved,same URL,verify at cutover
+post,/hvac-training-basic-operation-of-pressure-controlled-walk-in-coolers/,HVAC Training - Basic Operation of Pressure Controlled Walk-in Coolers,0,83,preserved,same URL,verify at cutover
+post,/hvac-training-low-system-charge-r22-txv/,HVAC Training - Low System Charge R22 TXV,0,70,preserved,same URL,verify at cutover
+post,/technician-certification/,Technician Certification,0,69,preserved,same URL,verify at cutover
+post,/operating-principles-of-a-honeywell-smart-valve-part-1/,Operating Principles of a Honeywell Smart Valve - Part 1,0,66,preserved,same URL,verify at cutover
+post,/hvac-training-electrical/,HVAC Training - Electrical,0,64,preserved,same URL,verify at cutover
+post,/hvac-training-operating-principles-of-a-honeywell-smart-valve/,HVAC Training - Operating Principles of a Honeywell Smart Valve,0,53,preserved,same URL,verify at cutover
+post,/understanding-a-heat-pump-defrost-control-board-part-3/,Understanding a Heat Pump Defrost Control Board – Part 3,0,53,preserved,same URL,verify at cutover
+post,/understanding-a-heat-pump-defrost-control-board-part-2/,Understanding a Heat Pump Defrost Control Board – Part 2,0,46,preserved,same URL,verify at cutover
+post,/motor-starters/,Motor Starters - Video,0,39,preserved,same URL,verify at cutover
+post,/hvac-classes-electrical-troubleshooting/,HVAC Classes - Electrical Troubleshooting,0,38,preserved,same URL,verify at cutover
+post,/superheating-suction-vapor/,Superheating Suction Vapor,0,38,preserved,same URL,verify at cutover
+post,/nate-hvacr-certification-basics/,NATE HVAC/R Certification Basics,0,37,preserved,same URL,verify at cutover
+post,/air-conditioning-training-compressor-and-condenser-coil/,Air Conditioning Training - Compressor and Condenser Coil,0,36,preserved,same URL,verify at cutover
+post,/hvac-training-laws-of-thermodynamics/,HVAC Training - Laws of Thermodynamics,0,29,preserved,same URL,verify at cutover
+post,/residential-ductwork-friction-loss-and-pressure-drop/,Residential Ductwork Friction Loss and Pressure Drop,0,26,preserved,same URL,verify at cutover
+post,/the-benefits-of-online-hvac-training/,The Benefits of Online HVAC Training,0,25,preserved,same URL,verify at cutover
+post,/air-conditioning-training-residential-duct-systems/,Air Conditioning Training - Residential Duct Systems,0,22,preserved,same URL,verify at cutover
+post,/measuring-subcooling/,Measuring Subcooling,0,22,preserved,same URL,verify at cutover
+post,/nate-training/,NATE Training,0,20,preserved,same URL,verify at cutover
+post,/nate-certification-training-core-part-1/,NATE Certification Training - Core Part 1,0,17,preserved,same URL,verify at cutover
+post,/refrigeration-cycle-part-1-video/,The Refrigeration Cycle Part 1 - Video,0,17,preserved,same URL,verify at cutover
+post,/epa-study-and-practice-test/,EPA Study and Practice Test,0,16,preserved,same URL,verify at cutover
+post,/hvac-training-inductance/,HVAC Training - Inductance,0,14,preserved,same URL,verify at cutover
+post,/hvac-training-contactors/,HVAC Training - Contactors,0,13,preserved,same URL,verify at cutover
+post,/free-hvac-training/,Free HVAC Training,0,12,preserved,same URL,verify at cutover
+post,/hvac-101-full-hvac-training/,Comprehensive HVAC Training - HVAC 101,0,12,preserved,same URL,verify at cutover
+post,/hvac-training-video-condenser/,HVAC Training Video - The Condenser,0,12,preserved,same URL,verify at cutover
+post,/online-hvac-training-systematic-troubleshooting/,HVAC Training - Systematic Troubleshooting - Our Online HVAC Training Teaches you How!,0,11,preserved,same URL,verify at cutover
+post,/hooking-up-your-refrigerant-gauges/,Hooking Up Your Refrigerant Gauges,0,10,preserved,same URL,verify at cutover
+post,/hvac-training-contactors-2/,HVAC Training - Contactors,0,9,preserved,same URL,verify at cutover
+post,/zeroing-your-manifold-gauges/,Zeroing Your Manifold Gauges,0,8,preserved,same URL,verify at cutover
+post,/free-hvac-training-schematic-diagrams/,Free HVAC Training - Schematic Diagrams,0,7,preserved,same URL,verify at cutover
+post,/operating-principles-of-a-honeywell-smart-valve-part-3/,Operating Principles of a Honeywell Smart Valve - Part 3,0,7,preserved,same URL,verify at cutover
+post,/air-conditioning-repair-troubleshooting-process/,Air Conditioning Repair - Troubleshooting Process,0,3,preserved,same URL,verify at cutover
+post,/career-hvac-great-choice/,Why a Career in HVAC is a Great Choice,0,1,preserved,same URL,verify at cutover
+post,/free-hvac-training-10-air-conditioning-components/,Free HVAC Training - 10 Air Conditioning Components,0,1,preserved,same URL,verify at cutover
+post,/hvac-service-tool-bag-video/,HVAC Service Tool Bag - Video,0,1,preserved,same URL,verify at cutover
+post,/hvac-training-academy/,HVAC Training Academy,0,1,preserved,same URL,verify at cutover
+post,/hvac-training-motors-and-capacitors/,HVAC Training - Motors and Capacitors,0,1,preserved,same URL,verify at cutover
+post,/hvac-training-service-call-2/,HVAC Training - Service Call,0,1,preserved,same URL,verify at cutover
+post,/hvac-word-week/,HVAC Word Of The Week,0,1,preserved,same URL,verify at cutover
+post,/we-are-in-a-technician-crisis/,We Are in a Technician Crisis,0,1,preserved,same URL,verify at cutover
+post,/3-phase-voltage-unbalance/,3 Phase Voltage Unbalance,0,0,preserved,same URL,verify at cutover
+post,/air-conditioning-training-subcooling/,Air Conditioning Training - Subcooling,0,0,preserved,same URL,verify at cutover
+post,/another-hvac-training-service-call/,Another HVAC Training Service Call,0,0,preserved,same URL,verify at cutover
+post,/attn-contractors-need-help/,Attn: Contractors - I Need Your Help,0,0,preserved,same URL,verify at cutover
+post,/awesome-day-hvac-training/,Awesome Day of HVAC Training,0,0,preserved,same URL,verify at cutover
+post,/can-earn-hvac-technician/,What Can I Earn as an HVAC Technician?,0,0,preserved,same URL,verify at cutover
+post,/classroom-tour/,HVAC Classroom Tour,0,0,preserved,same URL,verify at cutover
+post,/coming-soon-hvactraining-tv/,Coming Soon - HVACTraining.TV,0,0,preserved,same URL,verify at cutover
+post,/commercial-refrigeration-classes/,Commercial Refrigeration Classes,0,0,preserved,same URL,verify at cutover
+post,/condenser-fan-retrofit-rookie-mistake/,Condenser Fan Retrofit - Rookie Mistake,0,0,preserved,same URL,verify at cutover
+post,/current-relays-commercial-refrigeration/,Current Relays Commercial Refrigeration,0,0,preserved,same URL,verify at cutover
+post,/different/,How We're Different,0,0,preserved,same URL,verify at cutover
+post,/dont-forget-our-google-hangout-tonight-800-pm-est/,Don't Forget Our Google Hangout Tonight - 8:00 PM EST,0,0,preserved,same URL,verify at cutover
+post,/ductwork-forgotten-component-part-2/,Ductwork the Forgotten Component - Part 2,0,0,preserved,same URL,verify at cutover
+post,/free-hvac-training-testing-a-dual-capacitor/,Free HVAC Training - Testing a Dual Capacitor,0,0,preserved,same URL,verify at cutover
+post,/free-hvac-training-the-refrigeration-cycle-part-1/,Free HVAC Training - The Refrigeration Cycle Part 1,0,0,preserved,same URL,verify at cutover
+post,/free-hvac-training-the-refrigeration-cycle-part-2/,Free HVAC Training - The Refrigeration Cycle Part 2,0,0,preserved,same URL,verify at cutover
+post,/free-hvac-training-the-refrigeration-cycle-part-3/,Free HVAC Training - The Refrigeration Cycle Part 3,0,0,preserved,same URL,verify at cutover
+post,/free-hvac-training-the-refrigeration-cycle-part-4/,Free HVAC Training - The Refrigeration Cycle Part 4,0,0,preserved,same URL,verify at cutover
+post,/full-hvac-training-course/,Full HVAC Training Course,0,0,preserved,same URL,verify at cutover
+post,/grow-hvac-tech/,Grow Your Own Tech,0,0,preserved,same URL,verify at cutover
+post,/hands-vs-knowledge/,Hands On vs. HVAC Knowledge,0,0,preserved,same URL,verify at cutover
+post,/how-to-check-a-compressor/,How to Check a Compressor,0,0,preserved,same URL,verify at cutover
+post,/how-to-learn-hvac/,How to Learn HVAC,0,0,preserved,same URL,verify at cutover
+post,/hvac-definitions/,HVAC Definitions,0,0,preserved,same URL,verify at cutover
+post,/hvac-schematics-contactors/,HVAC Schematics - Contactors,0,0,preserved,same URL,verify at cutover
+post,/hvac-simulator-hvac-training/,HVAC Simulator - HVAC Training,0,0,preserved,same URL,verify at cutover
+post,/hvac-technician-course-can-handle/,HVAC Technician Course - Is This Course Right For You?,0,0,preserved,same URL,verify at cutover
+post,/hvac-training-basic-operation-of-temperature-controlled-medium-temperature-walk-in-coolers/,HVAC Training Basic Operation of Temperature Controlled Medium Temperature Walk-in Coolers,0,0,preserved,same URL,verify at cutover
+post,/hvac-training-lesson-update/,HVAC Training -  HVAC Video Lesson Update,0,0,preserved,same URL,verify at cutover
+post,/hvac-training-service-call/,HVAC Training Service Call,0,0,preserved,same URL,verify at cutover
+post,/hvac-training-survey/,HVAC Training Survey,0,0,preserved,same URL,verify at cutover
+post,/hvac-training-video-basic-pipe-preparation/,HVAC Training Video - Basic Pipe Preparation,0,0,preserved,same URL,verify at cutover
+post,/hvac-training-video-lesson-compressor/,HVAC Training Video Lesson - The Compressor,0,0,preserved,same URL,verify at cutover
+post,/hvac-troubleshooting/,HVAC Troubleshooting,0,0,preserved,same URL,verify at cutover
+post,/impossible-service-call/,The Impossible Service Call,0,0,preserved,same URL,verify at cutover
+post,/is-online-hvac-training-right-for-you/,Is Online HVAC Training Right for You?,0,0,preserved,same URL,verify at cutover
+post,/live-hvac-training-experiment-youre-invited/,Live HVAC Training Experiment - You're Invited,0,0,preserved,same URL,verify at cutover
+post,/module-review-posted/,Module Review Posted,0,0,preserved,same URL,verify at cutover
+post,/new-hvac-boot-camp/,NEW - HVAC Boot Camp,0,0,preserved,same URL,verify at cutover
+post,/online-classroom-tour/,Online Classroom Tour,0,0,preserved,same URL,verify at cutover
+post,/safety-safety-safety/,"Safety, Safety, Safety!",0,0,preserved,same URL,verify at cutover
+post,/tackling-a-txv-part-1/,Tackling a TXV - Part 1,0,0,preserved,same URL,verify at cutover
+post,/the-condenser-coil/,The Condenser Coil,0,0,preserved,same URL,verify at cutover
+post,/txv-operation-video/,TXV Operation - Video,0,0,preserved,same URL,verify at cutover
+post,/video-intro-to-oxyacetylene-torches/,Video - Intro to Oxy/Acetylene Torches,0,0,preserved,same URL,verify at cutover
+post,/wanted-hvacr-technicians/,Wanted - HVACR Technicians,0,0,preserved,same URL,verify at cutover
+post,/what-does-it-take-to-be-an-air-conditioning-technician/,What Does it Take to Be an Air Conditioning Technician?,0,0,preserved,same URL,verify at cutover
+post,/why-hvac-is-an-exciting-and-diverse-career/,Why HVAC is an Exciting and Diverse Career,0,0,preserved,same URL,verify at cutover
+search-only,/EPA.pdf,Not in WXR published posts/pages,260,4385,preserved,same URL,verify at cutover
+search-only,/wp-content/uploads/2015/08/Spark-Inginiton-Troubleshooting-Flowchart.pdf,Not in WXR published posts/pages,3,52,preserved,same URL,verify at cutover
+search-only,/checking-the-refrigerant-charge-in-the-colder-months/,Not in WXR published posts/pages,1,1,mapped,/checking-refrigerant-charge-colder-months/,verify at cutover
+search-only,/steps-to-measuring-superheat-hvac-training-solutions/,Not in WXR published posts/pages,1,1,mapped,/steps-to-measuring-superheat/,verify at cutover
+search-only,/recovering-refrigerant-using-a-refrigerant-recovery-machine/,Not in WXR published posts/pages,0,14,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvactrainingsolutions.net/hvac-training-commercial-refrigeration-headmaster/,Not in WXR published posts/pages,0,9,unresolved,,restore media or review alias; no clicks in export
+search-only,/author/rwalk/,Not in WXR published posts/pages,0,7,unresolved,,restore media or review alias; no clicks in export
+search-only,/wp-content/uploads/2015/05/ResourceGuide.pdf,Not in WXR published posts/pages,0,7,preserved,same URL,verify at cutover
+search-only,/category/free-hvac-training/blog/,Not in WXR published posts/pages,0,6,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-the-saturation-temperature/,Not in WXR published posts/pages,0,5,unresolved,,restore media or review alias; no clicks in export
+search-only,/recovering-refrigerant-without-using-a-recovery-machine/,Not in WXR published posts/pages,0,4,unresolved,,restore media or review alias; no clicks in export
+search-only,/troubleshooting-a-reversing-valve/,Not in WXR published posts/pages,0,4,unresolved,,restore media or review alias; no clicks in export
+search-only,/heat-pump-defrost-control-board-step-step/,Not in WXR published posts/pages,0,3,unresolved,,restore media or review alias; no clicks in export
+search-only,/capillary-tail-refrigeration/,Not in WXR published posts/pages,0,2,unresolved,,restore media or review alias; no clicks in export
+search-only,/capillary-tube-cap-tubes/,Not in WXR published posts/pages,0,2,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-the-pt-chart-and-saturation-temperature/,Not in WXR published posts/pages,0,2,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvactraining-the-pt-chart-and-saturation-temperature/,Not in WXR published posts/pages,0,2,unresolved,,restore media or review alias; no clicks in export
+search-only,/6-classes-refrigerant-leaks/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/HVAC-training-the-pt-chart-and-saturation-temperature/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/The-Subcooling-Process-HVAC-Training-Solutions.net,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/air-comparison-training-electric-circuits-1/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/air-conditioning-training-equipment/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/capillary-titles-cap-tubes/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/capillary-tw-hvac-training-solutions/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/category/free-hvac-training/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/chiller-lift-surge-refrigerant-terms-explained/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/con-fan-cycling/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/condenser-fan-cycling-solutions/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/heat-pump-defrost-control-boards-step-by-step/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-commercial-ref-headmaster/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-moisture-in-an---2013/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-moisture-in-an-system/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-solutions.net/hvac-training-solutions/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-solutions/hvac-training-cleaning-up-a-burned-out-compressor/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-the-pressure-temperature-relationship/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-the-pt-card-and-saturation-temperature/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training-the-pt-training-or-similar/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-training/hvac-training-superheat/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvac-trainingsolutions.net/hvac-training-mold-on-an-evaporator-coil/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvactrainingsolutions.net/steps-to-measuring-superheat/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hval-training-the-pt-chart-and-saturation-temperature-and-pressure/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hvastraining-commercial-defrost-timers/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/hwp-content/uploads/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/operating-principles-of-a-smart-valve/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/recovering-refrigerant-without-a-refrigerant-recovery-machine/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/recovering-refrigerant-without-using-a-refrigerant/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/the-pt-chart-and-saturation-temperature/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/understanding-capillary-tube-blockages/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/understanding-the-control-board-part-4-testing/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/using-jumper-wires-as-a-troubleshooting-tool/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/using-vires-troubleshooting-tool/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
+search-only,/v/the-pt-chart-and-saturation-temperature-12/,Not in WXR published posts/pages,0,1,unresolved,,restore media or review alias; no clicks in export
