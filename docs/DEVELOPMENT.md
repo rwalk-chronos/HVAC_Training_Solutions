@@ -21,6 +21,14 @@ Do not convert the remaining course or resume public-platform implementation unt
 - No development environment may send production email, collect live payments, enroll production students, or modify production data.
 - A production cutover requires explicit approval, a tested migration, and a rollback plan.
 
+## Current GitHub to Cloudflare workflow
+
+The development Worker is `hvac-training-solutions` at `https://hvac-training-solutions.rawalker0619.workers.dev`. Its Git repository is `rwalk-chronos/HVAC_Training_Solutions`. For this development phase, Cloudflare Workers Builds uses `recovery/money-pages-unit1` as the Worker's production branch. That label controls only this development Worker; the live WordPress and Moodle sites remain separate.
+
+Build settings: repository root `/`, build command `npm run build`, deploy command `npx wrangler deploy`. Pushes to the selected branch should build and update the development Worker automatically. Changing the selected branch does not build its existing HEAD; a new push is needed to test the connection. Inspect **Deployments > Recent builds** and the build log after each push. Record the Git commit SHA and confirm `/unit-1-prototype/` on the Worker URL before reviewing the page.
+
+Other branches can produce isolated previews after Worker Previews are set up and the preview command is configured. The current recovery branch is the active development Worker branch, not an isolated preview. Do not connect the public domain or move the production branch to `main` until the review and cutover decisions are made.
+
 ## Current stack
 
 - Astro 7
@@ -47,7 +55,7 @@ npm run verify
 npm run preview
 ```
 
-Do not run `npm run deploy` merely to verify a change. Use the local build first and the GitHub-connected Cloudflare branch preview for review.
+Do not run `npm run deploy` merely to verify a change. Use the local build first, then review the GitHub-connected development Worker or an isolated branch preview once configured.
 
 The repository contains a committed npm lockfile, a local build verifier, and a GitHub Actions workflow. `npm run verify` builds the site, checks the expected routes, and confirms that development crawler protection remains active. Add focused automated tests as application logic grows.
 
@@ -57,7 +65,7 @@ The repository contains a committed npm lockfile, a local build verifier, and a 
 2. Use one narrowly named feature or cleanup branch.
 3. Open a draft pull request early.
 4. Verify `npm ci` and `npm run verify`.
-5. Review the Cloudflare branch preview on desktop and phone.
+5. Review the Cloudflare development Worker or configured branch preview on desktop and phone.
 6. Record any environment, route, data, or migration impact in the pull request.
 7. Do not merge or change production routing without approval.
 
