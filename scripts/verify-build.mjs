@@ -77,8 +77,23 @@ for (const match of prototype.matchAll(/src="(\/media\/[^"?#]+)(?:[?#][^"]*)?"/g
   await access(`dist${match[1]}`);
 }
 
-if (!home.includes("/unit-1-prototype/") || !trial.includes("/unit-1-prototype/")) {
-  throw new Error("Marketing journey does not link to the approved Unit 1 preview");
+for (const [route, html] of [
+  ["/", home],
+  ["/hvac-boot-camp/", bootCamp],
+  ["/pricing/", pricing],
+  ["/try-boot-camp/", trial],
+]) {
+  if (html.includes('href="/unit-1-prototype/"')) {
+    throw new Error(`${route} links the current-course sales journey to the future course prototype`);
+  }
+}
+
+if (!home.includes('/try-boot-camp/') || !trial.includes('youtube-nocookie.com/embed/27uCRQ3B8r4')) {
+  throw new Error("Marketing journey is missing Ron's current teaching sample");
+}
+
+if (!trial.includes("27-module Moodle course") || !bootCamp.includes("Moodle")) {
+  throw new Error("Marketing journey does not clearly describe the current course delivery");
 }
 
 if (!pricing.includes("679 total") || !pricing.includes("textbook")) {

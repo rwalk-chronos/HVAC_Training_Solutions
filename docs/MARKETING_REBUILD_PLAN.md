@@ -1,10 +1,10 @@
 # Marketing site rebuild and article migration plan
 
-Updated: 2026-09-24. Ron chose the marketing site first because traffic has declined and there are no conversions. The recovered Unit 1 demo remains saved at `/unit-1-prototype/`; course expansion follows this marketing work.
+Updated: 2026-09-24. Ron chose to launch the new marketing format for the **existing HVAC Boot Camp** while the replacement course delivery is built separately. The recovered Unit 1 demo remains saved at `/unit-1-prototype/` for development review. After the complete new course and its enrollment flow are verified, the marketing site can switch to the new delivery without another site migration.
 
 ## Development build status
 
-The `feature/marketing-face` branch now implements a first reviewable marketing face: homepage, Boot Camp course page, how-it-works, pricing, selected Unit 1 preview entry, Ron bio, resource hub, and contact. The copy separates the existing 27-module Moodle/textbook/video/quiz course from the five-part lesson redesign. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook. The resource hub currently links back to original production article and PDF URLs while preserving their search entry points.
+The `feature/marketing-face` branch implements a first reviewable marketing face: homepage, Boot Camp course page, how-it-works, pricing, a sample of Ron's current teaching, Ron bio, resource hub, and contact. Public sales copy describes the existing 27-module Moodle/textbook/video/quiz course. Pricing discloses $479 in full or $97 now plus six $97 payments ($679 total) and a separate textbook. The resource hub currently links back to original production article and PDF URLs while preserving their search entry points.
 
 This is a **noindex development build**. It does not yet replace the WordPress site or its existing checkout. The new marketing pages do not implement new enrollment, student accounts, email automation, or production analytics. The unresolved policy and checkout decisions are in [POLICY_LAUNCH_GAPS.md](POLICY_LAUNCH_GAPS.md); URL/media migration remains in [MIGRATION_AUDIT.md](MIGRATION_AUDIT.md). Do not route the public domain here until both are complete and verified.
 
@@ -12,7 +12,8 @@ This is a **noindex development build**. It does not yet replace the WordPress s
 
 - Preserve useful organic traffic from working technicians while building a separate acquisition path for beginners who may buy Boot Camp. Ranking gains are an outcome to measure, not a promise.
 - Preserve useful technical articles and existing URL paths when possible.
-- Keep live WordPress and Moodle running while Cloudflare remains a noindex development site.
+- Keep live WordPress marketing and checkout on SiteGround, and Moodle delivery, while Cloudflare remains a noindex development site. Cloudflare is entirely development until the public-domain cutover.
+- At marketing launch, Cloudflare serves the public marketing and preserved article URLs. The existing Moodle course remains the paid delivery. The later course swap changes the delivery and enrollment path, not the marketing URLs.
 - Do not change public DNS until the complete marketing and checkout path passes review.
 
 ## 1. Capture baseline and inventory
@@ -39,7 +40,7 @@ Prioritize article work using actual clicks, relevant impressions, query intent,
 
 Review the existing Cloudflare drafts together: home, `/hvac-boot-camp/`, `/how-it-works/`, `/pricing/`, and free sample. The offer must explain who it helps, what is included, Ron's role, limits of online learning, career/OJT support, total payment terms, textbook, and a clear next action. Add real proof and Ron's bio; use testimonials only with permission. Confirm all prices, refund terms, claims, and contact details against the current approved offer before launch.
 
-Ron selected the recovered `/unit-1-prototype/` as the public development sample. The marketing CTAs now go there; `/try-boot-camp/` is an explanatory entry page that also opens the selected prototype. Review contrast, navigation, speed, and form/CTA behavior on phones. Track beginner-journey sample starts, inquiries, checkout starts, and confirmed purchases separately from technician-article engagement and any voluntary course clicks. Do not send personal or payment data to analytics.
+For the interim launch, `/try-boot-camp/` shows Ron's public teaching video as a sample of his instructional style. The recovered `/unit-1-prototype/` stays available by direct development URL, outside the public sales journey, until the new course is ready. Review contrast, navigation, speed, and form/CTA behavior on phones. Track beginner-journey teaching-sample views, inquiries, checkout starts, and confirmed purchases separately from technician-article engagement and any voluntary course clicks. Do not send personal or payment data to analytics.
 
 ## 4. Reuse articles for the right audience
 
@@ -58,13 +59,13 @@ Build a separate beginner search-content path around career entry, learning HVAC
 
 ## 5. Solve checkout and student handoff
 
-The development pricing page currently links to WordPress checkout paths on the same public domain. Once that domain serves Cloudflare, those paths will no longer automatically reach WordPress. Before cutover, select and test a retained checkout hostname or an approved replacement payment path. Verify confirmation, failure recovery, attribution, student access handoff, contact form, email delivery, and support. The course rewrite can wait; the marketing site's purchase or inquiry path cannot.
+The development pricing page currently links to WordPress checkout paths on the same public domain. Once that domain serves Cloudflare, those paths will no longer automatically reach WordPress. Before cutover, put the existing checkout on a stable separate hostname or implement a verified proxy/replacement payment path. Verify both payment plans, confirmation, failure recovery, attribution, Moodle account handoff, contact, email delivery, and support. Keep existing students in Moodle until a separate migration plan is approved.
 
 ## 6. QA, cutover, and observation
 
-Before any public-domain change, verify all inventory URLs, redirects, canonical tags, sitemap, metadata, robots/noindex removal at launch only, mobile pages, accessibility, forms, checkout, GA4 events, Search Console ownership, privacy/terms/refund pages, and WordPress/routing rollback. Ron reviews the cutover plan.
+Before any public-domain change, verify all inventory URLs (especially `/EPA.pdf` and high-click repair articles), their media, redirects, canonical tags, sitemap, metadata, robots/noindex removal at launch only, mobile pages, accessibility, forms, checkout, GA4 events, Search Console ownership, privacy/terms/refund pages, and WordPress/routing rollback. Ron reviews the cutover plan. Use the existing GA4 property and web stream if its ownership and measurement ID are verified; exclude development traffic. Record `begin_checkout` on outbound checkout intent, but count a purchase only from a confirmed transaction or verified return/server event.
 
-After launch, compare 7-, 28-, and 90-day Search Console and GA4 windows by audience intent: technical-resource reach and engagement; beginner landing-page visits, sample starts, qualified leads, checkout starts, and purchases; and broken URLs. Diagnose traffic and conversion separately.
+After marketing launch, compare 7-, 28-, and 90-day Search Console and GA4 windows by audience intent: technical-resource reach and engagement; beginner landing-page visits, teaching-sample views, qualified leads, checkout starts, and confirmed purchases; and broken URLs. Use one or two controlled page experiments with canonical/redirect handling, rather than publishing many near-duplicate indexed pages. Diagnose traffic and conversion separately. The later course-delivery swap is a distinct release with account, progress, payment, and email testing.
 
 ## First build milestone
 

@@ -2,15 +2,15 @@
 
 ## Frozen decision
 
-HVAC Training Solutions will become one custom application. It will replace the public WordPress experience and the Moodle student experience after the replacement is proven.
+HVAC Training Solutions will eventually become one custom application. The first public cutover replaces the WordPress marketing experience while continuing to sell the existing 27-module Moodle Boot Camp. A later, separately tested release replaces course delivery, checkout, and account/enrollment systems.
 
 The live WordPress and Moodle systems remain untouched during development.
 
 ## Current development focus
 
-Marketing site first. Ron reported diminished traffic and no conversions and chose to build the public site before returning to course delivery. The immediate work is a measured URL/article inventory, clearer money pages, a verified conversion path, and safe migration. See [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md).
+Marketing site first. Ron reported diminished traffic and no conversions and chose to build the public site for the current course before returning to the replacement course. The immediate work is a measured URL/article inventory, clearer money pages, a verified existing-course conversion path, and safe migration. GA4 begins measuring the new marketing site at public launch. See [MARKETING_REBUILD_PLAN.md](MARKETING_REBUILD_PLAN.md).
 
-The recovered `/unit-1-prototype/` remains saved as the selected learning baseline. Course expansion follows the marketing foundation.
+The recovered `/unit-1-prototype/` remains saved as the selected future-course learning baseline. Course expansion follows the marketing foundation; it is not the current paid offer or public sales sample.
 
 ## Repository authority
 
@@ -82,7 +82,7 @@ Marketing code and learning code may remain internally separated, but they must 
 4. Refine the Boot Camp, pricing, and free-sample path for prospective beginners.
 5. Verify contact and checkout handoff on a phone and measure each audience separately.
 
-The saved Unit 1 demo may be linked as a learning sample once reviewed; course expansion does not block marketing development.
+The public teaching sample represents Ron's existing instructional style. Keep the Unit 1 development prototype outside the current-course sales journey; course expansion does not block marketing development.
 
 ## Future learning AI boundary
 
@@ -166,7 +166,7 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 - calls to action and audience-specific outcomes are measurable
 - contact and checkout handoff remain functional when the main domain moves away from WordPress
 
-### Payment and enrollment gate
+### Later course-platform payment and enrollment gate
 
 - products, prices, currency, payment-plan terms, and refund language match the approved public offer
 - server-side transaction verification passes
@@ -187,4 +187,3 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 
 - replacement authentication, PayPal, enrollment, email, progress, and course experience pass their own acceptance tests
 - Moodle retirement and production data migration receive separate approval
-
