@@ -1,19 +1,15 @@
 /**
- * Static build-time checkout destinations for the existing Moodle Boot Camp.
+ * Static build-time PayPal hosted checkout destinations for the existing
+ * 27-module Moodle Boot Camp. Ron supplied these button IDs for the two plans.
  *
- * Development previews use the current WordPress checkout pages. Before the
- * marketing domain moves to Cloudflare, set both BOOT_CAMP_*_CHECKOUT_URL
- * variables and build with MARKETING_PUBLIC_LAUNCH=1. The public build refuses
- * any destination on the marketing hostname, where WordPress no longer serves
- * these paths.
- *
- * A PayPal hosted-button URL is a possible independent destination, but the
- * payment-to-Moodle enrollment handoff and approved purchase terms must be
- * tested before using it for the public launch.
+ * The links can be reviewed in development. Before a public-domain launch,
+ * verify the button prices, recurring terms, and payment-to-Moodle enrollment
+ * handoff end to end. The public build still requires both explicit checkout
+ * URL settings; it does not infer launch approval from these defaults.
  */
-const legacyCheckout = {
-  full: "https://www.hvactrainingsolutions.net/hvac-boot-camp/pay-in-full/",
-  monthly: "https://www.hvactrainingsolutions.net/hvac-boot-camp/monthly-plan/",
+const defaultCheckout = {
+  full: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAXSA22Y45YUU",
+  monthly: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7CXTSXX9FSYGS",
 } as const;
 
 const marketingHostnames = new Set([
@@ -53,8 +49,8 @@ export function getCheckoutLinks() {
     throw new Error("Public marketing launch requires both external Boot Camp checkout URLs");
   }
 
-  const full = validateCheckoutUrl(fullOverride || legacyCheckout.full, "Pay-in-full");
-  const monthly = validateCheckoutUrl(monthlyOverride || legacyCheckout.monthly, "Monthly");
+  const full = validateCheckoutUrl(fullOverride || defaultCheckout.full, "Pay-in-full");
+  const monthly = validateCheckoutUrl(monthlyOverride || defaultCheckout.monthly, "Monthly");
 
   if (publicLaunch) {
     for (const [plan, href] of Object.entries({ full, monthly })) {
