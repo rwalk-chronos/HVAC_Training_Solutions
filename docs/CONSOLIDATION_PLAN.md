@@ -22,17 +22,16 @@ The Unit 1 experience must be approved before the remaining course is converted 
 
 ## Current committed state
 
-The active repository currently contains:
+The active repository now contains:
 
-- Astro/Cloudflare application scaffolding
-- development-only public home, Boot Camp, how-it-works, pricing, and trial routes
-- a sample lesson-format prototype that is not the complete Unit 1 course
-- migration, development, and sales-page notes
-- staging crawler protection
+- Astro/Cloudflare application scaffolding and development-only public home, Boot Camp, how-it-works, pricing, and trial routes
+- the recovered September 22 five-section Unit 1 demo at `/unit-1-prototype/`, with selected media, PT-chart image, checks, and heat interaction
+- recovery provenance and a media inventory; see [RECOVERY_STATE.md](RECOVERY_STATE.md)
+- migration, development, and sales-page notes, plus development crawler protection
 
-It does not currently contain the complete eight-page Unit 1 phone-first pilot described in the HVAC Boot Camp project conversations.
+Ron selected `/unit-1-prototype/` as the Unit 1 baseline to build upon. The later `/unit-1/lesson-1/` reconstruction was rejected and removed. Do not replace the selected prototype with the older eight-page pilot or treat the old “missing source” assessment as current.
 
-That missing implementation must be located from its actual current artifact or recreated from the approved project material. It must not be silently substituted with code from a failed repository.
+On September 24, 2026, GitHub access for the Cloudflare Workers and Pages app was repaired. Cloudflare's development Worker is connected to `recovery/money-pages-unit1`; Ron reported a successful automatic build after commit `62f063cee244878a1f3f5d7176abfe5a7f3a5b06`. The build result confirms the connection; phone playback and interaction review remain to be done. The live WordPress and Moodle sites were not changed. See [DEVELOPMENT.md](DEVELOPMENT.md) for the current workflow.
 
 ## Target product boundaries
 
@@ -140,14 +139,12 @@ Detailed development and acceptance rules are in [DEVELOPMENT.md](DEVELOPMENT.md
 
 ### Next
 
-- review the public site and Unit 1 source material separately
-- inventory the authoritative Unit 1 pages, concepts, images, presentations, videos, checks, and instructor intent
-- map every concept to its learning objective, HVAC relevance, visual support, interaction, feedback, and approved help
-- prototype and test one representative phone-first concept
-- complete and test Unit 1 with target learners
-- approve the repeatable delivery pattern
-- only then reconnect the real sample lesson to the public journey and plan the remaining course conversion
-- defer account, billing, enrollment, email, and PayPal implementation until the Unit 1 learning proof is accepted
+- review the selected `/unit-1-prototype/` on desktop and phone for video playback, interaction, checks, legibility, and instructional accuracy
+- use the recovered media inventory and instructor material to refine Unit 1 without silently changing its selected five-section sequence
+- complete and test the Unit 1 learning pattern with target learners
+- connect the approved real learning experience to the public sample journey
+- plan remaining course conversion, student accounts, PayPal, enrollment, and email after the Unit 1 proof is accepted
+- preserve existing traffic-driving URLs and measure search/conversion baselines before any public-domain migration
 
 ## Acceptance gates
 
