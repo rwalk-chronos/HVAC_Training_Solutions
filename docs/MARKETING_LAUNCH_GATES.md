@@ -4,9 +4,9 @@ Status: development only, September 24, 2026. PRs #7 and #8 are merged into `mai
 
 ## Gate 1 — Current checkout survives the domain move
 
-The development pricing buttons currently point to `www.hvactrainingsolutions.net/hvac-boot-camp/pay-in-full/` and `/hvac-boot-camp/monthly-plan/`. Those paths will cease to be WordPress pages if the whole hostname moves to the Worker. Select and configure an independent checkout hostname or a verified path proxy before replacing the URLs. Confirm that WordPress, its payment integration, cookies, return URLs, emails, and Moodle enrollment actually work on that destination. A hosted PayPal button alone does not prove the Moodle handoff.
+Ron supplied PayPal hosted button IDs `WAXSA22Y45YUU` (pay in full) and `7CXTSXX9FSYGS` (monthly). PR #10 changed the development pricing links to those independent PayPal URLs. The formerly linked WordPress checkout paths on `www.hvactrainingsolutions.net` will cease to be WordPress pages if the whole hostname moves to the Worker. Confirm the hosted buttons' actual offer, processor return paths, emails, and Moodle enrollment. A PayPal button alone does not prove the Moodle handoff.
 
-Record the final HTTPS URL for each plan, the owner of the checkout host, and its rollback path. Configure both `BOOT_CAMP_*_CHECKOUT_URL` values together only after testing. Keep the same-domain development links as review links, never as public launch settings.
+Record the verified HTTPS URL for each plan, the payment-to-enrollment integration, and its rollback path. The public build still requires both `BOOT_CAMP_*_CHECKOUT_URL` values explicitly after testing. Keep noindex and GA4 off in development.
 
 | Test for each plan | Evidence to record |
 | --- | --- |
@@ -38,4 +38,4 @@ Rehearse the public build, sitemap, canonical host, one-hop redirects, robots/in
 
 ## Next executable step
 
-Choose the checkout destination and obtain a read-only description of the present WordPress payment-to-Moodle enrollment path. That determines whether a separate checkout hostname can retain the existing integration or a proxy/replacement is required. Then run the two-plan matrix above and record the results. No production configuration change follows from this document.
+Inspect the two supplied PayPal buttons and obtain a read-only description of the current payment-to-Moodle enrollment path. Then run the two-plan matrix above and record the results. If those buttons bypass the existing enrollment integration, design and test that handoff before public cutover. No production configuration change follows from this document.
