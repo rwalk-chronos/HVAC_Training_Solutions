@@ -43,7 +43,7 @@ The original September 22 prototype was recovered on September 24. Ron selected 
 
 The current [Google Drive student-facing Unit 1 draft](https://docs.google.com/document/d/1Ei8vYLgxcckZS9kDFMLwwbguQfH5eOtfNIfg64JlSHg/edit) governs the five-lesson content sequence and its approved checks. This document governs the interaction and learning pattern. The older Library `HVAC Boot Camp — Unit 1 Pilot` is a UX reference only; its eight-page Matter curriculum is superseded. Original course media and Ron's instructor intent inform each lesson after the assets are reviewed.
 
-PR #6 on `recovery/money-pages-unit1` is the durable implementation baseline. Save each accepted lesson and selected assets in GitHub before moving to the next. Cloudflare previews are review deployments, not source storage. The project Library has original MP4s; do not rely on conversation attachments as the only copy. Keep a source and revision map for selected media.
+The selected prototype is on `main`; PR #6 is a historical draft review thread. Start future course work from the current `main` on a new narrow branch. Save each accepted lesson and selected assets in GitHub before moving to the next. Cloudflare previews are review deployments, not source storage. The project Library has original MP4s; do not rely on conversation attachments as the only copy. Keep a source and revision map for selected media.
 
 Before building:
 
