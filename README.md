@@ -118,6 +118,7 @@ A browser payment-success redirect must never grant access by itself.
 
 ## Documentation
 
+- [Next-session handoff (September 25)](docs/HANDOFF_2026-09-25.md)
 - [Development guide](docs/DEVELOPMENT.md)
 - [Student platform requirements](docs/STUDENT_PLATFORM_REQUIREMENTS.md)
 - [Unit 1 learning experience](docs/UNIT_1_LEARNING_EXPERIENCE.md)
