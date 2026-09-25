@@ -1,8 +1,10 @@
 # Marketing launch execution gates
 
-Status: development only, September 24, 2026. PRs #7, #8, #10, and #11 are merged into `main`; the Cloudflare Worker is a noindex review deployment. The public WordPress site and Moodle course remain live. This checklist records the evidence needed for a separate cutover decision; completing a build does not authorize DNS changes.
+Status: development only, updated September 25, 2026. PRs #7, #8, #10, and #11 are merged into `main`; the Cloudflare Worker is a noindex review deployment. The public WordPress site and Moodle course remain live. This checklist records the evidence needed for a separate cutover decision; completing a build does not authorize DNS changes.
 
 ## Gate 1 — Current checkout survives the domain move
+
+**Status: blocked.** The September 25 read-only check confirmed GitHub `main` at `19cbd9d4c921c2f06c5eb3ce9f609f8238523746`, but the Cloudflare Worker's active deployed SHA and source branch remain unverified. The live WordPress checkout pages link to both supplied IDs; the full-pay PayPal page exposed $479 USD. The monthly PayPal page did not expose recurrence without JavaScript. Neither button's merchant return/notification settings nor the manual Moodle handoff has been tested. See [Gate 1 evidence and proposed enrollment procedure](GATE_1_CHECKOUT_ENROLLMENT_2026-09-25.md) for exact observations, unknowns and the restricted rehearsal record. Do not mark this gate passed from a GitHub build or a thank-you-page visit.
 
 Ron supplied PayPal hosted button IDs `WAXSA22Y45YUU` (pay in full) and `7CXTSXX9FSYGS` (monthly). PR #10 changed the development pricing links to those independent PayPal URLs, verified on the Worker. Ron confirmed that he manually enrolls paid students in Moodle. PR #11 preserved the existing WordPress thank-you path, `/hvac-boot-camp/course-purchase/`, as a development page that explains the manual handoff. The return page is noindex and its visit does not prove payment. Confirm each PayPal button's actual offer and configured post-payment return URL; the public WordPress paths will cease to be WordPress pages when the hostname moves to the Worker.
 
