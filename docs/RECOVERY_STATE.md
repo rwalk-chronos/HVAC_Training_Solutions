@@ -1,6 +1,6 @@
 # Recovery state — original Unit 1 demo found
 
-Updated: 2026-09-24. This supersedes earlier statements that the prototype source is missing or must be rebuilt.
+Updated: 2026-09-25. This supersedes earlier statements that the prototype source is missing or must be rebuilt.
 
 ## Recovery target
 
@@ -34,13 +34,13 @@ The recovered demo includes three embedded video players, an additional preserve
 - `docs/UNIT_1_MEDIA_INVENTORY.md` records all 13 original uploads and distinguishes them from the selected demo clips. Do not assign all 13 as required viewing merely because they exist.
 - Marketing remains based on `ee8cea08adcfeda4e29c05cfb9478f8976c4e88d` and remote recovery baseline `723a5deee91e292a131a310f51b6c06ea7af0341`.
 
-## Working rules
+## Current source and working rules
 
-1. Work on PR #6, branch `recovery/money-pages-unit1`.
-2. Preserve the recovered prototype and compare it with Ron before changing lesson design or topic order.
-3. Develop Unit 1 from `/unit-1-prototype/` only. Keep the shorter `/try-boot-camp/` marketing sample distinct.
-4. Verify build output, media, feedback, heat interaction, and playback.
-5. Push source, selected media, and the handoff together. Confirm remote HEAD; a local commit alone is not completion.
-6. Record a preview's actual deployed commit and ownership. An expired temporary URL is not source storage.
+The selected prototype and its media are on `main` as part of the recovered marketing baseline. PR #6 is a historical draft review thread, not the branch to use for new work. Start future Unit 1 changes from the then-current `main` on a narrow branch. The later rejected `/unit-1/lesson-1/` route must not be restored.
 
-The recovered commit `a5773ba257b8937bf76cd62b2c55c433892c030e` was pushed to PR #6 and deployed to `https://hvac-training-solutions.rawalker0619.workers.dev` (Cloudflare version `0d337b5f-44a6-452f-a0aa-6e86087bdd97`). The live prototype HTML matched the saved recovery archive. No production WordPress, Moodle, DNS, payment, account, or enrollment changes are part of this recovery. PR #6 stays draft; no merge or production cutover is authorized here.
+1. Preserve the recovered five-section prototype and compare changes with Ron before altering its lesson design or topic order.
+2. Keep `/unit-1-prototype/` separate from the shorter `/try-boot-camp/` marketing sample. The first public release sells the existing 27-module Moodle course.
+3. Verify built output, selected media, feedback, heat interaction, and phone playback for each accepted course change.
+4. Commit and push accepted source and media. Record remote HEAD, deployed preview URL and SHA, media sources, and Ron's decision in the next handoff.
+
+The recovered commit `a5773ba257b8937bf76cd62b2c55c433892c030e` and Cloudflare version `0d337b5f-44a6-452f-a0aa-6e86087bdd97` are historical recovery evidence, not the current marketing deployment. The development Worker displayed the marketing homepage, pricing, and same-path thank-you page on September 25, but its deployed commit and Cloudflare source-branch setting were not independently confirmed in that check. WordPress, Moodle, DNS, payment, account, and enrollment production systems remain unchanged. See [the current handoff](HANDOFF_2026-09-25.md) and [launch gates](MARKETING_LAUNCH_GATES.md).
