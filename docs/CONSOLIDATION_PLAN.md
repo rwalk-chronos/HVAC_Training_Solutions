@@ -31,7 +31,7 @@ The active repository now contains:
 
 Ron selected `/unit-1-prototype/` as the Unit 1 baseline to build upon. The later `/unit-1/lesson-1/` reconstruction was rejected and removed. Do not replace the selected prototype with the older eight-page pilot or treat the old “missing source” assessment as current.
 
-On September 24, 2026, GitHub access for the Cloudflare Workers and Pages app was repaired. Cloudflare's development Worker is connected to `recovery/money-pages-unit1`; Ron reported a successful automatic build after commit `62f063cee244878a1f3f5d7176abfe5a7f3a5b06`. The build result confirms the connection; phone playback and interaction review remain to be done. The live WordPress and Moodle sites were not changed. See [DEVELOPMENT.md](DEVELOPMENT.md) for the current workflow.
+On September 24, 2026, GitHub access for the Cloudflare Workers and Pages app was repaired; an automatic build from `recovery/money-pages-unit1` was reported after commit `62f063cee244878a1f3f5d7176abfe5a7f3a5b06`. Since then the marketing build, PayPal links, and same-path thank-you page have merged to `main`. On September 25 the development Worker displayed those pages, but its deployed commit and current source-branch setting were not independently confirmed. Check both in Cloudflare before relying on automatic deployment. Phone playback and interaction review for the future-course Unit 1 prototype remain to be done. The live WordPress and Moodle sites were not changed. See [DEVELOPMENT.md](DEVELOPMENT.md) and [the current handoff](HANDOFF_2026-09-25.md).
 
 ## Target product boundaries
 
